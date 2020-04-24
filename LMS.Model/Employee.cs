@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using LMS.Model.Auditing;
+using static LMS.Model.Enums.EnumCollection;
 
 namespace LMS.Model
 {
@@ -10,17 +11,18 @@ namespace LMS.Model
     /// </summary>
     public class Employee : EntityBase<int>, IFullAudited
     {
-
+        /// <summary>
+        /// 员工名称
+        /// </summary>
+        public string EmployeeNmae { get; set; }
 
         /// <summary>
-        /// 用户名称
+        /// 员工性别
         /// </summary>
-        public string ENmae { get; set; }
+        public Gender EmployeeGender { get; set; }
 
-        /// <summary>
-        /// 性别
-        /// </summary>
-        public int EGender { get; set; }
+        public int DepartmentID { get; set; }
+        public Department Department { get; set; }
 
         public bool IsActive { get; set; }
         public long CreatorUserId { get; set; }
