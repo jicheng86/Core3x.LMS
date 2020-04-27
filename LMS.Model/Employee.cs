@@ -15,7 +15,6 @@ namespace LMS.Model
         /// 员工性别
         /// </summary>
         public Gender EmployeeGender { get; set; }
-
         public int DepartmentID { get; set; }
         public Department Department { get; set; }
 

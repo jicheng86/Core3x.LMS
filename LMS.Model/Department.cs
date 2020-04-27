@@ -13,10 +13,7 @@ namespace LMS.Model
         {
             Corporation = new Corporation();
         }
-        /// <summary>
-        /// 部门名称
-        /// </summary>
-        public string DepartmentName { get; set; }
+
         /// <summary>
         /// 所属公司ID
         /// </summary>

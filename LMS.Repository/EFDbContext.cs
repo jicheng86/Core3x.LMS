@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static LMS.Model.Enums.EnumCollection;
 
 namespace LMS.Repository
 {
@@ -20,35 +21,15 @@ namespace LMS.Repository
         {
             modelBuilder.Entity<Corporation>().ToTable("Corporation");//.Property(s=>s.ID).HasValueGenerator();
             modelBuilder.Entity<Corporation>().Property(c => c.Name).HasMaxLength(200).IsRequired();
+            // modelBuilder.Entity<Corporation>().Property(c => c.ID)HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
             modelBuilder.Entity<Corporation>().Property(c => c.CorporationAddress).HasMaxLength(1000);
             modelBuilder.Entity<Department>().ToTable("Department");
+            modelBuilder.Entity<Department>().Property(d => d.Name).HasMaxLength(200).IsRequired();
             modelBuilder.Entity<Employee>().ToTable("Employee");
+            modelBuilder.Entity<Employee>().Property(e => e.Name).HasMaxLength(200).IsRequired();
+            modelBuilder.Entity<Employee>().Property(e => e.EmployeeGender).IsRequired().ValueGeneratedOnAdd();
             modelBuilder.Entity<Area>().ToTable("Area");
-            //modelBuilder.Entity<Corporation>()
-            //    // .HasOne(s=>s.ID)
-            //    .HasMany(c => c.Departments);
-            //modelBuilder.Entity<Department>()
-            //    .HasKey(d => new { d.ID, d.DepartmentName })
-            //    .HasName("IDAndName");
-            //modelBuilder.Entity<Department>()
-            //    .HasOne(p => p.Corporation)
-            //    .WithMany(p => p.Departments)
-            //    .HasForeignKey(p => p.Corporation.ID);
-            //.HasPrincipalKey(b => b.Url);
 
-
-            //modelBuilder.Entity<PostTag>()
-            //  .HasKey(t => new { t.PostId, t.TagId });
-
-            //modelBuilder.Entity<PostTag>()
-            //    .HasOne(pt => pt.Post)
-            //    .WithMany(p => p.PostTags)
-            //    .HasForeignKey(pt => pt.PostId);
-
-            //modelBuilder.Entity<PostTag>()
-            //    .HasOne(pt => pt.Tag)
-            //    .WithMany(t => t.PostTags)
-            //    .HasForeignKey(pt => pt.TagId);
 
             // modelBuilder.Entity<City>()
             //    .HasOne(x => x.Province)   //指向外键表的导航属性
