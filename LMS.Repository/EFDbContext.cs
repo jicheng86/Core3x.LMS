@@ -18,7 +18,9 @@ namespace LMS.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Corporation>().ToTable("Corporation");
+            modelBuilder.Entity<Corporation>().ToTable("Corporation");//.Property(s=>s.ID).HasValueGenerator();
+            modelBuilder.Entity<Corporation>().Property(c => c.Name).HasMaxLength(200).IsRequired();
+            modelBuilder.Entity<Corporation>().Property(c => c.CorporationAddress).HasMaxLength(1000);
             modelBuilder.Entity<Department>().ToTable("Department");
             modelBuilder.Entity<Employee>().ToTable("Employee");
             modelBuilder.Entity<Area>().ToTable("Area");
