@@ -6,6 +6,6 @@ namespace LMS.Model.Auditing
 {
     interface IHasCreationTime 
     {
-        public DateTime CreateTime { get; set; }
+        public DateTime CreationTime { get; set; }
     }
 }

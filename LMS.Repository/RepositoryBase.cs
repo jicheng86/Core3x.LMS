@@ -12,13 +12,13 @@ namespace LMS.Repository
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class, new()
     {
-        private readonly DbContext dbContext;
+        protected readonly EFDbContext dbContext;
 
         /// <summary>
         /// 实现类初始化时：初始化数据库上下文
         /// </summary>
         /// <param name="context"></param>
-        public RepositoryBase(DbContext context)
+        public RepositoryBase(EFDbContext context)
         {
             this.dbContext = context;
         }

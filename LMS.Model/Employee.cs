@@ -9,7 +9,7 @@ namespace LMS.Model
     /// <summary>
     /// 员工信息
     /// </summary>
-    public class Employee : EntityBase<int>, IFullAudited
+    public class Employee : Entity, IFullAudited
     {
         /// <summary>
         /// 员工名称
@@ -26,7 +26,7 @@ namespace LMS.Model
 
         public bool IsActive { get; set; }
         public long CreatorUserId { get; set; }
-        public DateTime CreateTime { get; set; }
+        public DateTime CreationTime { get; set; }
         public long? ModificationUserID { get; set; }
         public DateTime? LastModificationTime { get; set; }
         public long? DeleterUserId { get; set; }

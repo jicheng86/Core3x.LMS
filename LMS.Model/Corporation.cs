@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
-using Microsoft.VisualBasic;
+﻿using System.Collections.Generic;
 
 namespace LMS.Model
 {
-    public class Corporation
+    public class Corporation : Entity
     {
         public Corporation()
         {
-            this.Departments = new Collection<Department>();
+            //初始化部门集合
+            this.Departments = new List<Department>();
         }
         /// <summary>
         /// 公司名称
         /// </summary>
-        public string CorpName { get; set; }
-        public string CorpAddress { get; set; }
-        public virtual ICollection<Department> Departments { get; set; }
+        public string CorporationName { get; set; }
+        public string CorporationAddress { get; set; }
+        public virtual List<Department> Departments { get; set; }
     }
 }
