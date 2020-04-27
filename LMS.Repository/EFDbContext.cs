@@ -18,16 +18,16 @@ namespace LMS.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Corporation>()
-                // .HasOne(s=>s.ID)
-                .HasMany(c => c.Departments);
-            modelBuilder.Entity<Department>()
-                .HasKey(d => new { d.ID, d.DepartmentName })
-                .HasName("IDAndName");
-            modelBuilder.Entity<Department>()
-                .HasOne(p => p.Corporation)
-                .WithMany(p => p.Departments)
-                .HasForeignKey(p => p.Corporation.ID);
+            //modelBuilder.Entity<Corporation>()
+            //    // .HasOne(s=>s.ID)
+            //    .HasMany(c => c.Departments);
+            //modelBuilder.Entity<Department>()
+            //    .HasKey(d => new { d.ID, d.DepartmentName })
+            //    .HasName("IDAndName");
+            //modelBuilder.Entity<Department>()
+            //    .HasOne(p => p.Corporation)
+            //    .WithMany(p => p.Departments)
+            //    .HasForeignKey(p => p.Corporation.ID);
             //.HasPrincipalKey(b => b.Url);
 
 
@@ -65,12 +65,12 @@ namespace LMS.Repository
             modelBuilder.Entity<Mayor>()
                 .HasOne(x => x.City)             //指向外键表的导航属性
                 .WithOne(x => x.Mayor)             //外键表的导航属性指向自己
-                .HasForeignKey<Mayor>(x => x.CityId);             //外键表Id
+                .HasForeignKey<Mayor>("CityIdString");   //外键表Id
             base.OnModelCreating(modelBuilder);
         }
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Department> Departments { get; set; }
-        public DbSet<Corporation> Corporations { get; set; }
+        //public DbSet<Employee> Employees { get; set; }
+        //public DbSet<Department> Departments { get; set; }
+        //public DbSet<Corporation> Corporations { get; set; }
 
         public DbSet<City> Cities { get; set; }
         public DbSet<Province> provinces { get; set; }
@@ -123,18 +123,18 @@ namespace LMS.Repository
         /// </summary>
         public Province Province { get; set; }
 
-        public IEnumerable<CityCompany> CityCompanies { get; set; }
+        public List<CityCompany> CityCompanies { get; set; }
         public Mayor Mayor { get; set; }
     }
     public class Province
     {
         public int ProvinceId { get; set; }
-        public IEnumerable<City> Cities { get; set; }
+        public List<City> Cities { get; set; }
     }
     public class Company
     {
         public int CompanyId { get; set; }
-        public IEnumerable<CityCompany> CityCompanies { get; set; }
+        public List<CityCompany> CityCompanies { get; set; }
     }
     public class CityCompany
     {

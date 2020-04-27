@@ -14,7 +14,7 @@ namespace LMS.Repository
         public int GetInf()
         {
             dbContext.Entry(new Employee()).State = EntityState.Modified;
-            dbContext.Employees.FirstOrDefaultAsync();
+           // dbContext.Employees.FirstOrDefaultAsync();
             return 0;
         }
 
