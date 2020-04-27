@@ -12,11 +12,6 @@ namespace LMS.Model
     public class Employee : Entity, IFullAudited
     {
         /// <summary>
-        /// 员工名称
-        /// </summary>
-        public string EmployeeNmae { get; set; }
-
-        /// <summary>
         /// 员工性别
         /// </summary>
         public Gender EmployeeGender { get; set; }
