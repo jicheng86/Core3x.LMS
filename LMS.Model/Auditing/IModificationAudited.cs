@@ -9,6 +9,9 @@ namespace LMS.Model.Auditing
     /// </summary>
     interface IModificationAudited : IHasModificationTime
     {
+        /// <summary>
+        /// 修改者ID
+        /// </summary>
         public long? ModificationUserID { get; set; }
     }
 }
