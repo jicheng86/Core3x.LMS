@@ -18,6 +18,8 @@ namespace LMS.Repository.Migrations
                     ParentId = table.Column<int>(nullable: false),
                     CreatorUserId = table.Column<long>(nullable: false),
                     CreationTime = table.Column<DateTime>(nullable: false),
+                    ModificationUserID = table.Column<long>(nullable: true),
+                    LastModificationTime = table.Column<DateTime>(nullable: true),
                     IsActive = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
@@ -31,10 +33,17 @@ namespace LMS.Repository.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 200, nullable: false),
                     Remarks = table.Column<string>(nullable: true),
-                    CorporationName = table.Column<string>(nullable: true),
-                    CorporationAddress = table.Column<string>(nullable: true)
+                    CorporationAddress = table.Column<string>(maxLength: 1000, nullable: true),
+                    CreatorUserId = table.Column<long>(nullable: false),
+                    CreationTime = table.Column<DateTime>(nullable: false),
+                    ModificationUserID = table.Column<long>(nullable: true),
+                    LastModificationTime = table.Column<DateTime>(nullable: true),
+                    DeleterUserId = table.Column<long>(nullable: true),
+                    DeletionTime = table.Column<DateTime>(nullable: true),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    IsActive = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -47,10 +56,17 @@ namespace LMS.Repository.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 200, nullable: false),
                     Remarks = table.Column<string>(nullable: true),
-                    DepartmentName = table.Column<string>(nullable: true),
-                    CorporationID = table.Column<int>(nullable: false)
+                    CorporationID = table.Column<int>(nullable: false),
+                    CreatorUserId = table.Column<long>(nullable: false),
+                    CreationTime = table.Column<DateTime>(nullable: false),
+                    ModificationUserID = table.Column<long>(nullable: true),
+                    LastModificationTime = table.Column<DateTime>(nullable: true),
+                    DeleterUserId = table.Column<long>(nullable: true),
+                    DeletionTime = table.Column<DateTime>(nullable: true),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    IsActive = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -69,7 +85,7 @@ namespace LMS.Repository.Migrations
                 {
                     ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(maxLength: 200, nullable: false),
                     Remarks = table.Column<string>(nullable: true),
                     EmployeeGender = table.Column<int>(nullable: false),
                     DepartmentID = table.Column<int>(nullable: false),

@@ -4,8 +4,14 @@ using System.Text;
 
 namespace LMS.Model.Auditing
 {
+    /// <summary>
+    /// 创建信息
+    /// </summary>
     interface ICreationAudited : IHasCreationTime
     {
+        /// <summary>
+        /// 创建者ID
+        /// </summary>
         public long CreatorUserId { get; set; }
     }
 }
