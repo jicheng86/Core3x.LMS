@@ -4,8 +4,14 @@ using System.Text;
 
 namespace LMS.Model.Auditing
 {
+    /// <summary>
+    /// 软删除标记
+    /// </summary>
     interface ISoftDelete
     {
+        /// <summary>
+        /// 删除标记
+        /// </summary>
         public bool IsDeleted { get; set; }
     }
 }
