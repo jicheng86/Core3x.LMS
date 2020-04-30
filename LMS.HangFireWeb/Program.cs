@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace LMS.HangFireWeb
+namespace LMS.HangFire
 {
     public class Program
     {

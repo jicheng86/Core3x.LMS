@@ -1,6 +1,6 @@
 using System;
 
-namespace LMS.HangFireWeb.Models
+namespace LMS.HangFire.Models
 {
     public class ErrorViewModel
     {

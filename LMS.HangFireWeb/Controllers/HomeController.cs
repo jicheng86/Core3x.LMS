@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using LMS.HangFireWeb.Models;
+using LMS.HangFire.Models;
 
-namespace LMS.HangFireWeb.Controllers
+namespace LMS.HangFire.Controllers
 {
     public class HomeController : Controller
     {

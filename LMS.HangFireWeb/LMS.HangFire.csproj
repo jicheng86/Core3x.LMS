@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>LMS.HangFire</AssemblyName>
+    <RootNamespace>LMS.HangFire</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
