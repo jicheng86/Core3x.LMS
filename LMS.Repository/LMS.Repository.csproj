@@ -35,8 +35,4 @@
     <ProjectReference Include="..\LMS.IRepository\LMS.IRepository.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
-
 </Project>
