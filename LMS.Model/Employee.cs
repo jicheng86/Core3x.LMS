@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using LMS.Model.Auditing;
 using static LMS.Model.Enums.EnumCollection;
@@ -10,6 +11,7 @@ namespace LMS.Model
     /// <summary>
     /// 员工信息
     /// </summary>
+    [Table("Employee")]
     public class Employee : Entity, IFullAudited
     {
         /// <summary>

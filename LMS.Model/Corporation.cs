@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using LMS.Model.Auditing;
 
 namespace LMS.Model
 {
+    /// <summary>
+    /// 公司信息
+    /// </summary>
+    [Table("Corporation")]
     public class Corporation : Entity, IFullAudited
     {
         public Corporation()

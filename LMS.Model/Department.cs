@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using LMS.Model.Auditing;
 
@@ -9,6 +10,7 @@ namespace LMS.Model
     /// <summary>
     /// 部门信息
     /// </summary>
+    [Table("Department")]
     public class Department : Entity, IFullAudited
     {
         public Department()
