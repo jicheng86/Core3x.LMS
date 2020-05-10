@@ -19,18 +19,16 @@ namespace LMS.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Corporation>().ToTable("Corporation");//.Property(s=>s.ID).HasValueGenerator();
-            modelBuilder.Entity<Corporation>().Property(c => c.Name).HasMaxLength(200).IsRequired();
-            // modelBuilder.Entity<Corporation>().Property(c => c.ID)HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
-            modelBuilder.Entity<Corporation>().Property(c => c.CorporationAddress).HasMaxLength(1000);
-            modelBuilder.Entity<Department>().ToTable("Department");
-            modelBuilder.Entity<Department>().Property(d => d.Name).HasMaxLength(200).IsRequired();
-            modelBuilder.Entity<Employee>().ToTable("Employee");
-            modelBuilder.Entity<Employee>().Property(e => e.Name).HasMaxLength(200).IsRequired();
-            modelBuilder.Entity<Employee>().Property(e => e.EmployeeGender).IsRequired().ValueGeneratedOnAdd();
-            modelBuilder.Entity<Area>().ToTable("Area");
-
-
+            //modelBuilder.Entity<Corporation>().ToTable("Corporation");//.Property(s=>s.ID).HasValueGenerator();
+            //modelBuilder.Entity<Corporation>().Property(c => c.Name).HasMaxLength(200).IsRequired();
+            //// modelBuilder.Entity<Corporation>().Property(c => c.ID)HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
+            //modelBuilder.Entity<Corporation>().Property(c => c.CorporationAddress).HasMaxLength(1000);
+            //modelBuilder.Entity<Department>().ToTable("Department");
+            //modelBuilder.Entity<Department>().Property(d => d.Name).HasMaxLength(200).IsRequired();
+            //modelBuilder.Entity<Employee>().ToTable("Employee");
+            //modelBuilder.Entity<Employee>().Property(e => e.Name).HasMaxLength(200).IsRequired();
+            //modelBuilder.Entity<Employee>().Property(e => e.EmployeeGender).IsRequired().ValueGeneratedOnAdd();
+            //modelBuilder.Entity<Area>().ToTable("Area");
             // modelBuilder.Entity<City>()
             //    .HasOne(x => x.Province)   //指向外键表的导航属性
             //    .WithMany(x => x.Cities);  //外键表的导航属性指向自己
@@ -59,57 +57,6 @@ namespace LMS.Repository
         public DbSet<Department> Departments { get; set; }
         public DbSet<Corporation> Corporations { get; set; }
         public DbSet<Area> Areas { get; set; }
-        //public DbSet<City> Cities { get; set; }
-        //public DbSet<Province> provinces { get; set; }
-        //public DbSet<Company> Companys { get; set; }
-        //public DbSet<CityCompany> CityCompanys { get; set; }
-        //public DbSet<Mayor> Mayor { get; set; }
     }
-    //public class City
-    //{
-    //    /// <summary>
-    //    /// 主键Id
-    //    /// </summary>
-    //    public int CityId { get; set; }
-
-    //    /// <summary>
-    //    /// 外键Id
-    //    /// </summary>
-    //    public int ProvinceId { get; set; }
-
-    //    /// <summary>
-    //    /// 导航属性
-    //    /// </summary>
-    //    public Province Province { get; set; }
-
-    //    public IEnumerable<CityCompany> CityCompanies { get; set; }
-    //    public Mayor Mayor { get; set; }
-    //}
-    //public class Province
-    //{
-    //    public int ProvinceId { get; set; }
-    //    public IEnumerable<City> Cities { get; set; }
-    //}
-    //public class Company
-    //{
-    //    public int CompanyId { get; set; }
-    //    public IEnumerable<CityCompany> CityCompanies { get; set; }
-    //}
-    //public class CityCompany
-    //{
-    //    public int CityCompanyId { get; set; }
-
-    //    public int CityId { get; set; }
-    //    public City City { get; set; }
-
-    //    public int CompanyId { get; set; }
-    //    public Company Company { get; set; }
-    //}
-    //public class Mayor
-    //{
-    //    public int MayOrId { get; set; }
-
-    //   // public int CityId { get; set; }
-    //    public City City { get; set; }
-    //}
+   
 }

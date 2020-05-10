@@ -31,7 +31,13 @@ namespace LMS.Web
                 option.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
             services.AddControllersWithViews();
-            services.AddControllers().AddNewtonsoftJson();
+            services.AddControllers(
+                options =>
+                {
+                    options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true; //.NET Core 3.0 和更高版本中的验证系统将不可为 null 的参数或绑定属性视为具有 [Required] 特性。 decimal 和 int 等值类型是不可为 null 的类型 。设置为true（默认false）则阻止该特性
+
+                }
+                ).AddNewtonsoftJson();//添加Json.Net库支持
             //services.AddSingleton<>
         }
 
