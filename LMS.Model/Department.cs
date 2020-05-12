@@ -16,15 +16,19 @@ namespace LMS.Model
         public Department()
         {
             Corporation = new Corporation();
+            Positions = new List<Position>();
         }
 
         /// <summary>
         /// 所属公司ID
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "所属公司ID")]
         public int CorporationID { get; set; }
 
         public Corporation Corporation { get; set; }
+
+        public List<Position> Positions { get; set; }
+
 
         /// <summary>
         /// 创建者ID

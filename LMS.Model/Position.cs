@@ -2,15 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace LMS.Model
 {
+    [Table("Position")]
     public class Position : Entity, IFullAudited
     {
         public int ParentID { get; set; }
-        public int CorporationID { get; set; }
-        public Corporation corporation { get; set; }
+        public int DeptmentID { get; set; }
+        public Department Department { get; set; }
+        public List<Employee> Employees { get; set; }
 
         /// <summary>
         /// 创建者ID

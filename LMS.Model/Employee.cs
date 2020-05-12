@@ -19,9 +19,10 @@ namespace LMS.Model
         /// </summary>
         [Required(ErrorMessage = "字段：{0}，不能为空！")]
         public Gender EmployeeGender { get; set; }
+
         [Required(ErrorMessage = "字段：{0}，不能为空！")]
-        public int DepartmentID { get; set; }
-        public Department Department { get; set; }
+        public int PositionID { get; set; }
+        public Position Position { get; set; }
 
         /// <summary>
         /// 创建者ID

@@ -57,6 +57,7 @@ namespace LMS.Repository
         public DbSet<Department> Departments { get; set; }
         public DbSet<Corporation> Corporations { get; set; }
         public DbSet<Area> Areas { get; set; }
+        public DbSet<Position> positions { get; set; }
     }
-   
+
 }
