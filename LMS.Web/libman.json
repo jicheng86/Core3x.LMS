@@ -2,6 +2,40 @@
   "version": "1.0",
   "defaultProvider": "cdnjs",
   "libraries": [
-   
-  ]
+    {
+      "library": "twitter-bootstrap@3.3.6",
+      "destination": "wwwroot/lib/twitter-bootstrap/v3.3.6/"
+    },
+    {
+      "library": "font-awesome@4.4.0",
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "animate.css@4.1.0",
+      "destination": "wwwroot/lib/animate.css/"
+    },
+    {
+      "library": "jQuery@2.1.4",
+      "destination": "wwwroot/lib/jquery/v2.1.4/"
+    },
+    {
+      "library": "metisMenu@1.1.3",
+      "destination": "wwwroot/lib/jquery.metisMenu/"
+    }
+  ,
+{
+  "library": "jQuery-slimScroll@1.3.0",
+  "destination": "wwwroot/lib/jquery-slimScroll/"
+}
+,
+{
+  "library": "layer@2.1",
+  "destination": "wwwroot/lib/layer/v2.1/"
+}
+,
+{
+  "library": "pace@0.5.1",
+  "destination": "wwwroot/lib/pace/v0.5.1/"
+}
+]
 }
