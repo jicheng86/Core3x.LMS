@@ -1,4 +1,5 @@
 ﻿using LMS.IRepository;
+using LMS.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -22,37 +23,101 @@ namespace LMS.Repository
         {
             this.dbContext = context;
         }
-
+        /// <summary>
+        /// 新增实体
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns></returns>
         public T Create(T entity)
         {
             dbContext.Set<T>().Add(entity);
             return entity;
         }
-
+        /// <summary>
+        /// 删除实体
+        /// </summary>
+        /// <param name="whereLambda">Lambda查询条件</param>
+        /// <returns></returns>
         public bool Delete(Expression<Func<T, bool>> whereLambda)
         {
+            if (whereLambda == null)
+            {
+                throw new ArgumentNullException(nameof(whereLambda));
+            }
             T entity = GetEntity(whereLambda);
-            //context.Set<T>()
+
             return entity == null ? false : Update(entity) != null;
         }
-
+        /// <summary>
+        /// 删除实体
+        /// </summary>
+        /// <param name="entity">实体,SoftDelete</param>
+        /// <returns></returns>
+        public bool Delete(T entity)
+        {
+            return entity == null ? false : Update(entity) != null;
+        }
+        /// <summary>
+        /// 获取实体
+        /// </summary>
+        /// <param name="whereLambda">Lambda查询条件</param>
+        /// <returns></returns>
         public T GetEntity(Expression<Func<T, bool>> whereLambda)
         {
+            if (whereLambda == null)
+            {
+                whereLambda = w => true;
+            }
             T entity = dbContext.Set<T>().Where(whereLambda).FirstOrDefault();
             return entity;
         }
-
-        public Task<T> GetEntityAsync(Expression<Func<T, bool>> whereLambda)
+        /// <summary>
+        /// 获取实体（异步）
+        /// </summary>
+        /// <param name="whereLambda">Lambda查询条件</param>
+        /// <returns></returns>
+        public async Task<T> GetEntityAsync(Expression<Func<T, bool>> whereLambda)
         {
-            throw new NotImplementedException();
+            if (whereLambda == null)
+            {
+                whereLambda = w => true;
+            }
+            return await dbContext.Set<T>().Where(whereLambda).FirstOrDefaultAsync();
+        }
+        /// <summary>
+        /// 获取实体列表（异步）
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
+        public async Task<IQueryable<T>> GetEntityListAsync(Expression<Func<T, bool>> whereLambda)
+        {
+            if (whereLambda == null)
+            {
+                whereLambda = w => true;
+            }
+            return await Task.Run(() => dbContext.Set<T>().Where(whereLambda));
         }
 
-        public Task<IQueryable<T>> GetEntityListAsync(Expression<Func<T, bool>> whereLambda)
+        public async Task<PageData<T>> LoadPageDataList(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false)
         {
-            throw new NotImplementedException();
+            if (whereLambda == null)
+            {
+                whereLambda = w => true;
+            }
+
+            IQueryable<T> data = isDesc ? dbContext.Set<T>().OrderBy(orderLambda) : dbContext.Set<T>().OrderByDescending(orderLambda);
+
+            data = dbContext.Set<T>().Where(whereLambda);
+
+            PageData<T> pageData = new PageData<T>
+            {
+                Total = await data.CountAsync(),
+                Data = await data.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync()
+            };
+            return pageData;
         }
 
-        public Task<IQueryable<T>> LoadPageDataListAsync(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, ref int total)
+        public Task<PageData<T>> LoadPageDataListAsync(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false)
         {
             throw new NotImplementedException();
         }
@@ -64,7 +129,8 @@ namespace LMS.Repository
 
         public T Update(T entity)
         {
-            throw new NotImplementedException();
+            return entity;
         }
+
     }
 }

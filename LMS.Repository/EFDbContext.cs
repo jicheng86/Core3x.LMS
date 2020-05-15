@@ -1,4 +1,4 @@
-﻿using LMS.Model;
+﻿using LMS.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

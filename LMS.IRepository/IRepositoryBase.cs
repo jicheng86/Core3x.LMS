@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LMS.Model;
+using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -20,9 +21,15 @@ namespace LMS.IRepository
         /// <summary>
         /// 删除实体
         /// </summary>
-        /// <param name="ID">实体主键ID</param>
+        /// <param name="whereLambda">Lambda查询条件</param>
         /// <returns></returns>
         bool Delete(Expression<Func<T, bool>> whereLambda);
+        /// <summary>
+        /// 删除实体
+        /// </summary>
+        /// <param name="entity">实体</param>
+        /// <returns></returns>
+        bool Delete(T entity);
         /// <summary>
         /// 修改实体
         /// </summary>
@@ -57,7 +64,7 @@ namespace LMS.IRepository
         /// <param name="pageSize">页容量</param>
         /// <param name="total">查询数据总条数</param>
         /// <returns>分页数据集合</returns>
-        Task<IQueryable<T>> LoadPageDataListAsync(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, ref int total);
+        Task<PageData<T>> LoadPageDataListAsync(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false);
 
         /// <summary>
         /// 数据响应提交

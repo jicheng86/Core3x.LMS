@@ -17,11 +17,25 @@ namespace LMS.Web.Controllers
         {
             _logger = logger;
         }
+        public IActionResult Home()
+        {
+            return View();
+        }
 
         public IActionResult Index()
         {
             return View();
         }
+        public IActionResult Index_v2()
+        {
+            return View();
+        }
+        public IActionResult Layouts()
+        {
+            return View();
+        }
+
+
 
         public IActionResult Privacy()
         {
