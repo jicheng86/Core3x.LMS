@@ -13,11 +13,11 @@ namespace LMS.Model
         /// <summary>
         /// 返回状态码Code
         /// </summary>
-        public RespondStatusCode RespondStatusCode { get; set; }
+        public RespondStatusCode Code { get; set; }
         /// <summary>
         /// 描述信息Msg
         /// </summary>
-        public string Msg { get; set; }
+        public string Message { get; set; }
 
         /// <summary>
         /// 数据体Data
