@@ -52,5 +52,15 @@
         "dist/jquery.min.map"
       ]
     }
-  ]
+  ,
+{
+  "library": "formvalidation@0.6.2-dev",
+  "destination": "wwwroot/lib/formvalidation/v0.6.2-dev/"
+}
+,
+{
+  "library": "bootstrap-table@1.16.0",
+  "destination": "wwwroot/lib/bootstrap-table/v1.16.0/"
+}
+]
 }
