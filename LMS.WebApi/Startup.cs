@@ -83,11 +83,7 @@ namespace LMS.WebApi
 
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1.0", new OpenApiInfo
-                {
-                    Version = "v1.0",
-                    Title = "接口文档"
-                });
+                options.SwaggerDoc("v1", new OpenApiInfo { Version = "v1", Title = "接口文档" });
                 var basePath = PlatformServices.Default.Application.ApplicationBasePath;
                 var xmlPath = Path.Combine(basePath, "LMS.WebApi.xml");
                 options.IncludeXmlComments(xmlPath, true);
@@ -110,7 +106,8 @@ namespace LMS.WebApi
             app.UseSwagger();
             app.UseSwaggerUI(setup =>
             {
-                setup.SwaggerEndpoint("/swagger/v1/swagger.json", "swagger api v1.0");
+                setup.SwaggerEndpoint("/swagger/v1/swagger.json", "swagger api v1");
+                setup.RoutePrefix = string.Empty;
             });
 
             app.UseRouting();

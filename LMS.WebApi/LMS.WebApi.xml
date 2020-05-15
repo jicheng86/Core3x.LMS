@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LMS.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:LMS.WebApi.Controllers.AuthenticateController">
+            <summary>
+            Authenticate
+            </summary>
+        </member>
+        <member name="M:LMS.WebApi.Controllers.AuthenticateController.Login(LMS.Model.Entities.Employee)">
+             <summary>
+            登录action
+             </summary>
+             <param name="employee"></param>
+             <returns></returns>
+        </member>
+        <member name="T:LMS.WebApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LMS.WebApi.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:LMS.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:LMS.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:LMS.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

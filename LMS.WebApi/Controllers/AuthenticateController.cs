@@ -15,11 +15,20 @@ using static LMS.Model.Enums.EnumCollection;
 
 namespace LMS.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    /// <summary>
+    /// Authenticate
+    /// </summary>
+    [Route("api/Authenticate")]
     [ApiController]
     public class AuthenticateController : ControllerBase
     {
+        /// <summary>
+        ///登录action
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
         [Route("api/login")]
+        [HttpPost(Name = "Login")]
         public IActionResult Login([FromBody] Employee employee)
         {
             //从数据库验证用户名，密码 
