@@ -35,12 +35,12 @@ namespace LMS.Repository
             //   // .HasForeignKey(x => x.ProvinceId);             //外键表Id
 
             //// modelBuilder.Entity<CityCompany>()
-            //    // .HasKey(x => new { x.CityId, x.CompanyId });         //创建联合主键
+            //    .HasKey(x => new { x.CityId, x.CompanyId });         //创建联合主键
 
             // modelBuilder.Entity<CityCompany>()
             //     .HasOne(x => x.City)             //指向外键表的导航属性
             //     .WithMany(x => x.CityCompanies);  //外键表的导航属性指向自己
-            //                                       // .HasForeignKey(x => x.CityId);                     //外键表Id
+            //     .HasForeignKey(x => x.CityId);   //外键表Id
 
             // modelBuilder.Entity<CityCompany>()
             //     .HasOne(x => x.Company)         //指向外键表的导航属性
@@ -57,7 +57,7 @@ namespace LMS.Repository
         public DbSet<Department> Departments { get; set; }
         public DbSet<Corporation> Corporations { get; set; }
         public DbSet<Area> Areas { get; set; }
-        public DbSet<Position> positions { get; set; }
+        public DbSet<Position> Positions { get; set; }
     }
 
 }

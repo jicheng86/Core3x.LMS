@@ -14,9 +14,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.IO;
-using Swashbuckle.AspNetCore.Swagger;
-using Microsoft.OpenApi.Models;
-using Microsoft.Extensions.PlatformAbstractions;
+using NSwag;
+using LMS.WebApi.Model;
+using LMS.WebApi.Controllers;
+using LMS.Service;
+using LMS.IService;
 
 namespace LMS.WebApi
 {
@@ -45,7 +47,35 @@ namespace LMS.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddXmlDataContractSerializerFormatters();
+
+            // Register the Swagger services  --NSwag
+            services.AddSwaggerDocument(options =>
+            {
+                options.PostProcess = document =>
+                {
+                    document.Info.Version = "v1";
+                    document.Info.Title = "APISwagger";
+                    document.Info.Description = "ASP.NET Core Web API";
+                    document.Info.TermsOfService = "None";
+                    document.Info.Contact = new OpenApiContact
+                    {
+                        Name = "JiChengLee",
+                        Email = "791457931@qq.com",
+                        Url = "https://www.cnblogs.com/jicheng/"
+                    };
+                    document.Info.License = new OpenApiLicense
+                    {
+                        Name = "JiChengLee",
+                        Url = "https://www.cnblogs.com/jicheng/"
+                    };
+                };
+            });
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());//使用AutoMapper
+
+            var jwtSettings = Configuration.GetSection("jwtOptions");
+            services.Configure<JwtOptions>(jwtSettings);
+            JwtOptions jwtOptions = jwtSettings.Get<JwtOptions>();
+
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -53,20 +83,24 @@ namespace LMS.WebApi
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
             {
+                //定义承载令牌是否应存储在Microsoft.AspNetCore.Authentication中。成功授权后的AuthenticationProperties。
                 options.SaveToken = true;
+                //获取或设置元数据地址或权限是否需要HTTPS。默认值为true。这应该只在开发环境中禁用。
                 options.RequireHttpsMetadata = false;
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
-
+                    //获取或设置一个布尔值，以控制在令牌验证期间是否将对颁发者进行验证。
                     ValidateIssuer = true,
-                    ValidIssuer = "suern",
-
+                    //获取或设置一个System.String，它表示将使用的有效发行者检查代币的发行者。
+                    ValidIssuer = jwtOptions.Issuer,
+                    //获取或设置一个布尔值，以控制是否将在令牌验证期间验证受众。
                     ValidateAudience = true,
-                    ValidAudience = "Audience",
-
+                    //获取或设置一个字符串，该字符串表示将用于检查的有效受众反对令牌的观众。
+                    ValidAudience = jwtOptions.Audience,
+                    //获取或设置一个布尔值，该布尔值控制是否验证microsoft.identitymodel.token。调用对securityToken进行签名的SecurityKey。
                     ValidateIssuerSigningKey = true,
-                    //用于签名验证
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jicheng"))
+                    //获取或设置要使用的Microsoft.IdentityModel.Tokens.SecurityKey用于签名验证。
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Secret))
                 };
                 options.Events = new JwtBearerEvents()
                 {
@@ -81,13 +115,12 @@ namespace LMS.WebApi
                 };
             });
 
-            services.AddSwaggerGen(options =>
-            {
-                options.SwaggerDoc("v1", new OpenApiInfo { Version = "v1", Title = "接口文档" });
-                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, "LMS.WebApi.xml");
-                options.IncludeXmlComments(xmlPath, true);
-            });
+            #region 不同的controller注入不同的实例
+            services.AddSingleton<ILogger, ILogger<JwtAuthenticationController>>();
+            services.AddSingleton<ILogger, ILogger<WeatherForecastController>>();
+            #endregion
+            services.AddSingleton<IJwtAuthenticateService, JwtAuthenticationService>();
+
         }
 
 
@@ -103,13 +136,8 @@ namespace LMS.WebApi
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
-            app.UseSwagger();
-            app.UseSwaggerUI(setup =>
-            {
-                setup.SwaggerEndpoint("/swagger/v1/swagger.json", "swagger api v1");
-                setup.RoutePrefix = string.Empty;
-            });
-
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
             app.UseRouting();
 
             app.UseAuthentication();//启用验证中间件

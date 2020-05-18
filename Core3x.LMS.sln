@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMS.WebApi", "LMS.WebApi\LM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LMS.Services", "LMS.Services", "{3EA1CECD-6095-496F-A63F-3CB1BB540293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.IService", "LMS.IService\LMS.IService.csproj", "{0E13FA97-C3E1-4B1D-8D2C-3579482E1AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMS.IService", "LMS.IService\LMS.IService.csproj", "{0E13FA97-C3E1-4B1D-8D2C-3579482E1AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMS.Service", "LMS.Service\LMS.Service.csproj", "{8E0CF1DE-4647-43BC-A5FE-63733D0F9511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMS.Service", "LMS.Service\LMS.Service.csproj", "{8E0CF1DE-4647-43BC-A5FE-63733D0F9511}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

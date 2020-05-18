@@ -1,6 +1,6 @@
 using System;
 
-namespace LMS.WebApi
+namespace LMS.WebApi.Model
 {
     public class WeatherForecast
     {

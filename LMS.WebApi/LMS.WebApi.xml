@@ -4,18 +4,6 @@
         <name>LMS.WebApi</name>
     </assembly>
     <members>
-        <member name="T:LMS.WebApi.Controllers.AuthenticateController">
-            <summary>
-            Authenticate
-            </summary>
-        </member>
-        <member name="M:LMS.WebApi.Controllers.AuthenticateController.Login(LMS.Model.Entities.Employee)">
-             <summary>
-            登录action
-             </summary>
-             <param name="employee"></param>
-             <returns></returns>
-        </member>
         <member name="T:LMS.WebApi.Startup">
             <summary>
             
