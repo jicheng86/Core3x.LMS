@@ -6,14 +6,20 @@
         "Name": "Console",
         "Args": {
           "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Code, Serilog.Sinks.Console",
-          "outputTemplate": "发生时间:{Timestamp: HH:mm:ss.fff} 事件等级:{Level} 详细信息:{Message}{NewLine}{Exception}"
+          "encoding": "Encoding.UTF8",
+           "outputTemplate": "发生时间:{Timestamp: HH:mm:ss.fff} 事件等级:{Level} 详细信息:{Message}{NewLine}{Exception}"
         }
       },
       {
         "Name": "File",
         "Args": {
-          "path": "/SeriLogs/log.txt",
+          //文件存放目录
+          "path": "Serilogs/log.txt",
+          //按照“天”生成日志文件
           "rollingInterval": "Day",
+          //保留文件数量（4年=1461）
+          "retainedFileCountLimit": 1461,
+          "encoding": "Encoding.UTF8",
           "outputTemplate": "发生时间:{Timestamp: HH:mm:ss.fff} 事件等级:{Level} 详细信息:{Message}{NewLine}{Exception}"
         }
       },
@@ -21,15 +27,15 @@
         "Name": "MSSqlServer",
         "Args": {
           "connectionString": "Data Source=.;Database=DB_LMS_Core3.x;Integrated Security=SSPI;Persist Security Info=False;",
-          "MinimumLevel": "Warning",
+          "MinimumLevel": "Debug",
           "sinkOptionsSection": {
-            "tableName": "Logs",
-            "schemaName": "EventLogging",
+            "tableName": "webapi.logs",
+            "schemaName": "seri",
             "autoCreateSqlTable": true,
             "batchPostingLimit": 1000,
             "period": "0.00:00:30"
           },
-          "restrictedToMinimumLevel": "Warning",
+          "restrictedToMinimumLevel": "Debug", //Debug,Warning
           "columnOptionsSection": {
             "disableTriggers": true,
             "clusteredColumnstoreIndex": false,

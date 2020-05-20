@@ -13,6 +13,6 @@ namespace LMS.IService
         /// <param name="request"></param>
         /// <param name="jwtString"></param>
         /// <returns></returns>
-        bool IsAuthenticated(RequestDto request, out string jwtString);
+        bool IsAuthenticated(RequestDto request, JwtOptions JwtOptions, out string jwtString);
     }
 }

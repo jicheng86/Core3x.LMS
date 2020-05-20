@@ -1,0 +1,115 @@
+2020-05-20 16:30:40.208 +08:00 [INF] Starting up
+2020-05-20 16:30:42.249 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 16:30:42.543 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 16:30:42.545 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 16:30:42.545 +08:00 [INF] Hosting environment: Development
+2020-05-20 16:30:42.546 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 16:30:43.597 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 16:30:43.821 +08:00 [INF] Request finished in 228.2689ms 200 text/html; charset=utf-8
+2020-05-20 16:30:44.064 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 16:30:44.680 +08:00 [INF] Request finished in 616.6614ms 200 application/json; charset=utf-8
+2020-05-20 16:33:33.495 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 16:33:33.595 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 16:33:33.614 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 16:33:33.696 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-20 16:33:33.700 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 16:33:33.701 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 16:33:33.703 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 16:33:33.704 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 16:33:33.708 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.8402ms.
+2020-05-20 16:33:33.715 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 16:33:33.725 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 103.7366ms
+2020-05-20 16:33:33.727 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 16:33:33.729 +08:00 [INF] Request finished in 235.2357ms 200 application/json; charset=utf-8
+2020-05-20 17:01:44.987 +08:00 [INF] Starting up
+2020-05-20 17:01:47.512 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 17:01:47.763 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 17:01:47.765 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 17:01:47.766 +08:00 [INF] Hosting environment: Development
+2020-05-20 17:01:47.766 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 17:01:49.247 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 17:01:49.578 +08:00 [INF] Request finished in 338.2963ms 200 text/html; charset=utf-8
+2020-05-20 17:01:49.735 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 17:01:50.311 +08:00 [INF] Request finished in 576.0801ms 200 application/json; charset=utf-8
+2020-05-20 17:01:54.881 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 17:01:54.974 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:01:54.991 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 17:01:55.071 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-20 17:01:55.076 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 17:01:55.077 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 17:01:55.077 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 17:01:55.078 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 17:01:55.083 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.2501ms.
+2020-05-20 17:01:55.088 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 17:01:55.097 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 98.4308ms
+2020-05-20 17:01:55.100 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:01:55.103 +08:00 [INF] Request finished in 222.6258ms 200 application/json; charset=utf-8
+2020-05-20 17:40:01.719 +08:00 [INF] Starting up
+2020-05-20 17:40:08.516 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 17:40:08.778 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 17:40:08.785 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 17:40:08.787 +08:00 [INF] Hosting environment: Development
+2020-05-20 17:40:08.790 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 17:40:10.096 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 17:40:10.445 +08:00 [INF] Request finished in 351.4054ms 200 text/html; charset=utf-8
+2020-05-20 17:40:10.622 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 17:40:11.406 +08:00 [INF] Request finished in 783.5554ms 200 application/json; charset=utf-8
+2020-05-20 17:40:15.745 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 17:40:15.834 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:40:15.855 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 17:40:15.860 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 17:40:15.860 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 17:40:15.861 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 17:40:15.861 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 17:40:15.864 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 17:40:15.878 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 14.5255ms
+2020-05-20 17:40:15.881 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:40:15.886 +08:00 [INF] Request finished in 142.0307ms 200 application/json; charset=utf-8
+2020-05-20 17:40:50.863 +08:00 [INF] Starting up
+2020-05-20 17:40:53.096 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 17:40:53.280 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 17:40:53.282 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 17:40:53.283 +08:00 [INF] Hosting environment: Development
+2020-05-20 17:40:53.283 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 17:40:54.586 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 17:40:54.860 +08:00 [INF] Request finished in 280.2824ms 200 text/html; charset=utf-8
+2020-05-20 17:40:55.002 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 17:40:55.598 +08:00 [INF] Request finished in 596.0738ms 200 application/json; charset=utf-8
+2020-05-20 17:40:59.350 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 17:40:59.432 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:40:59.451 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 17:40:59.536 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-20 17:40:59.543 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 17:40:59.544 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 17:40:59.545 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 17:40:59.546 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 17:40:59.550 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.1139ms.
+2020-05-20 17:40:59.557 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 17:40:59.566 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 107.8434ms
+2020-05-20 17:40:59.569 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:40:59.573 +08:00 [INF] Request finished in 223.3573ms 200 application/json; charset=utf-8
+2020-05-20 17:44:11.768 +08:00 [INF] Starting up
+2020-05-20 17:44:13.673 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 17:44:13.872 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 17:44:13.875 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 17:44:13.875 +08:00 [INF] Hosting environment: Development
+2020-05-20 17:44:13.876 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 17:44:15.125 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 17:44:15.374 +08:00 [INF] Request finished in 254.8862ms 200 text/html; charset=utf-8
+2020-05-20 17:44:15.548 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 17:44:16.124 +08:00 [INF] Request finished in 576.2265ms 200 application/json; charset=utf-8
+2020-05-20 17:44:20.158 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 17:44:20.252 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:44:20.273 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 17:44:20.357 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-20 17:44:20.362 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 17:44:20.363 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 17:44:20.364 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 17:44:20.365 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 17:44:20.370 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.5377ms.
+2020-05-20 17:44:20.375 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 17:44:20.387 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 106.2485ms
+2020-05-20 17:44:20.388 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 17:44:20.391 +08:00 [INF] Request finished in 232.8047ms 200 application/json; charset=utf-8
+2020-05-20 17:52:04.750 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 17:52:04.752 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get

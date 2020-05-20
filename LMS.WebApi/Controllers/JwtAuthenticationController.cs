@@ -37,9 +37,16 @@ namespace LMS.WebApi.Controllers
             {
                 return BadRequest("Invalid Request");
             }
-
+            JwtOptions jwtOptions = new JwtOptions()
+            {
+                Secret = "Secret",
+                Issuer = "Issuer",
+                Audience = "Audience",
+                AccessExpiration = 20,
+                RefreshExpiration = 30
+            };
             string token;
-            if (jwtAuthenticateService.IsAuthenticated(request, out token))
+            if (jwtAuthenticateService.IsAuthenticated(request, jwtOptions, out token))
             {
                 return Ok(token);
             }

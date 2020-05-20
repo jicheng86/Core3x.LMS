@@ -19,6 +19,11 @@ using LMS.WebApi.Model;
 using LMS.WebApi.Controllers;
 using LMS.Service;
 using LMS.IService;
+using Serilog.Core;
+using Serilog;
+using Serilog.Events;
+using LMS.Repository;
+using Microsoft.EntityFrameworkCore;
 
 namespace LMS.WebApi
 {
@@ -46,8 +51,12 @@ namespace LMS.WebApi
         /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
+           
             services.AddControllers().AddXmlDataContractSerializerFormatters();
-
+            services.AddDbContext<EFDbContext>(option =>
+            {
+                option.UseSqlServer(Configuration.GetConnectionString("Default"));
+            });
             // Register the Swagger services  --NSwag
             services.AddSwaggerDocument(options =>
             {
@@ -72,9 +81,8 @@ namespace LMS.WebApi
             });
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());//使用AutoMapper
 
-            var jwtSettings = Configuration.GetSection("jwtOptions");
-            services.Configure<JwtOptions>(jwtSettings);
-            JwtOptions jwtOptions = jwtSettings.Get<JwtOptions>();
+           // services.Configure<JwtOptions>(Configuration.GetSection("jwtOptions")); 
+             JwtOptions jwtOptions = Configuration.GetSection("jwtOptions").Get<JwtOptions>();
 
             services.AddAuthentication(options =>
             {
@@ -115,10 +123,6 @@ namespace LMS.WebApi
                 };
             });
 
-            #region 不同的controller注入不同的实例
-            services.AddSingleton<ILogger, ILogger<JwtAuthenticationController>>();
-            services.AddSingleton<ILogger, ILogger<WeatherForecastController>>();
-            #endregion
             services.AddSingleton<IJwtAuthenticateService, JwtAuthenticationService>();
 
         }
@@ -138,6 +142,23 @@ namespace LMS.WebApi
             app.UseStaticFiles();
             app.UseOpenApi();
             app.UseSwaggerUi3();
+            // Add this line; you'll need `using Serilog;` up the top, too
+           // app.UseSerilogRequestLogging();
+            app.UseSerilogRequestLogging(options =>
+            {
+                // Customize the message template
+                options.MessageTemplate = "Handled {RequestPath}";
+
+                // Emit debug-level events instead of the defaults
+                options.GetLevel = (httpContext, elapsed, ex) => LogEventLevel.Debug;
+
+                // Attach additional properties to the request completion event
+                options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+                {
+                    diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+                    diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+                };
+            });
             app.UseRouting();
 
             app.UseAuthentication();//启用验证中间件
