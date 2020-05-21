@@ -14,6 +14,7 @@ using Serilog.Formatting.Compact;
 using Serilog.Sinks.Email;
 using Serilog.Sinks.MSSqlServer;
 using Serilog.Sinks.MSSqlServer.Sinks.MSSqlServer.Options;
+using Serilog.Sinks.SystemConsole.Themes;
 
 namespace LMS.WebApi
 {
@@ -21,41 +22,31 @@ namespace LMS.WebApi
     {
         public static void Main(string[] args)
         {
-            //Log.Logger = new LoggerConfiguration()
-            // .MinimumLevel.Debug()
-            // .MinimumLevel.Override("Microsoft", LogEventLevel.Information)//对其他日志进行重写,除此之外,目前框架只有微软自带的日志组件
-            // .ReadFrom.Configuration(
-            //    new ConfigurationBuilder()
-            //    .AddJsonFile("SerilogConfigs.json")
-            //    .Build()
-            //    )
-            //ICredentialsByHost
-           
-
-            //.WriteTo.MSSqlServer(@"Server=...", sinkOptions: new SinkOptions { TableName = "Logs" }, columnOptions: columnOptions)
-            //.CreateLogger();
             //程序启动就开始记录日志
             Log.Logger = new LoggerConfiguration()
-           .Enrich.FromLogContext()
-           .WriteTo.Console()
-            // .WriteTo.File(formatter: new CompactJsonFormatter(), path: "Serilogs/logs/log.txt", restrictedToMinimumLevel: LogEventLevel.Debug, retainedFileCountLimit: 365, encoding: Encoding.UTF8, shared: false, buffered: true)
-            .WriteTo.File(path: "Serilogs/log.txt", rollingInterval: RollingInterval.Day, restrictedToMinimumLevel: LogEventLevel.Debug, retainedFileCountLimit: 365, encoding: Encoding.UTF8, shared: false, buffered: true)
-           .AuditTo.File("Serilogs/audit.txt",restrictedToMinimumLevel: LogEventLevel.Error)
-           //.WriteTo.MSSqlServer(connectionString: @"Data Source=.;Database=DB_LMS_Core3.x;Integrated Security=SSPI;Persist Security Info=False;", sinkOptions: new SinkOptions { TableName = "Serilogs" }, restrictedToMinimumLevel: LogEventLevel.Debug)
-           .WriteTo.Email(
-              fromEmail: "791457931@qq.com",
-              toEmail: "412148697.qq.com",
-              mailServer: "smtp.qq.com",
-              mailSubject: "系统有错误，已写入日志，请查看！",
-              restrictedToMinimumLevel: LogEventLevel.Debug,
-              networkCredential: new NetworkCredential(userName: "791457931@qq.com", password: "C#EqualTo2C++LJC"))
-           // .WriteTo.Seq("http://localhost:5000")
-           .CreateLogger();
+                //.Enrich.WithProperty("SourceContext", null) //加入属性SourceContext，也就运行时是调用Logger的具体类
+                .Enrich.FromLogContext() //动态加入属性，主要是针对上面的自定义字段User和Class，当然也可以随时加入别的属性。
+                .WriteTo.Console(theme: AnsiConsoleTheme.Code)
+                .WriteTo.File(formatter: new CompactJsonFormatter(), path: "Serilogs/JsonFormatterlog.txt", rollingInterval: RollingInterval.Day, restrictedToMinimumLevel: LogEventLevel.Debug, retainedFileCountLimit: 365, encoding: Encoding.UTF8, shared: true, buffered: false)
+                .WriteTo.File(path: "Serilogs/log.txt", rollingInterval: RollingInterval.Day, restrictedToMinimumLevel: LogEventLevel.Debug, retainedFileCountLimit: 365, encoding: Encoding.UTF8, shared: true, buffered: false)
+                .AuditTo.File(path: "Serilogs/audit.txt", restrictedToMinimumLevel: LogEventLevel.Error)
+                .WriteTo.MSSqlServer(connectionString: @"Data Source=.;Database=DB_LMS_Core3.x;Integrated Security=SSPI;Persist Security Info=False;", sinkOptions: new SinkOptions { TableName = "Serilogs4Web", AutoCreateSqlTable = true }, restrictedToMinimumLevel: LogEventLevel.Warning)
+               //.WriteTo.Email(
+               //   fromEmail: "lijc@lx-car.com",
+               //   toEmail: "791457931@qq.com",
+               //   mailServer: "smtp.263.net",
+               //   mailSubject: "系统有错误，已写入日志，请查看！",
+               //   restrictedToMinimumLevel: LogEventLevel.Warning,
+               //   networkCredential: new NetworkCredential(userName: "lijc@lx-car.com", password: "zxc123111"))
+               //.WriteTo.Seq(serverUrl: "http://localhost:5341")
+               .CreateLogger();
 
             try
             {
-                Log.Information("Starting up");
-                CreateHostBuilder(args).Build().Run();
+                Log.Information("Starting up Successful");
+                CreateHostBuilder(args)
+                    .Build()
+                    .Run();
             }
             catch (Exception ex)
             {

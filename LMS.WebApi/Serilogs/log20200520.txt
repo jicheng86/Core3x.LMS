@@ -1,19 +1,91 @@
-﻿{"@t":"2020-05-20T09:01:44.9873080Z","@mt":"Starting up"}
-{"@t":"2020-05-20T09:01:47.5122964Z","@mt":"User profile is available. Using '{FullName}' as key repository and Windows DPAPI to encrypt keys at rest.","FullName":"C:\\Users\\LVXING\\AppData\\Local\\ASP.NET\\DataProtection-Keys","SourceContext":"Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager"}
-{"@t":"2020-05-20T09:01:47.7636445Z","@mt":"Now listening on: {address}","address":"http://localhost:5000","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2020-05-20T09:01:47.7657446Z","@mt":"Application started. Press Ctrl+C to shut down.","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2020-05-20T09:01:47.7662311Z","@mt":"Hosting environment: {envName}","envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2020-05-20T09:01:47.7668163Z","@mt":"Content root path: {contentRoot}","contentRoot":"F:\\dotNetCore\\LMS\\LMS.WebApi","SourceContext":"Microsoft.Hosting.Lifetime"}
-{"@t":"2020-05-20T09:01:49.2471166Z","@mt":"{HostingRequestStartingLog:l}","@r":["Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  "],"Protocol":"HTTP/1.1","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"http","Host":"localhost:5000","PathBase":"","Path":"/swagger/index.html","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  ","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HLVSJHMR6GR8:00000001","RequestPath":"/swagger/index.html","SpanId":"|df4260db-47717e30a2aece97.","TraceId":"df4260db-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:49.5787088Z","@mt":"{HostingRequestFinishedLog:l}","@r":["Request finished in 338.2963ms 200 text/html; charset=utf-8"],"ElapsedMilliseconds":338.2963,"StatusCode":200,"ContentType":"text/html; charset=utf-8","HostingRequestFinishedLog":"Request finished in 338.2963ms 200 text/html; charset=utf-8","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HLVSJHMR6GR8:00000001","RequestPath":"/swagger/index.html","SpanId":"|df4260db-47717e30a2aece97.","TraceId":"df4260db-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:49.7350056Z","@mt":"{HostingRequestStartingLog:l}","@r":["Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  "],"Protocol":"HTTP/1.1","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"http","Host":"localhost:5000","PathBase":"","Path":"/swagger/v1/swagger.json","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  ","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HLVSJHMR6GR8:00000002","RequestPath":"/swagger/v1/swagger.json","SpanId":"|df4260dc-47717e30a2aece97.","TraceId":"df4260dc-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:50.3110343Z","@mt":"{HostingRequestFinishedLog:l}","@r":["Request finished in 576.0801ms 200 application/json; charset=utf-8"],"ElapsedMilliseconds":576.0801,"StatusCode":200,"ContentType":"application/json; charset=utf-8","HostingRequestFinishedLog":"Request finished in 576.0801ms 200 application/json; charset=utf-8","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HLVSJHMR6GR8:00000002","RequestPath":"/swagger/v1/swagger.json","SpanId":"|df4260dc-47717e30a2aece97.","TraceId":"df4260dc-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:54.8812827Z","@mt":"{HostingRequestStartingLog:l}","@r":["Request starting HTTP/1.1 GET http://localhost:5000/api/Default  "],"Protocol":"HTTP/1.1","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"http","Host":"localhost:5000","PathBase":"","Path":"/api/Default","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/1.1 GET http://localhost:5000/api/Default  ","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:54.9749574Z","@mt":"Executing endpoint '{EndpointName}'","EndpointName":"LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)","EventId":{"Name":"ExecutingEndpoint"},"SourceContext":"Microsoft.AspNetCore.Routing.EndpointMiddleware","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:54.9917439Z","@mt":"Route matched with {RouteData}. Executing controller action with signature {MethodInfo} on controller {Controller} ({AssemblyName}).","RouteData":"{action = \"Get\", controller = \"Default\"}","MethodInfo":"System.Collections.Generic.IEnumerable`1[System.String] Get()","Controller":"LMS.WebApi.Controllers.DefaultController","AssemblyName":"LMS.WebApi","EventId":{"Id":3,"Name":"ControllerActionExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"23984918-f369-4ca5-a846-6a515c5f08af","ActionName":"LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:55.0719127Z","@mt":"Executing action method {ActionName} - Validation state: {ValidationState}","ActionName":"LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)","ValidationState":"Valid","EventId":{"Id":1,"Name":"ActionMethodExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"23984918-f369-4ca5-a846-6a515c5f08af","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:55.0767456Z","@mt":"记录LogInformation日志,发生在Default/Get","SourceContext":"LMS.WebApi.Controllers.DefaultController","ActionId":"23984918-f369-4ca5-a846-6a515c5f08af","ActionName":"LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:55.0772736Z","@mt":"记录LogError日志,发生在Default/Get","@l":"Error","SourceContext":"LMS.WebApi.Controllers.DefaultController","ActionId":"23984918-f369-4ca5-a846-6a515c5f08af","ActionName":"LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:55.0778188Z","@mt":"记录LogWarning日志,发生在Default/Get","@l":"Warning","SourceContext":"LMS.WebApi.Controllers.DefaultController","ActionId":"23984918-f369-4ca5-a846-6a515c5f08af","ActionName":"LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:55.0784385Z","@mt":"记录LogCritical日志,发生在Default/Get","@l":"Fatal","SourceContext":"LMS.WebApi.Controllers.DefaultController","ActionId":"23984918-f369-4ca5-a846-6a515c5f08af","ActionName":"LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)","RequestId":"0HLVSJHMR6GR8:00000003","RequestPath":"/api/Default","SpanId":"|df4260dd-47717e30a2aece97.","TraceId":"df4260dd-47717e30a2aece97","ParentId":"","ConnectionId":"0HLVSJHMR6GR8"}
-{"@t":"2020-05-20T09:01:55.0833323Z","@mt":"Executed action method {ActionNa
+﻿2020-05-20 18:03:11.714 +08:00 [INF] Starting up
+2020-05-20 18:03:14.685 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 18:03:14.929 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 18:03:14.932 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 18:03:14.933 +08:00 [INF] Hosting environment: Development
+2020-05-20 18:03:14.934 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 18:03:15.845 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 18:03:16.166 +08:00 [INF] Request finished in 331.145ms 200 text/html; charset=utf-8
+2020-05-20 18:03:16.321 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 18:03:16.910 +08:00 [INF] Request finished in 588.334ms 200 application/json; charset=utf-8
+2020-05-20 18:03:21.287 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 18:03:21.391 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:03:21.408 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 18:03:21.487 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-20 18:03:21.493 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 18:03:21.493 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 18:03:21.494 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 18:03:21.495 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 18:03:21.499 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.285ms.
+2020-05-20 18:03:21.506 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 18:03:21.515 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 101.0176ms
+2020-05-20 18:03:21.518 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:03:21.521 +08:00 [INF] Request finished in 234.4515ms 200 application/json; charset=utf-8
+2020-05-20 18:04:10.959 +08:00 [INF] Starting up
+2020-05-20 18:04:17.924 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 18:04:18.100 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 18:04:18.103 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 18:04:18.105 +08:00 [INF] Hosting environment: Development
+2020-05-20 18:04:18.105 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 18:04:19.400 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 18:04:19.769 +08:00 [INF] Request finished in 377.0567ms 200 text/html; charset=utf-8
+2020-05-20 18:04:19.953 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 18:04:20.593 +08:00 [INF] Request finished in 640.1355ms 200 application/json; charset=utf-8
+2020-05-20 18:04:25.078 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 18:04:25.169 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:04:25.190 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 18:04:25.194 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 18:04:25.194 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 18:04:25.195 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 18:04:25.196 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 18:04:25.200 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 18:04:25.214 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 17.3646ms
+2020-05-20 18:04:25.219 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:04:25.223 +08:00 [INF] Request finished in 145.6099ms 200 application/json; charset=utf-8
+2020-05-20 18:04:37.213 +08:00 [INF] Starting up
+2020-05-20 18:04:39.261 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 18:04:39.443 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 18:04:39.447 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 18:04:39.448 +08:00 [INF] Hosting environment: Development
+2020-05-20 18:04:39.450 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 18:04:40.406 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 18:04:40.650 +08:00 [INF] Request finished in 249.4806ms 200 text/html; charset=utf-8
+2020-05-20 18:04:40.814 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 18:04:41.412 +08:00 [INF] Request finished in 597.7899ms 200 application/json; charset=utf-8
+2020-05-20 18:04:46.821 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 18:04:46.908 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:04:46.930 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 18:04:47.003 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-20 18:04:47.009 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 18:04:47.010 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 18:04:47.011 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 18:04:47.011 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 18:04:47.015 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.249ms.
+2020-05-20 18:04:47.023 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 18:04:47.031 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 95.3595ms
+2020-05-20 18:04:47.033 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:04:47.037 +08:00 [INF] Request finished in 216.6478ms 200 application/json; charset=utf-8
+2020-05-20 18:09:56.929 +08:00 [INF] Starting up
+2020-05-20 18:09:58.315 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-20 18:09:58.505 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-20 18:09:58.509 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-20 18:09:58.510 +08:00 [INF] Hosting environment: Development
+2020-05-20 18:09:58.511 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-20 18:09:59.685 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+2020-05-20 18:09:59.958 +08:00 [INF] Request finished in 277.6337ms 200 text/html; charset=utf-8
+2020-05-20 18:10:00.130 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+2020-05-20 18:10:00.732 +08:00 [INF] Request finished in 602.0216ms 200 application/json; charset=utf-8
+2020-05-20 18:10:04.264 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Default  
+2020-05-20 18:10:04.348 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:10:04.366 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-20 18:10:04.438 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-20 18:10:04.444 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-20 18:10:04.445 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-20 18:10:04.446 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-20 18:10:04.446 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-20 18:10:04.451 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.6099ms.
+2020-05-20 18:10:04.458 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-20 18:10:04.468 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 93.5449ms
+2020-05-20 18:10:04.469 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-20 18:10:04.472 +08:00 [INF] Request finished in 208.1506ms 200 application/json; charset=utf-8
+2020-05-20 18:11:26.301 +08:00 [INF] Application is shutting down...

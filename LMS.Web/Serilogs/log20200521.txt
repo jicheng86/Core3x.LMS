@@ -1,0 +1,135 @@
+﻿2020-05-21 17:03:59.250 +08:00 [INF] Starting up Successful
+2020-05-21 17:04:01.471 +08:00 [FTL] Application start-up failed
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+2020-05-21 17:05:47.407 +08:00 [INF] Starting up Successful
+2020-05-21 17:05:48.902 +08:00 [FTL] Application start-up failed
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+2020-05-21 17:09:46.260 +08:00 [INF] Starting up Successful
+2020-05-21 17:10:41.051 +08:00 [INF] Starting up Successful
+2020-05-21 17:10:42.394 +08:00 [FTL] Application start-up failed
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+2020-05-21 17:11:21.418 +08:00 [INF] Starting up Successful
+2020-05-21 17:11:22.708 +08:00 [FTL] Application start-up failed
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+2020-05-21 17:15:24.300 +08:00 [INF] Starting up Successful
+2020-05-21 17:17:37.336 +08:00 [INF] Starting up Successful
+2020-05-21 17:17:38.820 +08:00 [FTL] Application start-up failed
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+2020-05-21 17:39:01.239 +08:00 [INF] Starting up Successful
+2020-05-21 17:39:02.338 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-21 17:39:02.711 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-21 17:39:02.712 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-21 17:39:02.712 +08:00 [INF] Hosting environment: Development
+2020-05-21 17:39:02.713 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-05-21 17:39:04.314 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-05-21 17:39:04.364 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-21 17:39:04.436 +08:00 [INF] Route matched with {action = "Home", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-21 17:39:04.527 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Home (LMS.Web) - Validation state: "Valid"
+2020-05-21 17:39:04.531 +08:00 [INF] 记录LogInformation日志,发生在Home/Home
+2020-05-21 17:39:04.534 +08:00 [ERR] 记录LogError日志,发生在Home/Home
+2020-05-21 17:39:04.537 +08:00 [WRN] 记录LogWarning日志,发生在Home/Home
+2020-05-21 17:39:04.538 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
+2020-05-21 17:39:04.559 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.0565ms.
+2020-05-21 17:39:04.596 +08:00 [INF] Executing ViewResult, running view Home.
+2020-05-21 17:39:04.806 +08:00 [INF] Executed ViewResult - view Home executed in 220.3576ms.
+2020-05-21 17:39:04.807 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Home (LMS.Web) in 366.2556ms
+2020-05-21 17:39:04.809 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-21 17:39:04.816 +08:00 [INF] Request finished in 513.0106ms 200 text/html; charset=utf-8
+2020-05-21 17:39:04.863 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Home/Index  
+2020-05-21 17:39:04.867 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-21 17:39:04.873 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-21 17:39:04.920 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Index (LMS.Web) - Validation state: "Valid"
+2020-05-21 17:39:04.921 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2633ms.
+2020-05-21 17:39:04.923 +08:00 [INF] Executing ViewResult, running view Index.
+2020-05-21 17:39:04.942 +08:00 [INF] Executed ViewResult - view Index executed in 20.4473ms.
+2020-05-21 17:39:04.943 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Index (LMS.Web) in 68.5919ms
+2020-05-21 17:39:04.955 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-21 17:39:04.960 +08:00 [INF] Request finished in 96.4598ms 200 text/html; charset=utf-8
+2020-05-21 17:39:12.264 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/home  
+2020-05-21 17:39:12.267 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-21 17:39:12.268 +08:00 [INF] Route matched with {action = "Home", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-21 17:39:12.303 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Home (LMS.Web) - Validation state: "Valid"
+2020-05-21 17:39:12.305 +08:00 [INF] 记录LogInformation日志,发生在Home/Home
+2020-05-21 17:39:12.307 +08:00 [ERR] 记录LogError日志,发生在Home/Home
+2020-05-21 17:39:12.310 +08:00 [WRN] 记录LogWarning日志,发生在Home/Home
+2020-05-21 17:39:12.311 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
+2020-05-21 17:39:12.311 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.3402ms.
+2020-05-21 17:39:12.313 +08:00 [INF] Executing ViewResult, running view Home.
+2020-05-21 17:39:12.316 +08:00 [INF] Executed ViewResult - view Home executed in 3.0802ms.
+2020-05-21 17:39:12.318 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Home (LMS.Web) in 35.0575ms
+2020-05-21 17:39:12.319 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-21 17:39:12.320 +08:00 [INF] Request finished in 56.6315ms 200 text/html; charset=utf-8
+2020-05-21 17:39:12.353 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a7.jpg  
+2020-05-21 17:39:12.353 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/profile_small.jpg  
+2020-05-21 17:39:12.375 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a4.jpg  
+2020-05-21 17:39:12.387 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a1.jpg  
+2020-05-21 17:39:12.388 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a2.jpg  
+2020-05-21 17:39:12.389 +08:00 [INF] Request finished in 36.0889ms 404 
+2020-05-21 17:39:12.389 +08:00 [INF] Request finished in 35.5827ms 404 
+2020-05-21 17:39:12.405 +08:00 [INF] Request finished in 17.794ms 404 
+2020-05-21 17:39:12.389 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a3.jpg  
+2020-05-21 17:39:12.430 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Home/Index  
+2020-05-21 17:39:12.425 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a8.jpg  
+2020-05-21 17:39:12.396 +08:00 [INF] Request finished in 9.7162ms 404 
+2020-05-21 17:39:12.389 +08:00 [INF] Request finished in 32.3547ms 404 
+2020-05-21 17:39:12.438 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-21 17:39:12.439 +08:00 [INF] Request finished in 13.403ms 404 
+2020-05-21 17:39:12.437 +08:00 [INF] Request finished in 48.3191ms 404 
+2020-05-21 17:39:12.442 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-21 17:39:12.470 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Index (LMS.Web) - Validation state: "Valid"
+2020-05-21 17:39:12.471 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0213ms.
+2020-05-21 17:39:12.476 +08:00 [INF] Executing ViewResult, running view Index.
+2020-05-21 17:39:12.477 +08:00 [INF] Executed ViewResult - view Index executed in 0.9003ms.
+2020-05-21 17:39:12.477 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Index (LMS.Web) in 28.4208ms
+2020-05-21 17:39:12.478 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-21 17:39:12.479 +08:00 [INF] Request finished in 49.289ms 200 text/html; charset=utf-8

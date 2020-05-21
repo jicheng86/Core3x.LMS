@@ -29,7 +29,7 @@
           "connectionString": "Data Source=.;Database=DB_LMS_Core3.x;Integrated Security=SSPI;Persist Security Info=False;",
           "MinimumLevel": "Debug",
           "sinkOptionsSection": {
-            "tableName": "webapi.logs",
+            "tableName": "Serlogs4Api",
             "schemaName": "seri",
             "autoCreateSqlTable": true,
             "batchPostingLimit": 1000,
