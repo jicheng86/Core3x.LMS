@@ -20,6 +20,11 @@ namespace LMS.Web.Controllers
             return View();
         }
         [HttpGet]
+        public IActionResult CorporationList()
+        {
+            return View();
+        }
+        [HttpGet]
         public IActionResult Creation()
         {
             return View();
