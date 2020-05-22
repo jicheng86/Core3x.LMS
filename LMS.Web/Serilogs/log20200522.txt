@@ -1,0 +1,76 @@
+﻿2020-05-22 10:56:00.203 +08:00 [INF] Starting up Successful
+2020-05-22 10:56:01.341 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-22 10:56:01.742 +08:00 [INF] Now listening on: http://localhost:5000
+2020-05-22 10:56:01.743 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-22 10:56:01.744 +08:00 [INF] Hosting environment: Development
+2020-05-22 10:56:01.745 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-05-22 10:56:02.908 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2020-05-22 10:56:03.012 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-22 10:56:03.103 +08:00 [INF] Route matched with {action = "Home", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-22 10:56:03.226 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Home (LMS.Web) - Validation state: "Valid"
+2020-05-22 10:56:03.229 +08:00 [INF] 记录LogInformation日志,发生在Home/Home
+2020-05-22 10:56:03.229 +08:00 [ERR] 记录LogError日志,发生在Home/Home
+2020-05-22 10:56:03.243 +08:00 [WRN] 记录LogWarning日志,发生在Home/Home
+2020-05-22 10:56:03.248 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
+2020-05-22 10:56:03.253 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 19.8854ms.
+2020-05-22 10:56:03.282 +08:00 [INF] Executing ViewResult, running view Home.
+2020-05-22 10:56:03.531 +08:00 [INF] Executed ViewResult - view Home executed in 259.0521ms.
+2020-05-22 10:56:03.532 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Home (LMS.Web) in 426.5384ms
+2020-05-22 10:56:03.532 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-22 10:56:03.538 +08:00 [INF] Request finished in 640.4077ms 200 text/html; charset=utf-8
+2020-05-22 10:56:03.562 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/v2.1.4/dist/jquery.js  
+2020-05-22 10:56:03.586 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/js/public/contabs.js?v=4.9.0  
+2020-05-22 10:56:03.588 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Home/Index  
+2020-05-22 10:56:03.591 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-22 10:56:03.591 +08:00 [INF] The file /lib/jquery/v2.1.4/dist/jquery.js was not modified
+2020-05-22 10:56:03.591 +08:00 [INF] The file /js/public/contabs.js was not modified
+2020-05-22 10:56:03.594 +08:00 [INF] Request finished in 7.6807ms 304 application/javascript
+2020-05-22 10:56:03.594 +08:00 [INF] Request finished in 32.0991ms 304 application/javascript
+2020-05-22 10:56:03.594 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-22 10:56:03.624 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Index (LMS.Web) - Validation state: "Valid"
+2020-05-22 10:56:03.625 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3459ms.
+2020-05-22 10:56:03.629 +08:00 [INF] Executing ViewResult, running view Index.
+2020-05-22 10:56:03.638 +08:00 [INF] Executed ViewResult - view Index executed in 10.6628ms.
+2020-05-22 10:56:03.639 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Index (LMS.Web) in 40.6054ms
+2020-05-22 10:56:03.639 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-22 10:56:03.640 +08:00 [INF] Request finished in 51.4977ms 200 text/html; charset=utf-8
+2020-05-22 10:56:11.423 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/home  
+2020-05-22 10:56:11.427 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-22 10:56:11.431 +08:00 [INF] Route matched with {action = "Home", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-22 10:56:11.453 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Home (LMS.Web) - Validation state: "Valid"
+2020-05-22 10:56:11.454 +08:00 [INF] 记录LogInformation日志,发生在Home/Home
+2020-05-22 10:56:11.455 +08:00 [ERR] 记录LogError日志,发生在Home/Home
+2020-05-22 10:56:11.455 +08:00 [WRN] 记录LogWarning日志,发生在Home/Home
+2020-05-22 10:56:11.455 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
+2020-05-22 10:56:11.457 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2.7265ms.
+2020-05-22 10:56:11.465 +08:00 [INF] Executing ViewResult, running view Home.
+2020-05-22 10:56:11.467 +08:00 [INF] Executed ViewResult - view Home executed in 2.3374ms.
+2020-05-22 10:56:11.468 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Home (LMS.Web) in 35.4315ms
+2020-05-22 10:56:11.468 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-22 10:56:11.469 +08:00 [INF] Request finished in 46.2569ms 200 text/html; charset=utf-8
+2020-05-22 10:56:11.490 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a7.jpg  
+2020-05-22 10:56:11.490 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/profile_small.jpg  
+2020-05-22 10:56:11.492 +08:00 [INF] Request finished in 1.7806ms 404 
+2020-05-22 10:56:11.492 +08:00 [INF] Request finished in 2.5795ms 404 
+2020-05-22 10:56:11.495 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a4.jpg  
+2020-05-22 10:56:11.495 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a1.jpg  
+2020-05-22 10:56:11.497 +08:00 [INF] Request finished in 1.3358ms 404 
+2020-05-22 10:56:11.499 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a2.jpg  
+2020-05-22 10:56:11.497 +08:00 [INF] Request finished in 1.0362ms 404 
+2020-05-22 10:56:11.499 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a8.jpg  
+2020-05-22 10:56:11.499 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/img/a3.jpg  
+2020-05-22 10:56:11.500 +08:00 [INF] Request finished in 1.0892ms 404 
+2020-05-22 10:56:11.500 +08:00 [INF] Request finished in 1.1856ms 404 
+2020-05-22 10:56:11.501 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Home/Index  
+2020-05-22 10:56:11.501 +08:00 [INF] Request finished in 2.0653ms 404 
+2020-05-22 10:56:11.511 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-22 10:56:11.513 +08:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-22 10:56:11.535 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Index (LMS.Web) - Validation state: "Valid"
+2020-05-22 10:56:11.536 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0243ms.
+2020-05-22 10:56:11.540 +08:00 [INF] Executing ViewResult, running view Index.
+2020-05-22 10:56:11.542 +08:00 [INF] Executed ViewResult - view Index executed in 1.9426ms.
+2020-05-22 10:56:11.543 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Index (LMS.Web) in 28.7867ms
+2020-05-22 10:56:11.544 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Index (LMS.Web)'
+2020-05-22 10:56:11.544 +08:00 [INF] Request finished in 43.1682ms 200 text/html; charset=utf-8
+2020-05-22 10:56:11.606 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/home/favicon.ico  
+2020-05-22 10:56:11.607 +08:00 [INF] Request finished in 0.5447ms 404 

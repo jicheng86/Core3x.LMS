@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LMS.IService\LMS.IService.csproj" />
     <ProjectReference Include="..\LMS.Repository\LMS.Repository.csproj" />
   </ItemGroup>
 
