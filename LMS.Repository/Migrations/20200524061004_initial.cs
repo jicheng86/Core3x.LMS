@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LMS.Repository.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -97,6 +97,37 @@ namespace LMS.Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Position",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1000, 1"),
+                    Name = table.Column<string>(maxLength: 150, nullable: false),
+                    Remarks = table.Column<string>(maxLength: 2500, nullable: true),
+                    ParentID = table.Column<int>(nullable: false),
+                    DeptmentID = table.Column<int>(nullable: false),
+                    DepartmentID = table.Column<int>(nullable: true),
+                    CreatorUserId = table.Column<long>(nullable: false),
+                    CreationTime = table.Column<DateTime>(nullable: false),
+                    ModificationUserID = table.Column<long>(nullable: true),
+                    LastModificationTime = table.Column<DateTime>(nullable: true),
+                    IsActive = table.Column<bool>(nullable: false),
+                    IsDeleted = table.Column<bool>(nullable: false),
+                    DeleterUserId = table.Column<long>(nullable: true),
+                    DeletionTime = table.Column<DateTime>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Position", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Position_Department_DepartmentID",
+                        column: x => x.DepartmentID,
+                        principalTable: "Department",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Employee",
                 columns: table => new
                 {
@@ -105,7 +136,7 @@ namespace LMS.Repository.Migrations
                     Name = table.Column<string>(maxLength: 150, nullable: false),
                     Remarks = table.Column<string>(maxLength: 2500, nullable: true),
                     EmployeeGender = table.Column<int>(nullable: false),
-                    DepartmentID = table.Column<int>(nullable: false),
+                    PositionID = table.Column<int>(nullable: false),
                     CreatorUserId = table.Column<long>(nullable: false),
                     CreationTime = table.Column<DateTime>(nullable: false),
                     ModificationUserID = table.Column<long>(nullable: true),
@@ -119,9 +150,9 @@ namespace LMS.Repository.Migrations
                 {
                     table.PrimaryKey("PK_Employee", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Employee_Department_DepartmentID",
-                        column: x => x.DepartmentID,
-                        principalTable: "Department",
+                        name: "FK_Employee_Position_PositionID",
+                        column: x => x.PositionID,
+                        principalTable: "Position",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -132,8 +163,13 @@ namespace LMS.Repository.Migrations
                 column: "CorporationID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Employee_DepartmentID",
+                name: "IX_Employee_PositionID",
                 table: "Employee",
+                column: "PositionID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Position_DepartmentID",
+                table: "Position",
                 column: "DepartmentID");
         }
 
@@ -144,6 +180,9 @@ namespace LMS.Repository.Migrations
 
             migrationBuilder.DropTable(
                 name: "Employee");
+
+            migrationBuilder.DropTable(
+                name: "Position");
 
             migrationBuilder.DropTable(
                 name: "Department");

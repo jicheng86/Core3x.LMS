@@ -10,18 +10,18 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LMS.Repository.Migrations
 {
     [DbContext(typeof(EFDbContext))]
-    [Migration("20200509085227_Initial")]
-    partial class Initial
+    [Migration("20200524061004_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("LMS.Model.Area", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Area", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -133,7 +133,7 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Area");
                 });
 
-            modelBuilder.Entity("LMS.Model.Corporation", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Corporation", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -185,7 +185,7 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Corporation");
                 });
 
-            modelBuilder.Entity("LMS.Model.Department", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Department", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -235,7 +235,7 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Department");
                 });
 
-            modelBuilder.Entity("LMS.Model.Employee", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Employee", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -253,9 +253,6 @@ namespace LMS.Repository.Migrations
 
                     b.Property<DateTime?>("DeletionTime")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("DepartmentID")
-                        .HasColumnType("int");
 
                     b.Property<int>("EmployeeGender")
                         .HasColumnType("int");
@@ -277,6 +274,65 @@ namespace LMS.Repository.Migrations
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
+                    b.Property<int>("PositionID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(2500)")
+                        .HasMaxLength(2500);
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("PositionID");
+
+                    b.ToTable("Employee");
+                });
+
+            modelBuilder.Entity("LMS.Model.Entities.Position", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("CreatorUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("DeleterUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("DeletionTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("DepartmentID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DeptmentID")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModificationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long?>("ModificationUserID")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(150)")
+                        .HasMaxLength(150);
+
+                    b.Property<int>("ParentID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Remarks")
                         .HasColumnType("nvarchar(2500)")
                         .HasMaxLength(2500);
@@ -285,25 +341,32 @@ namespace LMS.Repository.Migrations
 
                     b.HasIndex("DepartmentID");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Position");
                 });
 
-            modelBuilder.Entity("LMS.Model.Department", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Department", b =>
                 {
-                    b.HasOne("LMS.Model.Corporation", "Corporation")
+                    b.HasOne("LMS.Model.Entities.Corporation", "Corporation")
                         .WithMany("Departments")
                         .HasForeignKey("CorporationID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("LMS.Model.Employee", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Employee", b =>
                 {
-                    b.HasOne("LMS.Model.Department", "Department")
-                        .WithMany()
-                        .HasForeignKey("DepartmentID")
+                    b.HasOne("LMS.Model.Entities.Position", "Position")
+                        .WithMany("Employees")
+                        .HasForeignKey("PositionID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("LMS.Model.Entities.Position", b =>
+                {
+                    b.HasOne("LMS.Model.Entities.Department", "Department")
+                        .WithMany("Positions")
+                        .HasForeignKey("DepartmentID");
                 });
 #pragma warning restore 612, 618
         }

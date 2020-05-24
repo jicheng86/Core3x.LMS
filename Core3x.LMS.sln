@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMS.IService", "LMS.IServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMS.Service", "LMS.Service\LMS.Service.csproj", "{8E0CF1DE-4647-43BC-A5FE-63733D0F9511}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LMS.IdentityServer4", "LMS.IdentityServer4\LMS.IdentityServer4.csproj", "{948D1880-ED77-42CD-9B27-A33ADFF1402D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{8E0CF1DE-4647-43BC-A5FE-63733D0F9511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E0CF1DE-4647-43BC-A5FE-63733D0F9511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E0CF1DE-4647-43BC-A5FE-63733D0F9511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948D1880-ED77-42CD-9B27-A33ADFF1402D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948D1880-ED77-42CD-9B27-A33ADFF1402D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948D1880-ED77-42CD-9B27-A33ADFF1402D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948D1880-ED77-42CD-9B27-A33ADFF1402D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

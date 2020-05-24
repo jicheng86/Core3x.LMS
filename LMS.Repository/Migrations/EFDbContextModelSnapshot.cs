@@ -15,11 +15,11 @@ namespace LMS.Repository.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("LMS.Model.Area", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Area", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -131,7 +131,7 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Area");
                 });
 
-            modelBuilder.Entity("LMS.Model.Corporation", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Corporation", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -183,7 +183,7 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Corporation");
                 });
 
-            modelBuilder.Entity("LMS.Model.Department", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Department", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -233,7 +233,7 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Department");
                 });
 
-            modelBuilder.Entity("LMS.Model.Employee", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Employee", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -286,7 +286,7 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Employee");
                 });
 
-            modelBuilder.Entity("LMS.Model.Position", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Position", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -342,27 +342,27 @@ namespace LMS.Repository.Migrations
                     b.ToTable("Position");
                 });
 
-            modelBuilder.Entity("LMS.Model.Department", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Department", b =>
                 {
-                    b.HasOne("LMS.Model.Corporation", "Corporation")
+                    b.HasOne("LMS.Model.Entities.Corporation", "Corporation")
                         .WithMany("Departments")
                         .HasForeignKey("CorporationID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("LMS.Model.Employee", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Employee", b =>
                 {
-                    b.HasOne("LMS.Model.Position", "Position")
+                    b.HasOne("LMS.Model.Entities.Position", "Position")
                         .WithMany("Employees")
                         .HasForeignKey("PositionID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("LMS.Model.Position", b =>
+            modelBuilder.Entity("LMS.Model.Entities.Position", b =>
                 {
-                    b.HasOne("LMS.Model.Department", "Department")
+                    b.HasOne("LMS.Model.Entities.Department", "Department")
                         .WithMany("Positions")
                         .HasForeignKey("DepartmentID");
                 });

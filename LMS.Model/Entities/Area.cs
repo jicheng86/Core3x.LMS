@@ -16,32 +16,32 @@ namespace LMS.Model.Entities
         /// <summary>
         /// 行政区划Code
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划Code"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过50{1}")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划Code"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string CityCode { get; set; }
         /// <summary>
         /// 父级行政区划Code
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "父级行政区划Code"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过50{1}")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "父级行政区划Code"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string ParentCode { get; set; }
         /// <summary>
         /// 行政区划简称： XX省 或 XX市 或 XX区 或 XX街道
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划简称"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过50{1}")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划简称"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string LogogramName { get; set; }
         /// <summary>
         /// 省市区全称聚合：广东省,清远市
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "省市区全称聚合"), StringLength(100, ErrorMessage = "字段：{0}长度不能超过100{1}")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "省市区全称聚合"), StringLength(100, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string MergerName { get; set; }
         /// <summary>
         /// 省市区简称聚合：广东,清远
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "省市区简称聚合"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过50{1}")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "省市区简称聚合"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string MergerLogogramName { get; set; }
         /// <summary>
         /// 行政区划级别country:国家,province:省份,city:市,district:区县,street:街道
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划级别"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过50{1}")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划级别"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string AreaLevel { get; set; }
         /// <summary>
         /// 级别 0.国家，1.省(直辖市) 2.市 3.区(县),4.街道
