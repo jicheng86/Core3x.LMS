@@ -10,41 +10,38 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using IdentityServer4.EntityFramework.Storage;
 using Serilog;
+using System;
+using IdentityServer4.Models;
 
 namespace LMS.IdentityServer4
 {
     public class SeedData
     {
-        public static void EnsureSeedData(string connectionString)
+        /// <summary>
+        /// 种子数据初始化
+        /// </summary>
+        public static void EnsureSeedData(IServiceProvider serviceProvider)
         {
-            var services = new ServiceCollection();
-            services.AddOperationalDbContext(options =>
-            {
-                options.ConfigureDbContext = db => db.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(typeof(SeedData).Assembly.FullName));
-            });
-            services.AddConfigurationDbContext(options =>
-            {
-                options.ConfigureDbContext = db => db.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(typeof(SeedData).Assembly.FullName));
-            });
-
-            var serviceProvider = services.BuildServiceProvider();
-
             using (var scope = serviceProvider.GetRequiredService<IServiceScopeFactory>().CreateScope())
             {
-                scope.ServiceProvider.GetService<PersistedGrantDbContext>().Database.Migrate();
-
-                var context = scope.ServiceProvider.GetService<ConfigurationDbContext>();
-                context.Database.Migrate();
-                EnsureSeedData(context);
+                using (var context = scope.ServiceProvider.GetService<ConfigurationDbContext>())
+                {
+                    EnsureSeedData(context);
+                }
             }
         }
-
-        private static void EnsureSeedData(IConfigurationDbContext context)
+        /// <summary>
+        /// 种子数据初始化
+        /// </summary>
+        /// <param name="context"></param>
+        private static void EnsureSeedData(ConfigurationDbContext context)
         {
+            Console.WriteLine("Seeding database...");
+
             if (!context.Clients.Any())
             {
-                Log.Debug("Clients being populated");
-                foreach (var client in Config.Clients.ToList())
+                Console.WriteLine("Clients being populated");
+                foreach (var client in Config.Clients)
                 {
                     context.Clients.Add(client.ToEntity());
                 }
@@ -52,13 +49,13 @@ namespace LMS.IdentityServer4
             }
             else
             {
-                Log.Debug("Clients already populated");
+                Console.WriteLine("Clients already populated");
             }
 
             if (!context.IdentityResources.Any())
             {
-                Log.Debug("IdentityResources being populated");
-                foreach (var resource in Config.Ids.ToList())
+                Console.WriteLine("IdentityResources being populated");
+                foreach (var resource in Config.Ids)
                 {
                     context.IdentityResources.Add(resource.ToEntity());
                 }
@@ -66,13 +63,13 @@ namespace LMS.IdentityServer4
             }
             else
             {
-                Log.Debug("IdentityResources already populated");
+                Console.WriteLine("IdentityResources already populated");
             }
 
             if (!context.ApiResources.Any())
             {
-                Log.Debug("ApiResources being populated");
-                foreach (var resource in Config.Apis.ToList())
+                Console.WriteLine("ApiResources being populated");
+                foreach (var resource in Config.Apis)
                 {
                     context.ApiResources.Add(resource.ToEntity());
                 }
@@ -80,7 +77,25 @@ namespace LMS.IdentityServer4
             }
             else
             {
-                Log.Debug("ApiResources already populated");
+                Console.WriteLine("ApiResources already populated");
+            }
+
+            if (!context.ApiScopes.Any())
+            {
+                Console.WriteLine("Scopes being populated");
+                foreach (var resource in Config.ApiScopes)
+                {
+                    context.ApiScopes.Add(resource.ToEntity());
+                }
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("Scopes already populated");
+                //}
+
+                Console.WriteLine("Done seeding database.");
+                Console.WriteLine();
             }
         }
     }

@@ -19,7 +19,7 @@ namespace LMS.IdentityServer4
         public static int Main(string[] args)
         {
             // this will do the initial DB population
-           // InitializeIdentityServer4Database(args);
+            // InitializeIdentityServer4Database(args);
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
@@ -38,23 +38,18 @@ namespace LMS.IdentityServer4
 
             try
             {
-                var seed = true;// args.Contains("/seed");
-                if (seed)
-                {
-                    args = args.Except(new[] { "/seed" }).ToArray();
-                }
+
 
                 var host = CreateHostBuilder(args).Build();
 
-                if (seed)
-                {
-                    Log.Information("Seeding database...");
-                    var config = host.Services.GetRequiredService<IConfiguration>();
-                    var connectionString = config.GetConnectionString("DefaultConnection");
-                    SeedData.EnsureSeedData(connectionString);
-                    Log.Information("Done seeding database.");
-                    return 0;
-                }
+
+                Log.Information("Seeding database...");
+                var config = host.Services.GetRequiredService<IConfiguration>();
+                //第一次运行先注释,生成数据库及表之后再 初始化种子数据
+                SeedData.EnsureSeedData(host.Services);
+                Log.Information("Done seeding database.");
+                //return 0;
+
 
                 Log.Information("Starting host...");
                 host.Run();

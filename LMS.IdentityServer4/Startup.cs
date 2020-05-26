@@ -43,6 +43,9 @@ namespace LMS.IdentityServer4
             });
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
+            /*
+             * 用于生成数据库反射 migrationsAssembly
+             */
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
             var builder = services.AddIdentityServer(options =>
                 {
@@ -55,12 +58,14 @@ namespace LMS.IdentityServer4
                 // this adds the config data from DB (clients, resources, CORS)
                 .AddConfigurationStore(options =>
                 {
+                    // options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString);
                     options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString,
                         sql => sql.MigrationsAssembly(migrationsAssembly));
                 })
                 // this adds the operational data from DB (codes, tokens, consents)
                 .AddOperationalStore(options =>
                 {
+                   // options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString);
                     options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString,
                         sql => sql.MigrationsAssembly(migrationsAssembly));
 

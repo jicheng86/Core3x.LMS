@@ -11,7 +11,7 @@ END;
 GO
 
 CREATE TABLE [ApiResources] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Enabled] bit NOT NULL,
     [Name] nvarchar(200) NOT NULL,
     [DisplayName] nvarchar(200) NULL,
@@ -28,7 +28,7 @@ CREATE TABLE [ApiResources] (
 GO
 
 CREATE TABLE [ApiScopes] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Enabled] bit NOT NULL,
     [Name] nvarchar(200) NOT NULL,
     [DisplayName] nvarchar(200) NULL,
@@ -42,7 +42,7 @@ CREATE TABLE [ApiScopes] (
 GO
 
 CREATE TABLE [Clients] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Enabled] bit NOT NULL,
     [ClientId] nvarchar(200) NOT NULL,
     [ProtocolType] nvarchar(200) NOT NULL,
@@ -92,7 +92,7 @@ CREATE TABLE [Clients] (
 GO
 
 CREATE TABLE [IdentityResources] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Enabled] bit NOT NULL,
     [Name] nvarchar(200) NOT NULL,
     [DisplayName] nvarchar(200) NULL,
@@ -109,7 +109,7 @@ CREATE TABLE [IdentityResources] (
 GO
 
 CREATE TABLE [ApiResourceClaims] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Type] nvarchar(200) NOT NULL,
     [ApiResourceId] int NOT NULL,
     CONSTRAINT [PK_ApiResourceClaims] PRIMARY KEY ([Id]),
@@ -119,7 +119,7 @@ CREATE TABLE [ApiResourceClaims] (
 GO
 
 CREATE TABLE [ApiResourceProperties] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Key] nvarchar(250) NOT NULL,
     [Value] nvarchar(2000) NOT NULL,
     [ApiResourceId] int NOT NULL,
@@ -130,7 +130,7 @@ CREATE TABLE [ApiResourceProperties] (
 GO
 
 CREATE TABLE [ApiResourceScopes] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Scope] nvarchar(200) NOT NULL,
     [ApiResourceId] int NOT NULL,
     CONSTRAINT [PK_ApiResourceScopes] PRIMARY KEY ([Id]),
@@ -140,7 +140,7 @@ CREATE TABLE [ApiResourceScopes] (
 GO
 
 CREATE TABLE [ApiResourceSecrets] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Description] nvarchar(1000) NULL,
     [Value] nvarchar(4000) NOT NULL,
     [Expiration] datetime2 NULL,
@@ -154,7 +154,7 @@ CREATE TABLE [ApiResourceSecrets] (
 GO
 
 CREATE TABLE [ApiScopeClaims] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Type] nvarchar(200) NOT NULL,
     [ScopeId] int NOT NULL,
     CONSTRAINT [PK_ApiScopeClaims] PRIMARY KEY ([Id]),
@@ -164,7 +164,7 @@ CREATE TABLE [ApiScopeClaims] (
 GO
 
 CREATE TABLE [ApiScopeProperties] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Key] nvarchar(250) NOT NULL,
     [Value] nvarchar(2000) NOT NULL,
     [ScopeId] int NOT NULL,
@@ -175,7 +175,7 @@ CREATE TABLE [ApiScopeProperties] (
 GO
 
 CREATE TABLE [ClientClaims] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Type] nvarchar(250) NOT NULL,
     [Value] nvarchar(250) NOT NULL,
     [ClientId] int NOT NULL,
@@ -186,7 +186,7 @@ CREATE TABLE [ClientClaims] (
 GO
 
 CREATE TABLE [ClientCorsOrigins] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Origin] nvarchar(150) NOT NULL,
     [ClientId] int NOT NULL,
     CONSTRAINT [PK_ClientCorsOrigins] PRIMARY KEY ([Id]),
@@ -196,7 +196,7 @@ CREATE TABLE [ClientCorsOrigins] (
 GO
 
 CREATE TABLE [ClientGrantTypes] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [GrantType] nvarchar(250) NOT NULL,
     [ClientId] int NOT NULL,
     CONSTRAINT [PK_ClientGrantTypes] PRIMARY KEY ([Id]),
@@ -206,7 +206,7 @@ CREATE TABLE [ClientGrantTypes] (
 GO
 
 CREATE TABLE [ClientIdPRestrictions] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Provider] nvarchar(200) NOT NULL,
     [ClientId] int NOT NULL,
     CONSTRAINT [PK_ClientIdPRestrictions] PRIMARY KEY ([Id]),
@@ -216,7 +216,7 @@ CREATE TABLE [ClientIdPRestrictions] (
 GO
 
 CREATE TABLE [ClientPostLogoutRedirectUris] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [PostLogoutRedirectUri] nvarchar(2000) NOT NULL,
     [ClientId] int NOT NULL,
     CONSTRAINT [PK_ClientPostLogoutRedirectUris] PRIMARY KEY ([Id]),
@@ -226,7 +226,7 @@ CREATE TABLE [ClientPostLogoutRedirectUris] (
 GO
 
 CREATE TABLE [ClientProperties] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Key] nvarchar(250) NOT NULL,
     [Value] nvarchar(2000) NOT NULL,
     [ClientId] int NOT NULL,
@@ -237,7 +237,7 @@ CREATE TABLE [ClientProperties] (
 GO
 
 CREATE TABLE [ClientRedirectUris] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [RedirectUri] nvarchar(2000) NOT NULL,
     [ClientId] int NOT NULL,
     CONSTRAINT [PK_ClientRedirectUris] PRIMARY KEY ([Id]),
@@ -247,7 +247,7 @@ CREATE TABLE [ClientRedirectUris] (
 GO
 
 CREATE TABLE [ClientScopes] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Scope] nvarchar(200) NOT NULL,
     [ClientId] int NOT NULL,
     CONSTRAINT [PK_ClientScopes] PRIMARY KEY ([Id]),
@@ -257,7 +257,7 @@ CREATE TABLE [ClientScopes] (
 GO
 
 CREATE TABLE [ClientSecrets] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Description] nvarchar(2000) NULL,
     [Value] nvarchar(4000) NOT NULL,
     [Expiration] datetime2 NULL,
@@ -271,7 +271,7 @@ CREATE TABLE [ClientSecrets] (
 GO
 
 CREATE TABLE [IdentityResourceClaims] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Type] nvarchar(200) NOT NULL,
     [IdentityResourceId] int NOT NULL,
     CONSTRAINT [PK_IdentityResourceClaims] PRIMARY KEY ([Id]),
@@ -281,7 +281,7 @@ CREATE TABLE [IdentityResourceClaims] (
 GO
 
 CREATE TABLE [IdentityResourceProperties] (
-    [Id] int NOT NULL IDENTITY,
+    [Id] int NOT NULL IDENTITY(1000,1),
     [Key] nvarchar(250) NOT NULL,
     [Value] nvarchar(2000) NOT NULL,
     [IdentityResourceId] int NOT NULL,
