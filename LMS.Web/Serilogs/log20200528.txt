@@ -1,0 +1,162 @@
+﻿2020-05-28 21:27:38.790 +08:00 [INF] Starting up Successful
+2020-05-28 21:27:40.448 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-28 21:27:41.144 +08:00 [INF] Now listening on: http://localhost:6000
+2020-05-28 21:27:41.144 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-28 21:27:41.145 +08:00 [INF] Hosting environment: Development
+2020-05-28 21:27:41.145 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-05-28 21:29:26.826 +08:00 [INF] Starting up Successful
+2020-05-28 21:29:27.862 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-28 21:29:28.261 +08:00 [INF] Now listening on: http://localhost:6000
+2020-05-28 21:29:28.261 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-28 21:29:28.263 +08:00 [INF] Hosting environment: Development
+2020-05-28 21:29:28.264 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-05-28 21:32:59.415 +08:00 [INF] Starting up Successful
+2020-05-28 21:33:00.298 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-28 21:33:00.704 +08:00 [INF] Now listening on: http://localhost:8001
+2020-05-28 21:33:00.705 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-28 21:33:00.707 +08:00 [INF] Hosting environment: Development
+2020-05-28 21:33:00.708 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-05-28 21:33:01.995 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-05-28 21:33:02.080 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-28 21:33:02.175 +08:00 [INF] Route matched with {action = "Home", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-28 21:33:02.265 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Home (LMS.Web) - Validation state: "Valid"
+2020-05-28 21:33:02.269 +08:00 [INF] 记录LogInformation日志,发生在Home/Home
+2020-05-28 21:33:02.270 +08:00 [ERR] 记录LogError日志,发生在Home/Home
+2020-05-28 21:33:02.293 +08:00 [WRN] 记录LogWarning日志,发生在Home/Home
+2020-05-28 21:33:02.293 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
+2020-05-28 21:33:02.299 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 25.7869ms.
+2020-05-28 21:33:02.344 +08:00 [INF] Executing ViewResult, running view Home.
+2020-05-28 21:33:02.552 +08:00 [INF] Executed ViewResult - view Home executed in 228.3014ms.
+2020-05-28 21:33:02.553 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Home (LMS.Web) in 374.2909ms
+2020-05-28 21:33:02.554 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-28 21:33:02.558 +08:00 [INF] Request finished in 569.2874ms 200 text/html; charset=utf-8
+2020-05-28 21:33:02.580 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-05-28 21:33:02.592 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-05-28 21:33:02.605 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-05-28 21:33:02.605 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-05-28 21:33:02.606 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-05-28 21:33:02.629 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css  
+2020-05-28 21:33:02.688 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\site.css'
+2020-05-28 21:33:02.699 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-05-28 21:33:02.699 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\css\bootstrap.css'
+2020-05-28 21:33:02.699 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-05-28 21:33:02.699 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-05-28 21:33:02.699 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\style.css'
+2020-05-28 21:33:02.700 +08:00 [INF] Request finished in 107.844ms 200 text/css
+2020-05-28 21:33:02.703 +08:00 [INF] Request finished in 98.5005ms 200 text/css
+2020-05-28 21:33:02.708 +08:00 [INF] Request finished in 79.0645ms 200 text/css
+2020-05-28 21:33:02.710 +08:00 [INF] Request finished in 107.3734ms 200 text/css
+2020-05-28 21:33:02.711 +08:00 [INF] Request finished in 108.4006ms 200 application/javascript
+2020-05-28 21:33:02.713 +08:00 [INF] Request finished in 133.0072ms 200 text/css
+2020-05-28 21:33:02.713 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Home/Index  
+2020-05-28 21:33:02.713 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js  
+2020-05-28 21:33:02.714 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-05-28 21:33:02.714 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-05-28 21:33:02.717 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/layer.js  
+2020-05-28 21:33:02.730 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-05-28 21:33:02.732 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/layer.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\layer.js'
+2020-05-28 21:33:02.729 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-05-28 21:33:02.736 +08:00 [INF] Request finished in 19.3145ms 200 application/javascript
+2020-05-28 21:33:02.724 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-05-28 21:33:02.732 +08:00 [INF] Request finished in 17.8134ms 200 application/javascript
+2020-05-28 21:33:02.740 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\js\bootstrap.js'
+2020-05-28 21:33:02.746 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/profile_small.jpg  
+2020-05-28 21:33:02.752 +08:00 [INF] Request finished in 38.0598ms 200 application/javascript
+2020-05-28 21:33:02.748 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-05-28 21:33:02.762 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a7.jpg  
+2020-05-28 21:33:02.759 +08:00 [INF] Sending file. Request path: '/img/profile_small.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\profile_small.jpg'
+2020-05-28 21:33:02.772 +08:00 [INF] Request finished in 46.4393ms 200 application/javascript
+2020-05-28 21:33:02.786 +08:00 [INF] Request finished in 40.2547ms 200 image/jpeg
+2020-05-28 21:33:02.787 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a4.jpg  
+2020-05-28 21:33:02.787 +08:00 [INF] Sending file. Request path: '/img/a7.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a7.jpg'
+2020-05-28 21:33:02.792 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a1.jpg  
+2020-05-28 21:33:02.746 +08:00 [INF] Request finished in 31.8714ms 200 application/javascript
+2020-05-28 21:33:02.807 +08:00 [INF] Request finished in 45.3855ms 200 image/jpeg
+2020-05-28 21:33:02.810 +08:00 [INF] Sending file. Request path: '/img/a1.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a1.jpg'
+2020-05-28 21:33:02.807 +08:00 [INF] Sending file. Request path: '/img/a4.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a4.jpg'
+2020-05-28 21:33:02.747 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-05-28 21:33:02.825 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-05-28 21:33:02.833 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a2.jpg  
+2020-05-28 21:33:02.743 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+IdentityServer4.Quickstart.UI.HomeController.Index (LMS.IdentityServer4)
+LMS.Web.Controllers.HomeController.Index (LMS.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-28 21:33:02.842 +08:00 [INF] Request finished in 49.7049ms 200 image/jpeg
+2020-05-28 21:33:02.852 +08:00 [INF] Request finished in 64.9236ms 200 image/jpeg
+2020-05-28 21:33:02.854 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-05-28 21:33:02.860 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-05-28 21:33:02.860 +08:00 [INF] Sending file. Request path: '/img/a2.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a2.jpg'
+2020-05-28 21:33:02.876 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a8.jpg  
+2020-05-28 21:33:02.876 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a3.jpg  
+2020-05-28 21:33:02.881 +08:00 [INF] Request finished in 133.7718ms 200 application/javascript
+2020-05-28 21:33:02.883 +08:00 [INF] Request finished in 49.8672ms 200 image/jpeg
+2020-05-28 21:33:02.883 +08:00 [INF] Sending file. Request path: '/img/a8.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a8.jpg'
+2020-05-28 21:33:02.882 +08:00 [INF] Request finished in 57.1413ms 200 application/javascript
+2020-05-28 21:33:02.886 +08:00 [INF] Sending file. Request path: '/img/a3.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a3.jpg'
+2020-05-28 21:33:02.888 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile.png  
+2020-05-28 21:33:02.895 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-3.png  
+2020-05-28 21:33:02.895 +08:00 [INF] Request finished in 19.4788ms 200 image/jpeg
+2020-05-28 21:33:02.897 +08:00 [INF] Request finished in 21.4012ms 200 image/jpeg
+2020-05-28 21:33:02.896 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-1.png  
+2020-05-28 21:33:02.900 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-3.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-3.png'
+2020-05-28 21:33:02.898 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile.png'
+2020-05-28 21:33:02.906 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-1.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-1.png'
+2020-05-28 21:33:02.911 +08:00 [INF] Request finished in 16.443ms 200 image/png
+2020-05-28 21:33:02.912 +08:00 [INF] Request finished in 23.9979ms 200 image/png
+2020-05-28 21:33:02.913 +08:00 [INF] Request finished in 199.6738ms 500 text/html; charset=utf-8
+2020-05-28 21:33:02.914 +08:00 [INF] Request finished in 17.9846ms 200 image/png
+2020-05-28 21:33:02.924 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0  
+2020-05-28 21:33:02.929 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.woff2'
+2020-05-28 21:33:02.931 +08:00 [INF] Request finished in 7.2718ms 200 font/woff2
+2020-05-28 21:33:02.960 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/skin/layer.css  
+2020-05-28 21:33:02.963 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/skin/layer.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\skin\layer.css'
+2020-05-28 21:33:02.965 +08:00 [INF] Request finished in 5.5186ms 200 text/css
+2020-05-28 21:33:03.116 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/favicon.ico  
+2020-05-28 21:33:03.119 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\favicon.ico'
+2020-05-28 21:33:03.125 +08:00 [INF] Request finished in 9.0044ms 200 image/x-icon
+2020-05-28 21:42:55.061 +08:00 [INF] Starting up Successful
+2020-05-28 21:42:55.912 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-28 21:42:56.316 +08:00 [INF] Now listening on: http://localhost:8001
+2020-05-28 21:42:56.317 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-28 21:42:56.319 +08:00 [INF] Hosting environment: Development
+2020-05-28 21:42:56.320 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-05-28 21:42:57.889 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-05-28 21:42:57.943 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-28 21:42:58.001 +08:00 [INF] Route matched with {action = "Home", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomeController (LMS.Web).
+2020-05-28 21:42:58.079 +08:00 [INF] Executing action method LMS.Web.Controllers.HomeController.Home (LMS.Web) - Validation state: "Valid"
+2020-05-28 21:42:58.083 +08:00 [INF] 记录LogInformation日志,发生在Home/Home
+2020-05-28 21:42:58.083 +08:00 [ERR] 记录LogError日志,发生在Home/Home
+2020-05-28 21:42:58.085 +08:00 [WRN] 记录LogWarning日志,发生在Home/Home
+2020-05-28 21:42:58.086 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
+2020-05-28 21:42:58.100 +08:00 [INF] Executed action method LMS.Web.Controllers.HomeController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.459ms.
+2020-05-28 21:42:58.132 +08:00 [INF] Executing ViewResult, running view Home.
+2020-05-28 21:42:58.317 +08:00 [INF] Executed ViewResult - view Home executed in 193.7261ms.
+2020-05-28 21:42:58.320 +08:00 [INF] Executed action LMS.Web.Controllers.HomeController.Home (LMS.Web) in 314.7235ms
+2020-05-28 21:42:58.322 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomeController.Home (LMS.Web)'
+2020-05-28 21:42:58.328 +08:00 [INF] Request finished in 444.2353ms 200 text/html; charset=utf-8
+2020-05-28 21:42:58.370 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Home/Index  
+2020-05-28 21:42:58.380 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+IdentityServer4.Quickstart.UI.HomeController.Index (LMS.IdentityServer4)
+LMS.Web.Controllers.HomeController.Index (LMS.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-05-28 21:42:58.468 +08:00 [INF] Request finished in 97.8589ms 500 text/html; charset=utf-8

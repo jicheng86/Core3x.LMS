@@ -43,7 +43,9 @@ namespace LMS.IdentityServer4
             });
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            /*
+          
+            #region 数据库
+              /*
              * 用于生成数据库反射 migrationsAssembly
              */
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
@@ -65,7 +67,7 @@ namespace LMS.IdentityServer4
                 // this adds the operational data from DB (codes, tokens, consents)
                 .AddOperationalStore(options =>
                 {
-                   // options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString);
+                    // options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString);
                     options.ConfigureDbContext = builder => builder.UseSqlServer(connectionString,
                         sql => sql.MigrationsAssembly(migrationsAssembly));
 
@@ -76,6 +78,7 @@ namespace LMS.IdentityServer4
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
 
+            #endregion
 
 
 

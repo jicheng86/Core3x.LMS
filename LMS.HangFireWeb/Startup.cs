@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 using Hangfire;
 using Hangfire.SqlServer;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -32,7 +34,7 @@ namespace LMS.HangFire
             //hangfire必须需要绑定一个持久化的连接数据。 官方推荐的是sqlserver,还有mg,mssql,pgsql,redis都是个人封装的
             //连接字符串必须加 Allow User Variables=true
             services.AddHangfire(x => x.UseStorage(new SqlServerStorage(
-                Configuration.GetConnectionString("Default"),
+                Configuration.GetConnectionString("DefaultConnection"),
                 new SqlServerStorageOptions
                 {
                     CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
@@ -53,7 +55,7 @@ namespace LMS.HangFire
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IBackgroundJobClient backgroundJobClient)
         {
             if (env.IsDevelopment())
             {
@@ -68,8 +70,9 @@ namespace LMS.HangFire
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseHangfireServer();
             app.UseHangfireDashboard();
-            //backgroundJobs.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
+            backgroundJobClient.Enqueue(() => Console.WriteLine("Hello world from Hangfire!"));
 
             //app.UseMvc(routes =>
             //{

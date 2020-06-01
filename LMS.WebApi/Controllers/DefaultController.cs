@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
@@ -9,7 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace LMS.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Default")]
     [ApiController]
     public class DefaultController : ControllerBase
     {
@@ -21,6 +22,7 @@ namespace LMS.WebApi.Controllers
         }
         // GET: api/Default
         [HttpGet]
+        //[Authorize]
         public IEnumerable<string> Get()
         {
             ControllerActionDescriptor actionDescriptor = ControllerContext.ActionDescriptor;

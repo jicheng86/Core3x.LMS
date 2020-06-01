@@ -128,7 +128,7 @@ namespace LMS.Model.Enums
         /// <summary>
         /// HTTP请求返回码
         /// </summary>
-        public enum ResponseStatus
+        public enum ResponseStatusCode
         {
             /// <summary>
             /// 操作失败

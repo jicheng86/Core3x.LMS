@@ -149,3 +149,5 @@
 2020-05-21 16:52:47.078 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
 2020-05-21 17:25:37.156 +08:00 [ERR] 记录LogError日志,发生在Default/Get
 2020-05-21 17:25:37.158 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-29 09:39:12.978 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-29 09:39:12.989 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get

@@ -1,0 +1,32 @@
+﻿2020-05-29 09:39:00.880 +08:00 [INF] Starting up Successful
+2020-05-29 09:39:03.004 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-05-29 09:39:03.278 +08:00 [INF] Now listening on: http://localhost:8002
+2020-05-29 09:39:03.278 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-05-29 09:39:03.280 +08:00 [INF] Hosting environment: Development
+2020-05-29 09:39:03.280 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.WebApi
+2020-05-29 09:39:04.093 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/swagger/index.html  
+2020-05-29 09:39:04.328 +08:00 [INF] Request finished in 239.7916ms 200 text/html; charset=utf-8
+2020-05-29 09:39:04.360 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/swagger/swagger-ui-standalone-preset.js  
+2020-05-29 09:39:04.360 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/swagger/swagger-ui-bundle.js  
+2020-05-29 09:39:04.369 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/swagger/swagger-ui.css  
+2020-05-29 09:39:04.389 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-05-29 09:39:04.390 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-05-29 09:39:04.394 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-05-29 09:39:04.397 +08:00 [INF] Request finished in 27.9626ms 200 text/css
+2020-05-29 09:39:04.397 +08:00 [INF] Request finished in 37.255ms 200 application/javascript
+2020-05-29 09:39:04.397 +08:00 [INF] Request finished in 37.2552ms 200 application/javascript
+2020-05-29 09:39:04.545 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/swagger/v1/swagger.json  
+2020-05-29 09:39:05.086 +08:00 [INF] Request finished in 541.5392ms 200 application/json; charset=utf-8
+2020-05-29 09:39:12.754 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8002/api/Default  
+2020-05-29 09:39:12.888 +08:00 [INF] Executing endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-29 09:39:12.905 +08:00 [INF] Route matched with {action = "Get", controller = "Default"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller LMS.WebApi.Controllers.DefaultController (LMS.WebApi).
+2020-05-29 09:39:12.975 +08:00 [INF] Executing action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) - Validation state: "Valid"
+2020-05-29 09:39:12.978 +08:00 [INF] 记录LogInformation日志,发生在Default/Get
+2020-05-29 09:39:12.978 +08:00 [ERR] 记录LogError日志,发生在Default/Get
+2020-05-29 09:39:12.986 +08:00 [WRN] 记录LogWarning日志,发生在Default/Get
+2020-05-29 09:39:12.989 +08:00 [FTL] 记录LogCritical日志,发生在Default/Get
+2020-05-29 09:39:12.994 +08:00 [INF] Executed action method LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 12.1259ms.
+2020-05-29 09:39:12.999 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2020-05-29 09:39:13.007 +08:00 [INF] Executed action LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi) in 98.472ms
+2020-05-29 09:39:13.009 +08:00 [INF] Executed endpoint 'LMS.WebApi.Controllers.DefaultController.Get (LMS.WebApi)'
+2020-05-29 09:39:13.012 +08:00 [INF] Request finished in 258.1364ms 200 application/json; charset=utf-8

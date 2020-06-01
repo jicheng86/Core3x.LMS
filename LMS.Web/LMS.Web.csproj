@@ -29,9 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LMS.IdentityServer4\LMS.IdentityServer4.csproj" />
     <ProjectReference Include="..\LMS.IService\LMS.IService.csproj" />
     <ProjectReference Include="..\LMS.Repository\LMS.Repository.csproj" />
+    <ProjectReference Include="..\LMS.Service\LMS.Service.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties serilogconfigs_1json__JsonSchema="http://json.schemastore.org/2.0.0-csd.2.beta.2018-10-10.json" /></VisualStudio></ProjectExtensions>
