@@ -1,269 +1,4 @@
-2020-05-21 17:04:01.471 +08:00 [FTL] Application start-up failed
-System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
-   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
-   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
-2020-05-21 17:05:48.902 +08:00 [FTL] Application start-up failed
-System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
-   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
-   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
-2020-05-21 17:10:42.394 +08:00 [FTL] Application start-up failed
-System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
-   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
-   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
-2020-05-21 17:11:22.708 +08:00 [FTL] Application start-up failed
-System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
-   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
-   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
-2020-05-21 17:17:38.820 +08:00 [FTL] Application start-up failed
-System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
-   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
-   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
-   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass4_0.<UseMiddleware>b__0(RequestDelegate next)
-   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
-   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
-   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
-2020-05-21 17:39:04.534 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-05-21 17:39:04.538 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-05-21 17:39:12.307 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-05-21 17:39:12.311 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-05-22 10:56:03.229 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-05-22 10:56:03.248 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-05-22 10:56:11.455 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-05-22 10:56:11.455 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-05-28 21:33:02.270 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-05-28 21:33:02.293 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-05-28 21:33:02.743 +08:00 [ERR] An unhandled exception has occurred while executing the request.
-Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
-
-IdentityServer4.Quickstart.UI.HomeController.Index (LMS.IdentityServer4)
-LMS.Web.Controllers.HomeController.Index (LMS.Web)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-05-28 21:42:58.083 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-05-28 21:42:58.086 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-05-28 21:42:58.380 +08:00 [ERR] An unhandled exception has occurred while executing the request.
-Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
-
-IdentityServer4.Quickstart.UI.HomeController.Index (LMS.IdentityServer4)
-LMS.Web.Controllers.HomeController.Index (LMS.Web)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-06-01 09:16:14.794 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-06-01 09:16:14.799 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-06-01 09:16:15.236 +08:00 [ERR] An unhandled exception has occurred while executing the request.
-Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
-
-IdentityServer4.Quickstart.UI.HomeController.Index (LMS.IdentityServer4)
-LMS.Web.Controllers.HomeController.Index (LMS.Web)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-06-01 09:18:06.377 +08:00 [ERR] 记录LogError日志,发生在Home/Home
-2020-06-01 09:18:06.379 +08:00 [FTL] 记录LogCritical日志,发生在Home/Home
-2020-06-01 09:18:06.645 +08:00 [ERR] An unhandled exception has occurred while executing the request.
-Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
-
-IdentityServer4.Quickstart.UI.HomeController.Index (LMS.IdentityServer4)
-LMS.Web.Controllers.HomeController.Index (LMS.Web)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
-   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
-   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-06-01 11:52:20.068 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
-2020-06-01 11:52:20.070 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
-2020-06-01 11:52:20.364 +08:00 [ERR] An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: Unable to resolve service for type 'IdentityServer4.Services.IIdentityServerInteractionService' while attempting to activate 'IdentityServer4.Quickstart.UI.HomeController'.
-   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
-   at lambda_method(Closure , IServiceProvider , Object[] )
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-06-01 13:45:15.345 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
-2020-06-01 13:45:15.342 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
-2020-06-01 13:45:15.345 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
-2020-06-01 13:45:15.346 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
-2020-06-01 13:45:15.350 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
-2020-06-01 13:45:15.351 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
-2020-06-01 13:45:15.352 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
-2020-06-01 13:45:15.351 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
-2020-06-01 13:45:15.696 +08:00 [ERR] An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: Unable to resolve service for type 'IdentityServer4.Services.IIdentityServerInteractionService' while attempting to activate 'IdentityServer4.Quickstart.UI.HomeController'.
-   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
-   at lambda_method(Closure , IServiceProvider , Object[] )
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-06-01 13:57:36.291 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
-2020-06-01 13:57:36.293 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
-2020-06-01 14:15:27.081 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
-2020-06-01 14:15:27.083 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
-2020-06-01 14:15:29.944 +08:00 [ERR] An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: Unable to resolve service for type 'LMS.IService.IServices.ICorporationService' while attempting to activate 'LMS.Web.Controllers.CorporationController'.
-   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
-   at lambda_method(Closure , IServiceProvider , Object[] )
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
---- End of stack trace from previous location where exception was thrown ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2020-06-01 14:26:33.834 +08:00 [FTL] Application start-up failed
-System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Singleton ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.)
- ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Singleton ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
- ---> System.InvalidOperationException: Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
-   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
-   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
-   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
-   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
-   at Microsoft.Extensions.Hosting.HostBuilder.Build()
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
-2020-06-01 14:33:27.543 +08:00 [FTL] Application start-up failed
-System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Singleton ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.)
- ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Singleton ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
- ---> System.InvalidOperationException: Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
-   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
-   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
-   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
-   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
-   at Microsoft.Extensions.Hosting.HostBuilder.Build()
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
-2020-06-01 14:37:18.766 +08:00 [FTL] Application start-up failed
-System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Transient ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.)
- ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Transient ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
- ---> System.InvalidOperationException: Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
-   --- End of inner exception stack trace ---
-   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
-   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
-   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
-   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
-   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
-   at Microsoft.Extensions.Hosting.HostBuilder.Build()
-   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+﻿2020-06-03 09:33:16.364 +08:00 [INF] Starting up Successful
 2020-06-03 09:33:17.506 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Transient ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Transient ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositoryBase`1[LMS.Model.Entities.Corporation]' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -284,6 +19,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
    at Microsoft.Extensions.Hosting.HostBuilder.Build()
    at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+2020-06-03 15:25:31.017 +08:00 [INF] Starting up Successful
 2020-06-03 15:25:32.224 +08:00 [FTL] Application start-up failed
 System.IO.FileNotFoundException: Could not load file or assembly 'LMS.IService.IServices, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
 File name: 'LMS.IService.IServices, Culture=neutral, PublicKeyToken=null'
@@ -304,6 +40,7 @@ File name: 'LMS.IService.IServices, Culture=neutral, PublicKeyToken=null'
    at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
 
 
+2020-06-03 15:27:15.308 +08:00 [INF] Starting up Successful
 2020-06-03 15:29:28.182 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -379,6 +116,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:29:35.506 +08:00 [INF] Starting up Successful
 2020-06-03 15:29:42.066 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -454,6 +192,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:31:10.884 +08:00 [INF] Starting up Successful
 2020-06-03 15:31:11.927 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Scoped ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Scoped ImplementationType: LMS.Service.Services.EmployeeService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Singleton ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -635,6 +374,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:40:25.871 +08:00 [INF] Starting up Successful
 2020-06-03 15:40:26.842 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Scoped ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Scoped ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -743,6 +483,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:40:46.171 +08:00 [INF] Starting up Successful
 2020-06-03 15:41:53.060 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Scoped ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Scoped ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -851,6 +592,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:42:39.946 +08:00 [INF] Starting up Successful
 2020-06-03 15:43:07.406 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Scoped ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Scoped ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -959,6 +701,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:50:21.978 +08:00 [INF] Starting up Successful
 2020-06-03 15:50:23.038 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Scoped ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Scoped ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.ICorporationService Lifetime: Scoped ImplementationType: LMS.Service.Services.CorporationSercive': Unable to resolve service for type 'LMS.IRepository.IRepositories.ICorporationRepository' while attempting to activate 'LMS.Service.Services.CorporationSercive'.
@@ -1067,6 +810,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:53:23.784 +08:00 [INF] Starting up Successful
 2020-06-03 15:53:24.709 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.
@@ -1120,6 +864,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:53:48.895 +08:00 [INF] Starting up Successful
 2020-06-03 15:53:49.829 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IEmployeeRepository' while attempting to activate 'LMS.Service.Services.EmployeeService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IAreaRepository' while attempting to activate 'LMS.Service.Services.AreaService'.
@@ -1173,6 +918,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:56:17.592 +08:00 [INF] Starting up Successful
 2020-06-03 15:56:18.519 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.
@@ -1272,6 +1018,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 15:59:54.251 +08:00 [INF] Starting up Successful
 2020-06-03 15:59:55.293 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Scoped ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Scoped ImplementationType: LMS.Service.Services.EmployeeService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Scoped ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.
@@ -1371,6 +1118,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 16:00:15.850 +08:00 [INF] Starting up Successful
 2020-06-03 16:00:16.835 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.
@@ -1402,6 +1150,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 16:29:54.558 +08:00 [INF] Starting up Successful
 2020-06-03 16:29:55.578 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.
@@ -1433,6 +1182,8 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 16:50:48.829 +08:00 [INF] Starting up Successful
+2020-06-03 17:00:51.677 +08:00 [INF] Starting up Successful
 2020-06-03 17:01:13.894 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.
@@ -1464,6 +1215,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 17:01:20.482 +08:00 [INF] Starting up Successful
 2020-06-03 17:01:33.192 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.
@@ -1495,6 +1247,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 17:06:48.091 +08:00 [INF] Starting up Successful
 2020-06-03 17:06:49.694 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.Services.EmployeeService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.Services.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.
@@ -1594,6 +1347,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 17:19:22.752 +08:00 [INF] Starting up Successful
 2020-06-03 17:20:02.527 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.
@@ -1625,6 +1379,7 @@ System.AggregateException: Some services are not able to be constructed (Error w
    at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
    at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
 
+2020-06-03 17:54:35.459 +08:00 [INF] Starting up Successful
 2020-06-03 17:54:47.176 +08:00 [FTL] Application start-up failed
 System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
  ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IDepartmentService Lifetime: Scoped ImplementationType: LMS.Service.Services.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IDepartmentRepository' while attempting to activate 'LMS.Service.Services.DepartmentService'.

@@ -12,11 +12,10 @@ namespace LMS.Service
 {
     public abstract class ServiceBase<T> : IServiceBase<T> where T : class, new()
     {
+        /// <summary>
+        /// 通过在子类的构造函数中注入，这里是基类，不用构造函数
+        /// </summary>
         protected IRepositoryBase<T> Repository { get; set; }
-        public ServiceBase(IRepositoryBase<T> repository)
-        {
-            Repository = repository;
-        }
 
         public T Create(T entity)
         {

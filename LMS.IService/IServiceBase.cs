@@ -1,4 +1,5 @@
 ﻿using LMS.Model;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LMS.IService
 {
-    public interface IServiceBase<T> where T : class, new()
+    public interface IServiceBase<T> where T : class
     {
         /// <summary>
         /// 新增实体

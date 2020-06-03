@@ -19,6 +19,10 @@ using LMS.IService.IServices;
 using LMS.Service.Services;
 using LMS.Model.Entities;
 using LMS.IRepository;
+using LMS.IRepository.IRepositories;
+using LMS.Repository.Repositories;
+using System.Reflection;
+using LMS.Model.Helpers;
 
 namespace LMS.Web
 {
@@ -45,8 +49,10 @@ namespace LMS.Web
                     options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true; //.NET Core 3.0 和更高版本中的验证系统将不可为 null 的参数或绑定属性视为具有 [Required] 特性。 decimal 和 int 等值类型是不可为 null 的类型 。设置为true（默认false）则阻止该特性
                 }
                 ).AddNewtonsoftJson();//添加Json.Net库支持
-                                      //services.AddSingleton<ILogger, ILogger<HomeController>>();
-            services.AddTransient<ICorporationService, CorporationSercive>();
+
+            services.AddScoped(Assembly.Load("LMS.IRepository"), Assembly.Load("LMS.Repository"));
+            services.AddScoped(Assembly.Load("LMS.IService"), Assembly.Load("LMS.Service"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

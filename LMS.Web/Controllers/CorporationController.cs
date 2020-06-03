@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+
 using LMS.IService.IServices;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace LMS.Web.Controllers
@@ -13,7 +15,7 @@ namespace LMS.Web.Controllers
 
         public CorporationController(ICorporationService corporationService)
         {
-            CorporationService = corporationService;
+            CorporationService = corporationService ?? throw new ArgumentNullException(nameof(corporationService));
         }
         public IActionResult Index()
         {

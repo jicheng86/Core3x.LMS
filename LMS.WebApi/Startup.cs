@@ -123,8 +123,6 @@ namespace LMS.WebApi
                 };
             });
 
-            services.AddSingleton<IJwtAuthenticateService, JwtAuthenticationService>();
-
         }
 
 

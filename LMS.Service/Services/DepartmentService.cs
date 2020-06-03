@@ -1,4 +1,5 @@
 ﻿using LMS.IRepository;
+using LMS.IRepository.IRepositories;
 using LMS.IService.IServices;
 using LMS.Model.Entities;
 using System;
@@ -9,8 +10,9 @@ namespace LMS.Service.Services
 {
     public class DepartmentService : ServiceBase<Department>, IDepartmentService
     {
-        public DepartmentService(IRepositoryBase<Department> repository) : base(repository)
+        public DepartmentService(IDepartmentRepository repository)
         {
+            base.Repository = repository;
         }
     }
 }
