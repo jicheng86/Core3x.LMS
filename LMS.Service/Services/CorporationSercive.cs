@@ -8,9 +8,9 @@ using System.Text;
 
 namespace LMS.Service.Services
 {
-    public class CorporationSercive : ServiceBase<Corporation>, ICorporationService
+    public class CorporationService : ServiceBase<Corporation>, ICorporationService
     {
-        public CorporationSercive(ICorporationRepository repository)
+        public CorporationService(ICorporationRepository repository)
         {
             base.Repository = repository;
         }

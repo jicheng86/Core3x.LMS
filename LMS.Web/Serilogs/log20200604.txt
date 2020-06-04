@@ -1,0 +1,296 @@
+﻿2020-06-04 15:58:03.488 +08:00 [INF] Starting up Successful
+2020-06-04 15:58:05.412 +08:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IAreaRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IRepository.IRepositories.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.Repositories.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IRepositories.IEmployeeRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2020-06-04 16:15:20.992 +08:00 [INF] Starting up Successful
+2020-06-04 16:15:22.081 +08:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IRepository.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IEmployeeRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IAreaRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IDepartmentRepository' while attempting to activate 'LMS.Service.DepartmentService'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.EmployeeService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IEmployeeRepository'.) (Error while validating the service descriptor 'ServiceType: LMS.IService.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.PositionService': Unable to resolve service for type 'LMS.IRepository.IPositionRepository' while attempting to activate 'LMS.Service.PositionService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IRepository.IAreaRepository Lifetime: Singleton ImplementationType: LMS.Repository.AreaRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IAreaRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IAreaRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 47
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IRepository.IEmployeeRepository Lifetime: Singleton ImplementationType: LMS.Repository.EmployeeRepository': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IEmployeeRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IEmployeeRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IAreaService Lifetime: Singleton ImplementationType: LMS.Service.AreaService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IAreaRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IAreaRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IDepartmentService Lifetime: Singleton ImplementationType: LMS.Service.DepartmentService': Unable to resolve service for type 'LMS.IRepository.IDepartmentRepository' while attempting to activate 'LMS.Service.DepartmentService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'LMS.IRepository.IDepartmentRepository' while attempting to activate 'LMS.Service.DepartmentService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #4) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IEmployeeService Lifetime: Singleton ImplementationType: LMS.Service.EmployeeService': Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IEmployeeRepository'.
+ ---> System.InvalidOperationException: Cannot consume scoped service 'LMS.Repository.EFDbContext' from singleton 'LMS.IRepository.IEmployeeRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitScopeCache(ServiceCallSite scopedCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitConstructor(ConstructorCallSite constructorCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.VisitRootCache(ServiceCallSite singletonCallSite, CallSiteValidatorState state)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteValidator.ValidateCallSite(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.Microsoft.Extensions.DependencyInjection.ServiceLookup.IServiceProviderEngineCallback.OnCreate(ServiceCallSite callSite)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #5) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IPositionService Lifetime: Singleton ImplementationType: LMS.Service.PositionService': Unable to resolve service for type 'LMS.IRepository.IPositionRepository' while attempting to activate 'LMS.Service.PositionService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'LMS.IRepository.IPositionRepository' while attempting to activate 'LMS.Service.PositionService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2020-06-04 18:46:59.264 +08:00 [INF] Starting up Successful
+2020-06-04 18:47:11.429 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-04 18:47:11.978 +08:00 [INF] Now listening on: http://localhost:8001
+2020-06-04 18:47:11.979 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-06-04 18:47:11.981 +08:00 [INF] Hosting environment: Development
+2020-06-04 18:47:11.981 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-06-04 18:47:16.123 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-06-04 18:47:16.161 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-04 18:47:16.197 +08:00 [INF] Route matched with {action = "Home", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-04 18:47:16.276 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Home (LMS.Web) - Validation state: "Valid"
+2020-06-04 18:47:16.278 +08:00 [INF] 记录LogInformation日志,发生在Homes/Home
+2020-06-04 18:47:16.280 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-04 18:47:16.281 +08:00 [WRN] 记录LogWarning日志,发生在Homes/Home
+2020-06-04 18:47:16.282 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-04 18:47:16.293 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.3035ms.
+2020-06-04 18:47:16.331 +08:00 [INF] Executing ViewResult, running view Home.
+2020-06-04 18:47:16.519 +08:00 [INF] Executed ViewResult - view Home executed in 193.9134ms.
+2020-06-04 18:47:16.521 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Home (LMS.Web) in 320.2776ms
+2020-06-04 18:47:16.523 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-04 18:47:16.531 +08:00 [INF] Request finished in 411.5932ms 200 text/html; charset=utf-8
+2020-06-04 18:47:16.599 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-06-04 18:47:16.599 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-06-04 18:47:16.600 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-06-04 18:47:16.599 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-06-04 18:47:16.621 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-06-04 18:47:16.665 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-04 18:47:16.704 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\site.css'
+2020-06-04 18:47:16.709 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-06-04 18:47:16.709 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\css\bootstrap.css'
+2020-06-04 18:47:16.714 +08:00 [INF] Request finished in 114.3161ms 200 text/css
+2020-06-04 18:47:16.718 +08:00 [INF] Request finished in 52.604ms 200 text/css
+2020-06-04 18:47:16.717 +08:00 [INF] Request finished in 117.9314ms 200 text/css
+2020-06-04 18:47:16.727 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-04 18:47:16.727 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\style.css'
+2020-06-04 18:47:16.727 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-06-04 18:47:16.731 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-06-04 18:47:16.745 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Homes/Index  
+2020-06-04 18:47:16.758 +08:00 [INF] Request finished in 158.4981ms 200 text/css
+2020-06-04 18:47:16.761 +08:00 [INF] Request finished in 162.1946ms 200 text/css
+2020-06-04 18:47:16.758 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-06-04 18:47:16.762 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-06-04 18:47:16.763 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/layer.js  
+2020-06-04 18:47:16.764 +08:00 [INF] Request finished in 142.673ms 200 application/javascript
+2020-06-04 18:47:16.765 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-04 18:47:16.766 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0  
+2020-06-04 18:47:16.768 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/layer.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\layer.js'
+2020-06-04 18:47:16.770 +08:00 [INF] Route matched with {action = "Index", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-04 18:47:16.777 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-06-04 18:47:16.782 +08:00 [INF] Request finished in 19.55ms 200 application/javascript
+2020-06-04 18:47:16.832 +08:00 [INF] Request finished in 100.5622ms 200 application/javascript
+2020-06-04 18:47:16.778 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\js\bootstrap.js'
+2020-06-04 18:47:16.831 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Index (LMS.Web) - Validation state: "Valid"
+2020-06-04 18:47:16.784 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-06-04 18:47:16.832 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.woff2'
+2020-06-04 18:47:16.838 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-06-04 18:47:16.839 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-06-04 18:47:16.840 +08:00 [INF] Request finished in 112.9567ms 200 application/javascript
+2020-06-04 18:47:16.856 +08:00 [INF] Request finished in 90.5801ms 200 font/woff2
+2020-06-04 18:47:16.840 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2063ms.
+2020-06-04 18:47:16.842 +08:00 [INF] Request finished in 79.5595ms 200 application/javascript
+2020-06-04 18:47:16.865 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-06-04 18:47:16.865 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a7.jpg  
+2020-06-04 18:47:16.868 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/profile_small.jpg  
+2020-06-04 18:47:16.869 +08:00 [INF] Executing ViewResult, running view Index.
+2020-06-04 18:47:16.876 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-06-04 18:47:16.911 +08:00 [INF] Request finished in 72.9489ms 200 application/javascript
+2020-06-04 18:47:16.914 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-06-04 18:47:16.914 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-06-04 18:47:16.907 +08:00 [INF] Sending file. Request path: '/img/a7.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a7.jpg'
+2020-06-04 18:47:16.884 +08:00 [INF] Executed ViewResult - view Index executed in 16.4762ms.
+2020-06-04 18:47:16.892 +08:00 [INF] Sending file. Request path: '/img/profile_small.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\profile_small.jpg'
+2020-06-04 18:47:16.936 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a4.jpg  
+2020-06-04 18:47:16.938 +08:00 [INF] Request finished in 99.3386ms 200 application/javascript
+2020-06-04 18:47:16.944 +08:00 [INF] Request finished in 79.2456ms 200 application/javascript
+2020-06-04 18:47:16.947 +08:00 [INF] Request finished in 81.8498ms 200 image/jpeg
+2020-06-04 18:47:16.948 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Index (LMS.Web) in 163.7404ms
+2020-06-04 18:47:16.953 +08:00 [INF] Request finished in 84.5918ms 200 image/jpeg
+2020-06-04 18:47:16.965 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile.png  
+2020-06-04 18:47:16.962 +08:00 [INF] Sending file. Request path: '/img/a4.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a4.jpg'
+2020-06-04 18:47:16.960 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a1.jpg  
+2020-06-04 18:47:16.963 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a3.jpg  
+2020-06-04 18:47:16.968 +08:00 [INF] Request finished in 31.8456ms 200 image/jpeg
+2020-06-04 18:47:16.964 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a2.jpg  
+2020-06-04 18:47:16.964 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-04 18:47:16.975 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile.png'
+2020-06-04 18:47:16.977 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a8.jpg  
+2020-06-04 18:47:16.978 +08:00 [INF] Request finished in 233.0002ms 200 text/html; charset=utf-8
+2020-06-04 18:47:16.992 +08:00 [INF] Request finished in 26.5622ms 200 image/png
+2020-06-04 18:47:16.997 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-3.png  
+2020-06-04 18:47:16.998 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-1.png  
+2020-06-04 18:47:16.999 +08:00 [INF] Sending file. Request path: '/img/a2.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a2.jpg'
+2020-06-04 18:47:17.007 +08:00 [INF] Request finished in 42.957ms 200 image/jpeg
+2020-06-04 18:47:17.008 +08:00 [INF] Sending file. Request path: '/img/a1.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a1.jpg'
+2020-06-04 18:47:17.009 +08:00 [INF] Request finished in 49.7737ms 200 image/jpeg
+2020-06-04 18:47:17.026 +08:00 [INF] Sending file. Request path: '/img/a3.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a3.jpg'
+2020-06-04 18:47:17.028 +08:00 [INF] Request finished in 64.9808ms 200 image/jpeg
+2020-06-04 18:47:17.031 +08:00 [INF] Sending file. Request path: '/img/a8.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a8.jpg'
+2020-06-04 18:47:17.033 +08:00 [INF] Request finished in 55.8419ms 200 image/jpeg
+2020-06-04 18:47:17.035 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-3.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-3.png'
+2020-06-04 18:47:17.046 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-1.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-1.png'
+2020-06-04 18:47:17.057 +08:00 [INF] Request finished in 59.6ms 200 image/png
+2020-06-04 18:47:17.069 +08:00 [INF] Request finished in 70.6004ms 200 image/png
+2020-06-04 18:47:17.081 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/skin/layer.css  
+2020-06-04 18:47:17.090 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/skin/layer.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\skin\layer.css'
+2020-06-04 18:47:17.093 +08:00 [INF] Request finished in 12.6346ms 200 text/css
+2020-06-04 18:47:17.196 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-04 18:47:17.196 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-06-04 18:47:17.196 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-06-04 18:47:17.196 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-06-04 18:47:17.196 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-06-04 18:47:17.201 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\css\bootstrap.css'
+2020-06-04 18:47:17.197 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-06-04 18:47:17.218 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-06-04 18:47:17.219 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-06-04 18:47:17.225 +08:00 [INF] Request finished in 22.1489ms 200 text/css
+2020-06-04 18:47:17.227 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\site.css'
+2020-06-04 18:47:17.230 +08:00 [INF] Request finished in 34.3689ms 200 text/css
+2020-06-04 18:47:17.230 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-04 18:47:17.230 +08:00 [INF] Request finished in 35.0165ms 200 text/css
+2020-06-04 18:47:17.231 +08:00 [INF] Request finished in 34.8265ms 200 text/css
+2020-06-04 18:47:17.239 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-06-04 18:47:17.234 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\style.css'
+2020-06-04 18:47:17.241 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\js\bootstrap.js'
+2020-06-04 18:47:17.244 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-06-04 18:47:17.244 +08:00 [INF] Request finished in 49.8501ms 200 text/css
+2020-06-04 18:47:17.233 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-06-04 18:47:17.242 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/layer.js  
+2020-06-04 18:47:17.258 +08:00 [INF] Request finished in 18.9349ms 200 application/javascript
+2020-06-04 18:47:17.262 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/layer.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\layer.js'
+2020-06-04 18:47:17.250 +08:00 [INF] Request finished in 19.7586ms 200 application/javascript
+2020-06-04 18:47:17.262 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-06-04 18:47:17.246 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-06-04 18:47:17.260 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-06-04 18:47:17.263 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-06-04 18:47:17.266 +08:00 [INF] Request finished in 23.836ms 200 application/javascript
+2020-06-04 18:47:17.273 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-06-04 18:47:17.292 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-06-04 18:47:17.291 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-06-04 18:47:17.278 +08:00 [INF] Request finished in 44.5971ms 200 application/javascript
+2020-06-04 18:47:17.285 +08:00 [INF] Request finished in 89.6771ms 200 application/javascript
+2020-06-04 18:47:17.292 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/pay.png  
+2020-06-04 18:47:17.292 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-06-04 18:47:17.301 +08:00 [INF] Request finished in 38.4288ms 200 application/javascript
+2020-06-04 18:47:17.307 +08:00 [INF] Request finished in 46.7683ms 200 application/javascript
+2020-06-04 18:47:17.308 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/qr_code.png  
+2020-06-04 18:47:17.309 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0  
+2020-06-04 18:47:17.317 +08:00 [INF] Request finished in 43.5001ms 200 application/javascript
+2020-06-04 18:47:17.319 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.woff2'
+2020-06-04 18:47:17.321 +08:00 [INF] Request finished in 12.1583ms 200 font/woff2
+2020-06-04 18:47:17.331 +08:00 [INF] Sending file. Request path: '/img/qr_code.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\qr_code.png'
+2020-06-04 18:47:17.332 +08:00 [INF] Sending file. Request path: '/img/pay.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\pay.png'
+2020-06-04 18:47:17.335 +08:00 [INF] Request finished in 26.0867ms 200 image/png
+2020-06-04 18:47:17.335 +08:00 [INF] Request finished in 43.461ms 200 image/png
+2020-06-04 18:47:17.405 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/skin/layer.css  
+2020-06-04 18:47:17.411 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/skin/layer.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\skin\layer.css'
+2020-06-04 18:47:17.418 +08:00 [INF] Request finished in 13.0681ms 200 text/css

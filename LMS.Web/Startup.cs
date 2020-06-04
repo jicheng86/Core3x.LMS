@@ -23,6 +23,8 @@ using LMS.IRepository.IRepositories;
 using LMS.Repository.Repositories;
 using System.Reflection;
 using LMS.Model.Helpers;
+using Autofac;
+using LMS.Web.Models.autofac;
 
 namespace LMS.Web
 {
@@ -33,7 +35,14 @@ namespace LMS.Web
         {
             Configuration = configuration;
         }
-
+        /// <summary>
+        /// autofac
+        /// </summary>
+        /// <param name="services"></param>
+        //public void ConfigureContainer(ContainerBuilder builder)
+        //{
+        //    builder.RegisterModule<AutomaticInjectionModule>();
+        //}
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -49,7 +58,6 @@ namespace LMS.Web
                     options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true; //.NET Core 3.0 和更高版本中的验证系统将不可为 null 的参数或绑定属性视为具有 [Required] 特性。 decimal 和 int 等值类型是不可为 null 的类型 。设置为true（默认false）则阻止该特性
                 }
                 ).AddNewtonsoftJson();//添加Json.Net库支持
-
             services.AddScoped(Assembly.Load("LMS.IRepository"), Assembly.Load("LMS.Repository"));
             services.AddScoped(Assembly.Load("LMS.IService"), Assembly.Load("LMS.Service"));
 
