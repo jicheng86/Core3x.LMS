@@ -117,10 +117,7 @@ namespace LMS.Repository
             return pageData;
         }
 
-        public Task<PageData<T>> LoadPageDataListAsync(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false)
-        {
-            throw new NotImplementedException();
-        }
+     
 
         public async Task<int> SaveChangeAsync()
         {

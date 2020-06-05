@@ -1,5 +1,4 @@
 ﻿using Autofac;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,8 +37,8 @@ namespace LMS.Web.Models.autofac
 
 
             //程序集范围注入
-            Assembly service = Assembly.Load("Exercise.Services");
-            Assembly Iservice = Assembly.Load("Exercise.IServices");
+            Assembly service = Assembly.Load("LMS.Service");
+            Assembly Iservice = Assembly.Load("LMS.IService");
             builder.RegisterAssemblyTypes(service, Iservice)
                 .Where(t => t.Name.EndsWith("Service"))
                 .AsImplementedInterfaces()

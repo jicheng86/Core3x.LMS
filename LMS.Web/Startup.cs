@@ -25,6 +25,8 @@ using System.Reflection;
 using LMS.Model.Helpers;
 using Autofac;
 using LMS.Web.Models.autofac;
+using AutoMapper;
+using LMS.Model.AutoMapper;
 
 namespace LMS.Web
 {
@@ -61,6 +63,20 @@ namespace LMS.Web
             services.AddScoped(Assembly.Load("LMS.IRepository"), Assembly.Load("LMS.Repository"));
             services.AddScoped(Assembly.Load("LMS.IService"), Assembly.Load("LMS.Service"));
 
+            #region 使用AutoMapper
+            // 参数类型是Assembly类型的数组 表示AutoMapper将在这些程序集数组里面遍历寻找所有继承了Profile类的配置文件
+            // 在当前作用域的所有程序集里面扫描AutoMapper的配置文件
+            //.Map<TDto>(Tsrc)方法的新实现配置
+            //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            // services.AddAutoMapper(Assembly.GetExecutingAssembly());
+             services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
+
+            //ProjectTo()方法的新实现配置
+            var mapperConfiguration = new MapperConfiguration(e => e.AddProfile(new AutoMapperProfile()));
+            services.AddSingleton(mapperConfiguration);
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

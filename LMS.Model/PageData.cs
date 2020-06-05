@@ -9,6 +9,12 @@ namespace LMS.Model
     /// </summary>
     public class PageData<T> where T : class
     {
+        public PageData()
+        {
+            Total = 0;
+            Data = null;
+        }
+
         /// <summary>
         /// 总数
         /// </summary>

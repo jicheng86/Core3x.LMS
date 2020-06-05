@@ -10,9 +10,8 @@ namespace LMS.Service.Services
 {
     public class EmployeeService : ServiceBase<Employee>, IEmployeeService
     {
-        public EmployeeService(IEmployeeRepository repository)
+        public EmployeeService(IEmployeeRepository repository) : base(repository)
         {
-            base.Repository = repository;
         }
     }
 }

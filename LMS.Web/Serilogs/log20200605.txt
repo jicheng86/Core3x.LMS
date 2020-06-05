@@ -1,0 +1,224 @@
+﻿2020-06-05 09:21:08.983 +08:00 [INF] Starting up Successful
+2020-06-05 09:21:14.943 +08:00 [INF] User profile is available. Using 'C:\Users\LVXING\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-05 09:21:15.509 +08:00 [INF] Now listening on: http://localhost:8001
+2020-06-05 09:21:15.510 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-06-05 09:21:15.511 +08:00 [INF] Hosting environment: Development
+2020-06-05 09:21:15.511 +08:00 [INF] Content root path: F:\dotNetCore\LMS\LMS.Web
+2020-06-05 09:21:19.108 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-06-05 09:21:19.147 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-05 09:21:19.178 +08:00 [INF] Route matched with {action = "Home", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-05 09:21:19.239 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Home (LMS.Web) - Validation state: "Valid"
+2020-06-05 09:21:19.241 +08:00 [INF] 记录LogInformation日志,发生在Homes/Home
+2020-06-05 09:21:19.241 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-05 09:21:19.249 +08:00 [WRN] 记录LogWarning日志,发生在Homes/Home
+2020-06-05 09:21:19.250 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-05 09:21:19.267 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.746ms.
+2020-06-05 09:21:19.297 +08:00 [INF] Executing ViewResult, running view Home.
+2020-06-05 09:21:19.489 +08:00 [INF] Executed ViewResult - view Home executed in 196.4761ms.
+2020-06-05 09:21:19.491 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Home (LMS.Web) in 310.8818ms
+2020-06-05 09:21:19.492 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-05 09:21:19.503 +08:00 [INF] Request finished in 398.2078ms 200 text/html; charset=utf-8
+2020-06-05 09:21:19.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-06-05 09:21:19.535 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-06-05 09:21:19.571 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-06-05 09:21:19.583 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-06-05 09:21:19.583 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-06-05 09:21:19.597 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-05 09:21:19.621 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\site.css'
+2020-06-05 09:21:19.622 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-06-05 09:21:19.625 +08:00 [INF] Request finished in 42.3464ms 200 text/css
+2020-06-05 09:21:19.626 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Homes/Index  
+2020-06-05 09:21:19.627 +08:00 [INF] Request finished in 92.2282ms 200 text/css
+2020-06-05 09:21:19.627 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-05 09:21:19.630 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-05 09:21:19.632 +08:00 [INF] Route matched with {action = "Index", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-05 09:21:19.656 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Index (LMS.Web) - Validation state: "Valid"
+2020-06-05 09:21:19.658 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3139ms.
+2020-06-05 09:21:19.661 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-06-05 09:21:19.668 +08:00 [INF] Executing ViewResult, running view Index.
+2020-06-05 09:21:19.670 +08:00 [INF] Request finished in 135.0516ms 200 text/css
+2020-06-05 09:21:19.672 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-06-05 09:21:19.672 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\js\bootstrap.js'
+2020-06-05 09:21:19.674 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\style.css'
+2020-06-05 09:21:19.679 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\css\bootstrap.css'
+2020-06-05 09:21:19.681 +08:00 [INF] Request finished in 53.1006ms 200 application/javascript
+2020-06-05 09:21:19.687 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-06-05 09:21:19.688 +08:00 [INF] Request finished in 90.1429ms 200 text/css
+2020-06-05 09:21:19.700 +08:00 [INF] Request finished in 28.3996ms 200 application/javascript
+2020-06-05 09:21:19.698 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-06-05 09:21:19.686 +08:00 [INF] Request finished in 116.3961ms 200 text/css
+2020-06-05 09:21:19.703 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-06-05 09:21:19.707 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-06-05 09:21:19.705 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-06-05 09:21:19.683 +08:00 [INF] Executed ViewResult - view Index executed in 23.2603ms.
+2020-06-05 09:21:19.711 +08:00 [INF] Request finished in 127.516ms 200 application/javascript
+2020-06-05 09:21:19.710 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/layer.js  
+2020-06-05 09:21:19.712 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Index (LMS.Web) in 80.056ms
+2020-06-05 09:21:19.713 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-06-05 09:21:19.714 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-05 09:21:19.715 +08:00 [INF] Request finished in 88.832ms 200 text/html; charset=utf-8
+2020-06-05 09:21:19.716 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-06-05 09:21:19.716 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/profile_small.jpg  
+2020-06-05 09:21:19.721 +08:00 [INF] Request finished in 22.5944ms 200 application/javascript
+2020-06-05 09:21:19.724 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/layer.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\layer.js'
+2020-06-05 09:21:19.729 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a7.jpg  
+2020-06-05 09:21:19.732 +08:00 [INF] Request finished in 21.5623ms 200 application/javascript
+2020-06-05 09:21:19.732 +08:00 [INF] Sending file. Request path: '/img/profile_small.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\profile_small.jpg'
+2020-06-05 09:21:19.733 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0  
+2020-06-05 09:21:19.736 +08:00 [INF] Request finished in 19.4538ms 200 image/jpeg
+2020-06-05 09:21:19.737 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a4.jpg  
+2020-06-05 09:21:19.738 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-06-05 09:21:19.739 +08:00 [INF] Request finished in 25.8908ms 200 application/javascript
+2020-06-05 09:21:19.741 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a1.jpg  
+2020-06-05 09:21:19.742 +08:00 [INF] Sending file. Request path: '/img/a7.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a7.jpg'
+2020-06-05 09:21:19.743 +08:00 [INF] Request finished in 13.7007ms 200 image/jpeg
+2020-06-05 09:21:19.744 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a2.jpg  
+2020-06-05 09:21:19.752 +08:00 [INF] Sending file. Request path: '/img/a4.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a4.jpg'
+2020-06-05 09:21:19.753 +08:00 [INF] Request finished in 16.0548ms 200 image/jpeg
+2020-06-05 09:21:19.756 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a3.jpg  
+2020-06-05 09:21:19.764 +08:00 [INF] Sending file. Request path: '/img/a2.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a2.jpg'
+2020-06-05 09:21:19.765 +08:00 [INF] Request finished in 20.6051ms 200 image/jpeg
+2020-06-05 09:21:19.767 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a8.jpg  
+2020-06-05 09:21:19.779 +08:00 [INF] Sending file. Request path: '/img/a3.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a3.jpg'
+2020-06-05 09:21:19.780 +08:00 [INF] Request finished in 24.2169ms 200 image/jpeg
+2020-06-05 09:21:19.783 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile.png  
+2020-06-05 09:21:19.789 +08:00 [INF] Sending file. Request path: '/img/a1.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a1.jpg'
+2020-06-05 09:21:19.790 +08:00 [INF] Request finished in 48.3363ms 200 image/jpeg
+2020-06-05 09:21:19.793 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-1.png  
+2020-06-05 09:21:19.796 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.woff2'
+2020-06-05 09:21:19.797 +08:00 [INF] Request finished in 64.5569ms 200 font/woff2
+2020-06-05 09:21:19.800 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-3.png  
+2020-06-05 09:21:19.806 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-06-05 09:21:19.807 +08:00 [INF] Request finished in 100.8906ms 200 application/javascript
+2020-06-05 09:21:19.813 +08:00 [INF] Sending file. Request path: '/img/a8.jpg'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\a8.jpg'
+2020-06-05 09:21:19.814 +08:00 [INF] Request finished in 46.9706ms 200 image/jpeg
+2020-06-05 09:21:19.824 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-3.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-3.png'
+2020-06-05 09:21:19.824 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile.png'
+2020-06-05 09:21:19.825 +08:00 [INF] Request finished in 24.6117ms 200 image/png
+2020-06-05 09:21:19.828 +08:00 [INF] Request finished in 44.6285ms 200 image/png
+2020-06-05 09:21:19.828 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-1.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-1.png'
+2020-06-05 09:21:19.829 +08:00 [INF] Request finished in 36.1254ms 200 image/png
+2020-06-05 09:21:19.833 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-06-05 09:21:19.835 +08:00 [INF] Request finished in 129.6878ms 200 application/javascript
+2020-06-05 09:21:19.913 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/skin/layer.css  
+2020-06-05 09:21:19.930 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/skin/layer.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\skin\layer.css'
+2020-06-05 09:21:19.931 +08:00 [INF] Request finished in 18.6317ms 200 text/css
+2020-06-05 09:21:20.011 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-06-05 09:21:20.011 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-06-05 09:21:20.012 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-06-05 09:21:20.008 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-05 09:21:20.012 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-06-05 09:21:20.017 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-06-05 09:21:20.012 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-06-05 09:21:20.022 +08:00 [INF] Request finished in 11.3109ms 200 text/css
+2020-06-05 09:21:20.026 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\style.css'
+2020-06-05 09:21:20.026 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\site.css'
+2020-06-05 09:21:20.029 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\css\bootstrap.css'
+2020-06-05 09:21:20.029 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-06-05 09:21:20.029 +08:00 [INF] Request finished in 16.8048ms 200 text/css
+2020-06-05 09:21:20.029 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-05 09:21:20.032 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-06-05 09:21:20.031 +08:00 [INF] Request finished in 20.3675ms 200 text/css
+2020-06-05 09:21:20.029 +08:00 [INF] Request finished in 17.2083ms 200 text/css
+2020-06-05 09:21:20.034 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-06-05 09:21:20.034 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\js\bootstrap.js'
+2020-06-05 09:21:20.030 +08:00 [INF] Request finished in 22.8191ms 200 text/css
+2020-06-05 09:21:20.038 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-06-05 09:21:20.039 +08:00 [INF] Request finished in 7.33ms 200 application/javascript
+2020-06-05 09:21:20.040 +08:00 [INF] Request finished in 11.0206ms 200 application/javascript
+2020-06-05 09:21:20.041 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/layer.js  
+2020-06-05 09:21:20.041 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-06-05 09:21:20.042 +08:00 [INF] Request finished in 30.5843ms 200 application/javascript
+2020-06-05 09:21:20.042 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-06-05 09:21:20.043 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/layer.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\layer.js'
+2020-06-05 09:21:20.044 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-06-05 09:21:20.045 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-06-05 09:21:20.045 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-06-05 09:21:20.047 +08:00 [INF] Request finished in 6.0705ms 200 application/javascript
+2020-06-05 09:21:20.047 +08:00 [INF] Request finished in 6.7201ms 200 application/javascript
+2020-06-05 09:21:20.048 +08:00 [INF] Request finished in 6.5272ms 200 application/javascript
+2020-06-05 09:21:20.051 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-06-05 09:21:20.051 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-06-05 09:21:20.051 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/qr_code.png  
+2020-06-05 09:21:20.053 +08:00 [INF] Request finished in 8.6526ms 200 application/javascript
+2020-06-05 09:21:20.055 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-06-05 09:21:20.056 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/pay.png  
+2020-06-05 09:21:20.060 +08:00 [INF] Request finished in 9.0222ms 200 application/javascript
+2020-06-05 09:21:20.062 +08:00 [INF] Sending file. Request path: '/img/qr_code.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\qr_code.png'
+2020-06-05 09:21:20.063 +08:00 [INF] Request finished in 12.4316ms 200 image/png
+2020-06-05 09:21:20.074 +08:00 [INF] Sending file. Request path: '/img/pay.png'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\img\pay.png'
+2020-06-05 09:21:20.076 +08:00 [INF] Request finished in 19.3905ms 200 image/png
+2020-06-05 09:21:20.195 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0  
+2020-06-05 09:21:20.197 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.woff2'
+2020-06-05 09:21:20.198 +08:00 [INF] Request finished in 2.8902ms 200 font/woff2
+2020-06-05 09:21:20.292 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/skin/layer.css  
+2020-06-05 09:21:20.294 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/skin/layer.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\skin\layer.css'
+2020-06-05 09:21:20.295 +08:00 [INF] Request finished in 3.5073ms 200 text/css
+2020-06-05 09:21:22.876 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Corporation/Creation  
+2020-06-05 09:21:22.879 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-05 09:21:22.881 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation() on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-05 09:21:37.028 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Valid"
+2020-06-05 09:21:41.069 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4039.389ms.
+2020-06-05 09:21:41.182 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-05 09:21:41.752 +08:00 [INF] Executed ViewResult - view Creation executed in 670.4562ms.
+2020-06-05 09:21:41.752 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 18870.4901ms
+2020-06-05 09:21:41.754 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-05 09:21:43.908 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-06-05 09:21:43.908 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-06-05 09:21:43.908 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-06-05 09:21:43.908 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-05 09:21:43.908 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-06-05 09:21:43.923 +08:00 [INF] Request finished in 21034.5429ms 200 text/html; charset=utf-8
+2020-06-05 09:21:43.923 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\site.css'
+2020-06-05 09:21:43.938 +08:00 [INF] Request finished in 45.9295ms 200 text/css
+2020-06-05 09:21:43.947 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-06-05 09:21:43.956 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-05 09:21:43.971 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-06-05 09:21:43.972 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\css\bootstrap.css'
+2020-06-05 09:21:43.971 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-06-05 09:21:43.973 +08:00 [INF] Sending file. Request path: '/lib/twitter-bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\twitter-bootstrap\v3.3.6\js\bootstrap.js'
+2020-06-05 09:21:43.973 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\css\style.css'
+2020-06-05 09:21:43.974 +08:00 [INF] Request finished in 82.9241ms 200 text/css
+2020-06-05 09:21:43.979 +08:00 [INF] Request finished in 87.5411ms 200 text/css
+2020-06-05 09:21:43.975 +08:00 [INF] Request finished in 83.9205ms 200 text/css
+2020-06-05 09:21:43.976 +08:00 [INF] Request finished in 84.956ms 200 text/css
+2020-06-05 09:21:43.978 +08:00 [INF] Request finished in 30.4412ms 200 application/javascript
+2020-06-05 09:21:43.975 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-06-05 09:21:43.979 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-06-05 09:21:43.980 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/layer.js  
+2020-06-05 09:21:43.981 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-06-05 09:21:43.982 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-06-05 09:21:43.987 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-06-05 09:21:43.986 +08:00 [INF] Request finished in 48.8787ms 200 application/javascript
+2020-06-05 09:21:43.986 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-06-05 09:21:43.987 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/layer.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\layer.js'
+2020-06-05 09:21:43.989 +08:00 [INF] Request finished in 9.2456ms 200 application/javascript
+2020-06-05 09:21:43.988 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-06-05 09:21:43.988 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-06-05 09:21:43.989 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-06-05 09:21:43.990 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-06-05 09:21:43.992 +08:00 [INF] Request finished in 10.3585ms 200 application/javascript
+2020-06-05 09:21:43.993 +08:00 [INF] Request finished in 10.5575ms 200 application/javascript
+2020-06-05 09:21:43.990 +08:00 [INF] Request finished in 10.5632ms 200 application/javascript
+2020-06-05 09:21:43.994 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/content.js?v=1.0  
+2020-06-05 09:21:43.994 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-06-05 09:21:43.996 +08:00 [INF] Request finished in 10.8439ms 200 application/javascript
+2020-06-05 09:21:43.997 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-validate/v1.13.1/localization/messages_zh.js  
+2020-06-05 09:21:43.997 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/Corporation/Creation.js  
+2020-06-05 09:21:43.999 +08:00 [INF] Request finished in 4.9239ms 404 
+2020-06-05 09:21:43.997 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-validate/v1.13.1/jquery.validate.js  
+2020-06-05 09:21:43.999 +08:00 [INF] Request finished in 10.0161ms 200 application/javascript
+2020-06-05 09:21:44.013 +08:00 [INF] Sending file. Request path: '/lib/jquery-validate/v1.13.1/localization/messages_zh.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-validate\v1.13.1\localization\messages_zh.js'
+2020-06-05 09:21:44.014 +08:00 [INF] Request finished in 17.6109ms 200 application/javascript
+2020-06-05 09:21:44.015 +08:00 [INF] Sending file. Request path: '/js/Corporation/Creation.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\js\Corporation\Creation.js'
+2020-06-05 09:21:44.016 +08:00 [INF] Request finished in 19.1649ms 200 application/javascript
+2020-06-05 09:21:44.021 +08:00 [INF] Sending file. Request path: '/lib/jquery-validate/v1.13.1/jquery.validate.js'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\jquery-validate\v1.13.1\jquery.validate.js'
+2020-06-05 09:21:44.024 +08:00 [INF] Request finished in 26.2674ms 200 application/javascript
+2020-06-05 09:21:44.034 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0  
+2020-06-05 09:21:44.036 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.woff2'
+2020-06-05 09:21:44.039 +08:00 [INF] Request finished in 5.4342ms 200 font/woff2
+2020-06-05 09:21:44.079 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.1/skin/layer.css  
+2020-06-05 09:21:44.080 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.1/skin/layer.css'. Physical path: 'F:\dotNetCore\LMS\LMS.Web\wwwroot\lib\layer\v2.1\skin\layer.css'
+2020-06-05 09:21:44.082 +08:00 [INF] Request finished in 2.8722ms 200 text/css
+2020-06-05 09:21:44.099 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/content.js?v=1.0  
+2020-06-05 09:21:44.912 +08:00 [INF] Request finished in 813.5337ms 404 

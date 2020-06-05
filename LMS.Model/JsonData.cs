@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+
 using static LMS.Model.Enums.EnumCollection;
 
 namespace LMS.Model
@@ -10,6 +11,13 @@ namespace LMS.Model
     /// </summary>
     public class JsonData
     {
+        public JsonData()
+        {
+            Code = RespondStatusCode.Fail;
+            Message = "操作失败";
+            Data = null;
+        }
+
         /// <summary>
         /// 返回状态码Code
         /// </summary>

@@ -56,17 +56,6 @@ namespace LMS.IRepository
         Task<IQueryable<T>> GetEntityListAsync(Expression<Func<T, bool>> whereLambda);
 
         /// <summary>
-        /// 查询分页数据
-        /// </summary>
-        /// <param name="whereLambda">lambda查询条件</param>
-        /// <param name="orderLambda">Lambda排序</param>
-        /// <param name="pageIndex">当前页</param>
-        /// <param name="pageSize">页容量</param>
-        /// <param name="total">查询数据总条数</param>
-        /// <returns>分页数据集合</returns>
-        Task<PageData<T>> LoadPageDataListAsync(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false);
-
-        /// <summary>
         /// 数据响应提交
         /// </summary>
         /// <returns></returns>

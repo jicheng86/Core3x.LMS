@@ -10,9 +10,8 @@ namespace LMS.Service.Services
 {
     public class PositionService : ServiceBase<Position>, IPositionService
     {
-        public PositionService(IPositionRepository repository)
+        public PositionService(IPositionRepository repository) : base(repository)
         {
-            base.Repository = repository;
         }
     }
 }

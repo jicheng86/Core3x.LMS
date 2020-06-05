@@ -14,8 +14,14 @@ namespace LMS.Service
     {
         /// <summary>
         /// 通过在子类的构造函数中注入，这里是基类，不用构造函数
+        /// 构造函数注入
         /// </summary>
         protected IRepositoryBase<T> Repository { get; set; }
+
+        public ServiceBase(IRepositoryBase<T> repository)
+        {
+            Repository = repository;
+        }
 
         public T Create(T entity)
         {
@@ -47,10 +53,7 @@ namespace LMS.Service
             return Repository.GetEntityListAsync(whereLambda);
         }
 
-        public Task<PageData<T>> LoadPageDataListAsync(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false)
-        {
-            return Repository.LoadPageDataListAsync(whereLambda, orderLambda, pageIndex, pageSize, isDesc);
-        }
+     
 
         public Task<int> SaveChangeAsync()
         {

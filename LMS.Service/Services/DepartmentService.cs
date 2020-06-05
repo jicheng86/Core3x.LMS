@@ -10,9 +10,8 @@ namespace LMS.Service.Services
 {
     public class DepartmentService : ServiceBase<Department>, IDepartmentService
     {
-        public DepartmentService(IDepartmentRepository repository)
+        public DepartmentService(IDepartmentRepository repository) : base(repository)
         {
-            base.Repository = repository;
         }
     }
 }
