@@ -23,11 +23,11 @@ namespace LMS.Web.Controllers
     public class CorporationController : SharedController
     {
 
-        public CorporationController(IMapper mapper,
-                                     IAreaService areaService,
-                                     ICorporationService corporationService) : base(mapper, areaService, corporationService)
-        {
-        }
+        //public CorporationController(IMapper mapper,
+        //                             IAreaService areaService,
+        //                             ICorporationService corporationService) : base(mapper, areaService, corporationService)
+        //{
+        //}
         public IActionResult Index()
         {
             return View();
@@ -77,7 +77,7 @@ namespace LMS.Web.Controllers
                        .ToListAsync();
             }
 
-            List<SelectListItem> listItems = AreasSelectListItem("100000", 10, false);
+            List<SelectListItem> listItems = AreasSelectListItem("100000", 0, false);
             ViewBag.AreaSelectListItem = listItems;
             return View();
         }

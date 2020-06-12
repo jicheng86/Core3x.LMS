@@ -23,7 +23,7 @@ namespace LMS.Model.Extend
         /// <param name="implementAssembly">服务实现程序集</param>
         public static void AddScoped(this IServiceCollection services, Assembly interfaceAssembly, Assembly implementAssembly)
         {
-            var interfaces = interfaceAssembly.GetTypes().Where(t => t.IsInterface && !t.Name.ToLower().Contains("base"));
+            var interfaces = interfaceAssembly.GetTypes().Where(t => t.IsInterface);
             var implements = implementAssembly.GetTypes();
             foreach (var item in interfaces)
             {
@@ -44,7 +44,7 @@ namespace LMS.Model.Extend
         /// <param name="implementAssembly">服务实现程序集</param>
         public static void AddSingleton(this IServiceCollection services, Assembly interfaceAssembly, Assembly implementAssembly)
         {
-            var interfaces = interfaceAssembly.GetTypes().Where(t => t.IsInterface && !t.Name.ToLower().Contains("base"));
+            var interfaces = interfaceAssembly.GetTypes().Where(t => t.IsInterface);
             var implements = implementAssembly.GetTypes();
             foreach (var item in interfaces)
             {
@@ -65,7 +65,7 @@ namespace LMS.Model.Extend
         /// <param name="implementAssembly">服务实现程序集</param>
         public static void AddTransient(this IServiceCollection services, Assembly interfaceAssembly, Assembly implementAssembly)
         {
-            var interfaces = interfaceAssembly.GetTypes().Where(t => t.IsInterface && !t.Name.ToLower().Contains("base"));
+            var interfaces = interfaceAssembly.GetTypes().Where(t => t.IsInterface);
             var implements = implementAssembly.GetTypes();
             foreach (var item in interfaces)
             {

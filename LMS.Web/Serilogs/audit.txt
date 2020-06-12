@@ -1792,3 +1792,63 @@ Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert
 2020-06-11 18:09:13.033 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
 2020-06-11 18:11:33.199 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
 2020-06-11 18:11:33.201 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:06:32.446 +08:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 86
+2020-06-12 11:07:47.887 +08:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: LMS.IService.IServices.IPositionService Lifetime: Scoped ImplementationType: LMS.Service.Services.PositionService': Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'LMS.IRepository.IRepositories.IPositionRepository' while attempting to activate 'LMS.Service.Services.PositionService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 86
+2020-06-12 11:10:03.361 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:10:03.363 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:16:36.274 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:16:36.275 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:19:03.481 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:19:03.483 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:22:40.424 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:22:40.426 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:36:08.718 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:36:08.721 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:40:50.593 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:40:50.594 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:44:34.225 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:44:34.227 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 11:47:28.418 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 11:47:28.420 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 13:35:01.086 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 13:35:01.088 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-12 13:42:20.032 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-12 13:42:20.033 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home

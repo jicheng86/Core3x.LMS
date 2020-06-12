@@ -38,9 +38,15 @@ namespace LMS.Web.Models.autofac
 
             //程序集范围注入
             Assembly service = Assembly.Load("LMS.Service");
-            Assembly Iservice = Assembly.Load("LMS.IService");
-            builder.RegisterAssemblyTypes(service, Iservice)
+            Assembly iservice = Assembly.Load("LMS.IService");
+            builder.RegisterAssemblyTypes(service, iservice)
                 .Where(t => t.Name.EndsWith("Service"))
+                .AsImplementedInterfaces()
+                .PropertiesAutowired();
+            Assembly repository = Assembly.Load("LMS.Repository");
+            Assembly irepository = Assembly.Load("LMS.IRepository");
+            builder.RegisterAssemblyTypes(repository, irepository)
+                .Where(t => t.Name.EndsWith("Repository"))
                 .AsImplementedInterfaces()
                 .PropertiesAutowired();
 
