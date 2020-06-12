@@ -1,30 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using LMS.Repository;
-using LMS.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using LMS.Web.Controllers;
 using Serilog;
-using Serilog.Core;
 using Serilog.Events;
-using LMS.IService.IServices;
-using LMS.Service.Services;
-using LMS.Model.Entities;
-using LMS.IRepository;
-using LMS.IRepository.IRepositories;
-using LMS.Repository.Repositories;
 using System.Reflection;
-using LMS.Model.Helpers;
-using Autofac;
-using LMS.Web.Models.autofac;
+using LMS.Model.Extend;
 using AutoMapper;
 using LMS.Model.AutoMapper;
 
@@ -70,11 +54,11 @@ namespace LMS.Web
             //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             // services.AddAutoMapper(Assembly.GetExecutingAssembly());
-             services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
+            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 
             //ProjectTo()方法的新实现配置
-            var mapperConfiguration = new MapperConfiguration(e => e.AddProfile(new AutoMapperProfile()));
-            services.AddSingleton(mapperConfiguration);
+            //var mapperConfiguration = new MapperConfiguration(e => e.AddProfile(new AutoMapperProfile()));
+            //services.AddSingleton(mapperConfiguration);
 
             #endregion
         }

@@ -4,7 +4,7 @@
   "libraries": [
     {
       "library": "twitter-bootstrap@3.3.6",
-      "destination": "wwwroot/lib/twitter-bootstrap/v3.3.6/"
+      "destination": "wwwroot/lib/bootstrap/v3.3.6/"
     },
     {
       "library": "animate.css@4.1.0",
@@ -51,16 +51,22 @@
         "dist/jquery.min.js",
         "dist/jquery.min.map"
       ]
+    },
+    {
+      "library": "formvalidation@0.6.2-dev",
+      "destination": "wwwroot/lib/formvalidation/v0.6.2-dev/"
+    },
+    {
+      "library": "bootstrap-table@1.16.0",
+      "destination": "wwwroot/lib/bootstrap-table/v1.16.0/"
+    },
+    {
+      "library": "bootstrap-select@1.13.17",
+      "destination": "wwwroot/lib/bootstrap-select/"
+    },
+    {
+      "library": "popper.js@2.4.2",
+      "destination": "wwwroot/lib/popper.js/v2.4.2"
     }
-  ,
-{
-  "library": "formvalidation@0.6.2-dev",
-  "destination": "wwwroot/lib/formvalidation/v0.6.2-dev/"
-}
-,
-{
-  "library": "bootstrap-table@1.16.0",
-  "destination": "wwwroot/lib/bootstrap-table/v1.16.0/"
-}
-]
+  ]
 }

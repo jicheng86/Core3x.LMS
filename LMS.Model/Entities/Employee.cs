@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using LMS.Model.Auditing;
-using static LMS.Model.Enums.EnumCollection;
+using LMS.Model;
 
 namespace LMS.Model.Entities
 {
@@ -18,7 +18,7 @@ namespace LMS.Model.Entities
         /// 员工性别
         /// </summary>
         [Required(ErrorMessage = "字段：{0}，不能为空！")]
-        public Gender EmployeeGender { get; set; }
+        public EntityEnum.Gender EmployeeGender { get; set; }
 
         [Required(ErrorMessage = "字段：{0}，不能为空！")]
         public int PositionID { get; set; }

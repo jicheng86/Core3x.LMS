@@ -100,7 +100,7 @@ namespace LMS.Web
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-            .UseServiceProviderFactory(new AutofacServiceProviderFactory())//使用AutoFac做IOC和AOP
+            //.UseServiceProviderFactory(new AutofacServiceProviderFactory())//使用AutoFac做IOC和AOP
             .UseSerilog()
             .ConfigureWebHostDefaults(webBuilder =>
             {

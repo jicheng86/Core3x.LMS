@@ -40,6 +40,11 @@
     <ProjectReference Include="..\LMS.Service\LMS.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\View\" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties serilogconfigs_1json__JsonSchema="http://json.schemastore.org/2.0.0-csd.2.beta.2018-10-10.json" /></VisualStudio></ProjectExtensions>
 
 </Project>

@@ -1660,3 +1660,135 @@ System.AggregateException: Some services are not able to be constructed (Error w
 2020-06-04 18:47:16.282 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
 2020-06-05 09:21:19.241 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
 2020-06-05 09:21:19.250 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-09 14:10:03.034 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-09 14:10:03.044 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-09 14:10:09.210 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+LMS.Web.Controllers.CorporationController.Creation (LMS.Web)
+LMS.Web.Controllers.CorporationController.Creation (LMS.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, CandidateState[] candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.Matching.DataSourceDependentMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-09 14:11:39.653 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-09 14:11:39.655 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-09 14:21:24.725 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-09 14:21:24.726 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-09 14:25:05.086 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-09 14:25:05.088 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-09 14:27:05.739 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-09 14:27:05.741 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-09 14:29:04.676 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-09 14:29:04.678 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-10 20:07:53.476 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-10 20:07:53.478 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-10 20:07:59.107 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable<LMS.Model.Entities.Area>' to 'System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>'. An explicit conversion exists (are you missing a cast?)
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCore.Views_Corporation_Creation.<ExecuteAsync>b__31_3() in F:\dotNetCore\LMS\LMS.Web\Views\Corporation\Creation.cshtml:line 38
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCore.Views_Corporation_Creation.<ExecuteAsync>b__31_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Views_Corporation_Creation.ExecuteAsync() in F:\dotNetCore\LMS\LMS.Web\Views\Corporation\Creation.cshtml:line 2
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|21_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-10 20:42:08.855 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-10 20:42:08.857 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-10 20:51:34.335 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-10 20:51:34.340 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-10 20:53:14.789 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-10 20:53:14.791 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-10 21:43:53.134 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-10 21:43:53.135 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-10 21:45:06.705 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-10 21:45:06.708 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 11:34:05.954 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 11:34:05.959 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 11:39:40.969 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 11:39:40.973 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 13:43:40.153 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 13:43:40.156 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 13:46:22.507 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 13:46:22.510 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 13:46:42.805 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 13:46:42.806 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 13:46:44.399 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 13:46:44.406 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 13:47:16.343 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 13:47:16.345 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 13:49:14.304 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 13:49:14.313 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 14:26:15.041 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 14:26:15.043 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 14:29:26.434 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 14:29:26.436 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:12:00.149 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:12:00.151 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:13:59.882 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:13:59.883 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:16:42.771 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:16:42.774 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:28:09.830 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:28:09.833 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:33:33.978 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:33:33.980 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:34:35.933 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:34:35.935 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:37:26.359 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:37:26.362 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:43:33.704 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:43:33.705 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:47:40.862 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:47:40.865 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 15:49:04.293 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 15:49:04.295 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 17:48:51.179 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 17:48:51.182 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 17:52:24.205 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 17:52:24.207 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 17:55:07.845 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 17:55:07.849 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 17:56:59.573 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 17:56:59.575 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 17:58:34.749 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 17:58:34.751 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 17:59:52.160 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 17:59:52.163 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 18:02:26.932 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 18:02:26.934 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 18:09:13.031 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 18:09:13.033 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-11 18:11:33.199 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-11 18:11:33.201 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home

@@ -25,12 +25,9 @@ namespace LMS.Service.Services
 
         public ICorporationRepository corporationRepository { get; }
 
-        public PageData<CorporationDto> LoadPageDataList(
-            Expression<Func<Corporation, bool>> whereLambda,
-            Expression<Func<Corporation, object>> orderLambda,
-            int pageIndex,
-            int pageSize,
-            bool isDesc = false)
+        public PageData<CorporationDto> LoadPageDataList(Expression<Func<Corporation, bool>> whereLambda,
+                                                         Expression<Func<Corporation, object>> orderLambda,
+                                                         int pageIndex, int pageSize, bool isDesc = false)
         {
             return corporationRepository.LoadPageDataList(whereLambda, orderLambda, pageIndex, pageSize, isDesc);
         }

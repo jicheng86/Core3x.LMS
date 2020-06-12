@@ -1,8 +1,12 @@
 ﻿@{
     ViewBag.Title = "Corporation Creation";
+
 }
+@model CorporationDtoCreation;
 <head>
     <link href="~/lib/font-awesome/v4.4.0/css/font-awesome.css" rel="stylesheet" />
+    <!--bootstrap-select css-->
+    <link href="~/lib/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
 </head>
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
@@ -24,21 +28,23 @@
                     <div class="ibox-content">
                         <form class="form-horizontal m-t" id="CreationForm">
                             <div class="form-group col-sm-6">
-                                <label class="col-sm-3 control-label">姓氏：</label>
+                                <label class="col-sm-3 control-label" asp-for="Name"></label>
                                 <div class="col-sm-9">
-                                    <input id="firstname" name="firstname" class="form-control" type="text" placeholder="这里写点提示的内容">
+                                    <input asp-for="Name" class="form-control" type="text" placeholder="填写公司名称">
+                                    <span asp-validation-for="Name"></span>
                                 </div>
                             </div>
                             <div class="form-group col-sm-6">
-                                <label class="col-sm-3 control-label">名字：</label>
+                                <label class="col-sm-3 control-label" asp-for="AreaID"></label>
                                 <div class="col-sm-9">
-                                    <input id="lastname" name="lastname" class="form-control" type="text" aria-required="true" aria-invalid="false" class="valid">
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label class="col-sm-3 control-label">用户名：</label>
-                                <div class="col-sm-9">
-                                    <input id="username" name="username" class="form-control" type="text" aria-required="true" aria-invalid="true" class="error">
+                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search=“true” data-style="btn-success" data-size="11" data-width="auto" data-actions-box="true" title="请选择" name="AreaID" asp-items="@ViewBag.AreaSelectListItem">
+                                    </select>
+
+                                    <select class="form-control col-sm-4 selectpicker hidden" data-live-search=“true” name="AreaID2" asp-items="@ViewBag.AreaSelectListItem">
+                                    </select>
+
+                                    <select class="form-control col-sm-4 selectpicker hidden" data-live-search=“true” name="AreaID3" asp-items="@ViewBag.AreaSelectListItem">
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group col-sm-6">
@@ -68,9 +74,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-sm-9 col-sm-offset-3">
+                            <div class="form-group ">
+                                <div class="col-sm-9 col-sm-offset-1">
                                     <button class="btn btn-primary" type="submit">提交</button>
+                                    <button class="btn btn-default" type="button">取消</button>
                                 </div>
                             </div>
                         </form>
@@ -83,11 +90,14 @@
 
     @section Scripts {
         <!-- 自定义js -->
-        <script src="~/js/content.js?v=1.0"></script>
+        <script src="~/js/public/content.js?v=1.0"></script>
         <!-- jQuery Validation plugin javascript-->
         <script src="~/lib/jquery-validate/v1.13.1/jquery.validate.js"></script>
         <script src="~/lib/jquery-validate/v1.13.1/localization/messages_zh.js"></script>
         <script src="~/js/Corporation/Creation.js"></script>
+        <!--bootstrap-select js-->
+        <script src="~/lib/bootstrap-select/js/bootstrap-select.js"></script>
+        <script src="~/lib/bootstrap-select/js/i18n/defaults-zh_CN.js"></script>
     }
 </body>
 

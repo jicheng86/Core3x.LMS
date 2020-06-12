@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
+
 using LMS.Model.Auditing;
 
 namespace LMS.Model.Dto
@@ -9,7 +11,7 @@ namespace LMS.Model.Dto
     /// <summary>
     /// 公司信息
     /// </summary>
-    public class CorporationDto: IFullAudited
+    public class CorporationDto : BootstrapTableDtoBase, IFullAudited
     {
         /// <summary>
         /// 公司名称

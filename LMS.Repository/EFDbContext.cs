@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using static LMS.Model.Enums.EnumCollection;
 
 namespace LMS.Repository
 {

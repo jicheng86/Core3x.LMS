@@ -30,11 +30,12 @@ namespace LMS.Repository.Repositories
                                                          Expression<Func<Corporation, object>> orderLambda,
                                                          int pageIndex, int pageSize, bool isDesc = false)
         {
-            var dataSource = dbContext.Corporations.Where(w => true);
-            if (whereLambda != null)
+            if (whereLambda == null)
             {
-                dataSource = dataSource.Where(whereLambda);
+                whereLambda = w => true;
             }
+            var dataSource = dbContext.Corporations.Where(whereLambda);
+
             PageData<CorporationDto> resualData = new PageData<CorporationDto>();
             if (dataSource == null || !dataSource.Any())
             {
@@ -46,8 +47,8 @@ namespace LMS.Repository.Repositories
             }
             resualData.Total = dataSource.Count();
             dataSource = dataSource.Skip(pageIndex).Take(pageSize);
-            resualData.Data = dataSource.ProjectTo<CorporationDto>(configuration: Mapper.ConfigurationProvider).ToList();
-            //pageData.Data = Mapper.ProjectTo<CorporationDto>(dataSource).ToList();
+            //resualData.Data = dataSource.ProjectTo<CorporationDto>(configuration: Mapper.ConfigurationProvider).ToList();
+            resualData.Data = Mapper.ProjectTo<CorporationDto>(dataSource).ToList();
             return resualData;
         }
 

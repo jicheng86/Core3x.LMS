@@ -19,7 +19,7 @@ namespace LMS.Model.Entities
         [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划Code"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string CityCode { get; set; }
         /// <summary>
-        /// 父级行政区划Code
+        /// 父级行政区划Code 100000=中国
         /// </summary>
         [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "父级行政区划Code"), StringLength(50, ErrorMessage = "字段：{0}长度不能超过：{1}")]
         public string ParentCode { get; set; }
