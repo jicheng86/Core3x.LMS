@@ -10,7 +10,7 @@ using Serilog.Events;
 using System.Reflection;
 using LMS.Model.Extend;
 using AutoMapper;
-using LMS.Model.AutoMapper;
+using LMS.Model.autoMapper;
 using LMS.Web.Models.autofac;
 using Autofac;
 

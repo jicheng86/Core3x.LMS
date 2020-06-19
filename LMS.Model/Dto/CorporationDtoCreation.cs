@@ -20,7 +20,7 @@ namespace LMS.Model.Dto
         /// <summary>
         /// 行政区划ID
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "行政区划")]
+        [Display(Name = "行政区划")]
         public int AreaID { get; set; }
         /// <summary>
         /// 公司详细地址：行政区划ID之后地址

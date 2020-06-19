@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LMS.Web.Models.Identity
+namespace LMS.Web.Models.identity
 {
     public class ClientCredentials
     {

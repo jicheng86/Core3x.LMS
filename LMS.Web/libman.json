@@ -40,7 +40,7 @@
     },
     {
       "library": "jquery.bootstrapvalidator@0.5.3",
-      "destination": "wwwroot/lib/jquery.bootstrapvalidator/"
+      "destination": "wwwroot/lib/jquery.bootstrapvalidator/v0.5.3/"
     },
     {
       "provider": "unpkg",
@@ -53,10 +53,6 @@
       ]
     },
     {
-      "library": "formvalidation@0.6.2-dev",
-      "destination": "wwwroot/lib/formvalidation/v0.6.2-dev/"
-    },
-    {
       "library": "bootstrap-table@1.16.0",
       "destination": "wwwroot/lib/bootstrap-table/v1.16.0/"
     },
@@ -67,6 +63,20 @@
     {
       "library": "popper.js@2.4.2",
       "destination": "wwwroot/lib/popper.js/v2.4.2"
+    },
+    {
+      "library": "jquery.form@4.3.0",
+      "destination": "wwwroot/lib/jquery.form/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "formvalidation@0.6.2-dev",
+      "destination": "wwwroot/lib/formvalidation/v0.6.2-dev/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "jquery-form@4.3.0",
+      "destination": "wwwroot/lib/jquery-form/v4.3.0/"
     }
   ]
 }

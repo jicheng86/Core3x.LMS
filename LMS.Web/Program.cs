@@ -46,7 +46,7 @@ namespace LMS.Web
                  .CreateLogger();
             #endregion
 
-            #region autofac-profile
+            #region autofac-profile ·´Éä×é¼þ
             // The Microsoft.Extensions.DependencyInjection.ServiceCollection
             // has extension methods provided by other .NET Core libraries to
             // regsiter services with DI.

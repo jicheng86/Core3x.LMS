@@ -13,12 +13,148 @@
 
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="wwwroot\lib\layer\v2.1.0\.gitignore" />
+    <None Include="wwwroot\lib\layer\v2.1.0\.travis.yml" />
+    <None Include="wwwroot\lib\layer\v2.1.0\CHANGELOG.md" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\font\iconfont.svg" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\layui.all.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\layui.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\carousel.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\code.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\element.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\flow.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\form.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\jquery.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\laydate.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\layedit.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\layer.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\laypage.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\laytpl.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\table.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\tree.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\upload.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\dist\lay\modules\util.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\doc\Git仓库.url" />
+    <None Include="wwwroot\lib\layer\v2.1.0\doc\README.md" />
+    <None Include="wwwroot\lib\layer\v2.1.0\doc\在线演示.url" />
+    <None Include="wwwroot\lib\layer\v2.1.0\doc\快速上手.url" />
+    <None Include="wwwroot\lib\layer\v2.1.0\examples\js\child\test.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\examples\js\index.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\gulpfile.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\karma.conf.base.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\karma.conf.sauce.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\karma.conf.unit.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\LICENSE" />
+    <None Include="wwwroot\lib\layer\v2.1.0\README.md" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\font\iconfont.svg" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\layui.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\all-mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\all.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\carousel.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\code.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\element.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\flow.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\form.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\jquery.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\laydate.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\layedit.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\layer.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\laypage.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\laytpl.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\mobile\layer-mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\mobile\layim-mobile-open.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\mobile\upload-mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\mobile\zepto.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\table.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\tree.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\upload.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\src\lay\modules\util.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\test\layui.js" />
+    <None Include="wwwroot\lib\layer\v2.1.0\test\lay\modules\laytpl.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\.gitignore" />
+    <None Include="wwwroot\lib\layer\v2.5.6\.travis.yml" />
+    <None Include="wwwroot\lib\layer\v2.5.6\CHANGELOG.md" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\font\iconfont.svg" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\font\iconfont.woff2" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\layui.all.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\layui.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\carousel.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\code.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\colorpicker.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\element.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\flow.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\form.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\jquery.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\laydate.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\layedit.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\layer.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\laypage.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\laytpl.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\rate.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\slider.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\table.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\transfer.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\tree.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\upload.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\dist\lay\modules\util.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\doc\Git仓库.url" />
+    <None Include="wwwroot\lib\layer\v2.5.6\doc\README.md" />
+    <None Include="wwwroot\lib\layer\v2.5.6\doc\在线演示.url" />
+    <None Include="wwwroot\lib\layer\v2.5.6\doc\快速上手.url" />
+    <None Include="wwwroot\lib\layer\v2.5.6\examples\extends\mod1.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\examples\extends\mod2.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\examples\extends\temp.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\examples\js\child\test.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\examples\js\index.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\gulpfile.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\karma.conf.base.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\karma.conf.sauce.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\karma.conf.unit.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\LICENSE" />
+    <None Include="wwwroot\lib\layer\v2.5.6\README.md" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\font\iconfont.svg" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\font\iconfont.woff2" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\layui.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\all-mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\all.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\carousel.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\code.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\colorpicker.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\element.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\flow.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\form.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\jquery.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\laydate.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\layedit.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\layer.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\laypage.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\laytpl.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\mobile\layer-mobile.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\mobile\layim-mobile-open.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\mobile\zepto.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\rate.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\slider.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\table.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\transfer.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\tree.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\upload.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\src\lay\modules\util.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\test\layui.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\test\lay\modules\code.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\test\lay\modules\laydate.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\test\lay\modules\laytpl.js" />
+    <None Include="wwwroot\lib\layer\v2.5.6\test\README.md" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -42,7 +178,6 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Models\View\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties serilogconfigs_1json__JsonSchema="http://json.schemastore.org/2.0.0-csd.2.beta.2018-10-10.json" /></VisualStudio></ProjectExtensions>

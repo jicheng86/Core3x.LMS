@@ -165,14 +165,10 @@ var TableInit = function () {
                     formatter: function (value, row, index) {
                         switch (value) {
                             case false:
-                                return "否";
-                                break;
-                            case true:
-                                return "是";
-                                break;
                             case null:
                                 return "否";
-                                break;
+                            case true:
+                                return "是";
                             default:
                                 break;
                         }

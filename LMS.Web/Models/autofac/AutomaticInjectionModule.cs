@@ -1,4 +1,7 @@
 ﻿using Autofac;
+
+using AutoMapper;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,11 +54,12 @@ namespace LMS.Web.Models.autofac
                 .PropertiesAutowired();
 
             //单个注册
-            // builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().PropertiesAutowired();
+            // builder.RegisterType<IMapper>().As<Mapper>().PropertiesAutowired();
 
             //在控制器中使用属性依赖注入，其中注入属性必须标注为public
-            var types = typeof(Startup).Assembly.GetExportedTypes()
-                .Where(type => typeof(Microsoft.AspNetCore.Mvc.ControllerBase)
+            var types = typeof(Startup)
+                .Assembly.GetExportedTypes()
+                .Where(type => typeof(Microsoft.AspNetCore.Mvc.Controller)
                 .IsAssignableFrom(type))
                 .ToArray();
             builder.RegisterTypes(types).PropertiesAutowired();

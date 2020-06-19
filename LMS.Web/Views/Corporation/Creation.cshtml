@@ -5,13 +5,10 @@
 @model CorporationDtoCreation;
 <head>
     <link href="~/lib/font-awesome/v4.4.0/css/font-awesome.css" rel="stylesheet" />
-    <!--bootstrap-select css-->
-    <link href="~/lib/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
 </head>
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
-
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
@@ -26,7 +23,7 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        <form class="form-horizontal m-t" id="CreationForm">
+                        <form class="form-horizontal m-t" id="FormCorporationCreation" enctype="multipart/form-data" method="post" asp-action="Creation" asp-controller="Corporation">
                             <div class="form-group col-sm-6">
                                 <label class="col-sm-3 control-label" asp-for="Name"></label>
                                 <div class="col-sm-9">
@@ -37,36 +34,27 @@
                             <div class="form-group col-sm-6">
                                 <label class="col-sm-3 control-label" asp-for="AreaID"></label>
                                 <div class="col-sm-9">
-                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search=“true” data-style="btn-success" data-size="11" data-width="auto" data-actions-box="true" title="请选择" name="AreaID" asp-items="@ViewBag.AreaSelectListItem">
+                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="fit" data-actions-box="true" title="请选择" name="AreaID" id="seltProvinceAreaID" asp-items="@ViewBag.AreaSelectListItem">
                                     </select>
+                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="fit" data-actions-box="true" title="请选择" name="AreaID" id="seltCityAreaID">
+                                    </select>
+                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="fit" data-actions-box="true" title="请选择" name="AreaID" id="seltCistrictAreaID">
+                                    </select>
+                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="auto" data-actions-box="true" title="请选择" name="AreaID" id="seltStreetAreaID">
+                                    </select>
+                                    <span asp-validation-for="AreaID"></span>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label class="col-sm-3 control-label" asp-for="CorporationAddress"></label>
+                                <div class="col-sm-9">
+                                    <input asp-for="CorporationAddress" id="CorporationAddress" class="form-control" type="text" placeholder="请填写公司所在区划之后的详细地址">
+                                    <span asp-validation-for="CorporationAddress"></span>
+                                </div>
+                            </div>
 
-                                    <select class="form-control col-sm-4 selectpicker hidden" data-live-search=“true” name="AreaID2" asp-items="@ViewBag.AreaSelectListItem">
-                                    </select>
-
-                                    <select class="form-control col-sm-4 selectpicker hidden" data-live-search=“true” name="AreaID3" asp-items="@ViewBag.AreaSelectListItem">
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label class="col-sm-3 control-label">密码：</label>
-                                <div class="col-sm-9">
-                                    <input id="password" name="password" class="form-control" type="password" placeholder="请输入您的密码">
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label class="col-sm-3 control-label">确认密码：</label>
-                                <div class="col-sm-9">
-                                    <input id="confirm_password" name="confirm_password" class="form-control" type="password" placeholder="请再次输入您的密码">
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label class="col-sm-3 control-label">E-mail：</label>
-                                <div class="col-sm-9">
-                                    <input id="email" name="email" class="form-control" type="email">
-                                </div>
-                            </div>
-                            <div class="form-group  col-sm-6">
-                                <div class="col-sm-9 col-sm-offset-3">
+                            <div class="form-group  col-sm-12">
+                                <div class="col-sm-9 col-sm-offset-1">
                                     <div class="checkbox">
                                         <label>
                                             <input type="checkbox" class="checkbox" id="agree" name="agree"> 我已经认真阅读并同意《使用协议》
@@ -74,9 +62,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <span asp-validation-summary="ModelOnly"></span>
                             <div class="form-group ">
                                 <div class="col-sm-9 col-sm-offset-1">
-                                    <button class="btn btn-primary" type="submit">提交</button>
+                                    <button class="btn btn-primary" id="btnSubmit" type="button">提交</button>
                                     <button class="btn btn-default" type="button">取消</button>
                                 </div>
                             </div>
@@ -91,13 +80,10 @@
     @section Scripts {
         <!-- 自定义js -->
         <script src="~/js/public/content.js?v=1.0"></script>
-        <!-- jQuery Validation plugin javascript-->
-        <script src="~/lib/jquery-validate/v1.13.1/jquery.validate.js"></script>
-        <script src="~/lib/jquery-validate/v1.13.1/localization/messages_zh.js"></script>
+        @{await Html.RenderPartialAsync("_BootstrapSelectPartial"); }
+        @{await Html.RenderPartialAsync("_BootstrapValidator"); }
+        @{await Html.RenderPartialAsync("_AjaxFromPartial"); }
         <script src="~/js/Corporation/Creation.js"></script>
-        <!--bootstrap-select js-->
-        <script src="~/lib/bootstrap-select/js/bootstrap-select.js"></script>
-        <script src="~/lib/bootstrap-select/js/i18n/defaults-zh_CN.js"></script>
     }
 </body>
 

@@ -1,33 +1,37 @@
-﻿using System;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+
+using LMS.IService.IServices;
+using LMS.Model;
+using LMS.Model.Dto;
+using LMS.Model.Entities;
+using LMS.Model.Extend;
+using LMS.Web.Models;
+using LMS.Web.Utility;
+
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-using AutoMapper;
-using AutoMapper.QueryableExtensions;
-
-using LMS.IService.IServices;
-using LMS.Web.Models;
-using LMS.Model.Dto;
-using LMS.Model;
-using LMS.Model.Entities;
-using LMS.Model.Extend;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using LMS.Web.Utility;
-
 namespace LMS.Web.Controllers
 {
+    /// <summary>
+    /// 企业控制器
+    /// </summary>
     public class CorporationController : SharedController
     {
 
-        //public CorporationController(IMapper mapper,
-        //                             IAreaService areaService,
-        //                             ICorporationService corporationService) : base(mapper, areaService, corporationService)
-        //{
-        //}
+        public CorporationController(IMapper mapper,
+                                     IAreaService areaService,
+                                     ICorporationService corporationService) : base(mapper, areaService, corporationService)
+        {
+        }
         public IActionResult Index()
         {
             return View();
@@ -35,7 +39,6 @@ namespace LMS.Web.Controllers
         [HttpGet]
         public IActionResult CorporationList()
         {
-
             return View();
         }
         [HttpPost]
@@ -77,7 +80,7 @@ namespace LMS.Web.Controllers
                        .ToListAsync();
             }
 
-            List<SelectListItem> listItems = AreasSelectListItem("100000", 0, false);
+            List<SelectListItem> listItems = AreasSelectListItem();
             ViewBag.AreaSelectListItem = listItems;
             return View();
         }
@@ -86,16 +89,35 @@ namespace LMS.Web.Controllers
         /// </summary>
         /// <param name="corporationDto">提交公司信息</param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Creation(CorporationDto corporationDto)
         {
-            if (ModelState.IsValid)
-            {
-                // return ModelExtensions ()
-            }
             JSONData Jsondata = new JSONData();
-            Corporation corporation = AutoMapper.Map<Corporation>(corporationDto);
+            var firstArerID = corporationDto.AreaID.FirstOrDefault();
+            if (Constant.SpecialAdministrativeRegionAreaID.Contains(firstArerID))
+            {
+                if (corporationDto.AreaID.Count < 2)
+                {
+                    Jsondata.Code = EnumCollection.ResponseStatusCode.ARGUMENTSLOSE;
+                    Jsondata.Message = "请选择完整的区划地址";
+                    return Json(Jsondata);
+                }
+            }
+            if (corporationDto.AreaID.Count < 4)
+            {
+                Jsondata.Code = EnumCollection.ResponseStatusCode.ARGUMENTSLOSE;
+                Jsondata.Message = "请选择完整的区划地址";
+                return Json(Jsondata);
+            }
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError(string.Empty, "ModelLevelError");
+                return View();
+            }
 
+
+            Corporation corporation = AutoMapper.Map<Corporation>(corporationDto);
+            corporation.CreatorUserId = 1000;
             CorporationService.Create(corporation);
             var result = CorporationService.SaveChangeAsync();
             if (result.IsCompleted && result.Result > 0)

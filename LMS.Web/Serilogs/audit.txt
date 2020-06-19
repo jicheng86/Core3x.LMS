@@ -1852,3 +1852,643 @@ System.AggregateException: Some services are not able to be constructed (Error w
 2020-06-12 13:35:01.088 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
 2020-06-12 13:42:20.032 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
 2020-06-12 13:42:20.033 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 09:32:34.687 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 09:32:34.704 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 09:33:10.511 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LMS.Web.Controllers.SharedController.AreasSelectListItem(String ParentCode, Int32 SelectedID, Boolean HadEmptyItem) in F:\dotNetCore\LMS\LMS.Web\Controllers\SharedController.cs:line 51
+   at LMS.Web.Controllers.SharedController.GetAreasSelectOptions(String ParentCode, Int32 SelectedID, Boolean HadEmptyItem) in F:\dotNetCore\LMS\LMS.Web\Controllers\SharedController.cs:line 66
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-15 15:00:17.462 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 15:00:17.463 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 15:01:11.347 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 15:01:11.350 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 15:01:58.210 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LMS.Web.Controllers.SharedController.AreasSelectListItem(String ParentCode, Int32 SelectedID, Boolean HadEmptyItem) in F:\dotNetCore\LMS\LMS.Web\Controllers\SharedController.cs:line 51
+   at LMS.Web.Controllers.CorporationController.Creation(Int32 ID) in F:\dotNetCore\LMS\LMS.Web\Controllers\CorporationController.cs:line 80
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-15 15:12:46.597 +08:00 [FTL] Application start-up failed
+System.ArgumentException: The type 'AutoMapper.IMapper' is not assignable to service 'AutoMapper.Mapper'.
+   at Autofac.Builder.RegistrationBuilder.CreateRegistration(Guid id, RegistrationData data, IInstanceActivator activator, Service[] services, IComponentRegistration target, Boolean isAdapterForIndividualComponent)
+   at Autofac.Builder.RegistrationBuilder.CreateRegistration[TLimit,TActivatorData,TSingleRegistrationStyle](IRegistrationBuilder`3 builder)
+   at Autofac.Builder.RegistrationBuilder.RegisterSingleComponent[TLimit,TActivatorData,TSingleRegistrationStyle](IComponentRegistryBuilder cr, IRegistrationBuilder`3 builder)
+   at Autofac.RegistrationExtensions.<>c__DisplayClass2_0`1.<RegisterType>b__0(IComponentRegistryBuilder cr)
+   at Autofac.ContainerBuilder.Build(IComponentRegistryBuilder componentRegistry, Boolean excludeDefaultModules)
+   at Autofac.ContainerBuilder.UpdateRegistry(IComponentRegistryBuilder componentRegistry)
+   at Autofac.Module.Configure(IComponentRegistryBuilder componentRegistry)
+   at Autofac.ContainerBuilder.Build(IComponentRegistryBuilder componentRegistry, Boolean excludeDefaultModules)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 86
+2020-06-15 15:15:09.980 +08:00 [FTL] Application start-up failed
+System.ArgumentException: The type 'AutoMapper.IMapper' is not assignable to service 'AutoMapper.Mapper'.
+   at Autofac.Builder.RegistrationBuilder.CreateRegistration(Guid id, RegistrationData data, IInstanceActivator activator, Service[] services, IComponentRegistration target, Boolean isAdapterForIndividualComponent)
+   at Autofac.Builder.RegistrationBuilder.CreateRegistration[TLimit,TActivatorData,TSingleRegistrationStyle](IRegistrationBuilder`3 builder)
+   at Autofac.Builder.RegistrationBuilder.RegisterSingleComponent[TLimit,TActivatorData,TSingleRegistrationStyle](IComponentRegistryBuilder cr, IRegistrationBuilder`3 builder)
+   at Autofac.RegistrationExtensions.<>c__DisplayClass2_0`1.<RegisterType>b__0(IComponentRegistryBuilder cr)
+   at Autofac.ContainerBuilder.Build(IComponentRegistryBuilder componentRegistry, Boolean excludeDefaultModules)
+   at Autofac.ContainerBuilder.UpdateRegistry(IComponentRegistryBuilder componentRegistry)
+   at Autofac.Module.Configure(IComponentRegistryBuilder componentRegistry)
+   at Autofac.ContainerBuilder.Build(IComponentRegistryBuilder componentRegistry, Boolean excludeDefaultModules)
+   at Autofac.ContainerBuilder.Build(ContainerBuildOptions options)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProviderFactory.CreateServiceProvider(ContainerBuilder containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at LMS.Web.Program.Main(String[] args) in F:\dotNetCore\LMS\LMS.Web\Program.cs:line 86
+2020-06-15 15:15:56.065 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 15:15:56.068 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 15:30:53.980 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 15:30:53.982 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 15:34:02.481 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 15:34:02.483 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 15:36:38.224 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 15:36:38.227 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 16:07:16.091 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 16:07:16.116 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 16:10:31.054 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 16:10:31.056 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 16:50:27.297 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 16:50:27.299 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 16:59:59.949 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 16:59:59.951 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:10:50.483 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:10:50.485 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:13:10.644 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:13:10.647 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:17:51.871 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:17:51.874 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:20:50.592 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:20:50.595 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:29:16.034 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:29:16.036 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:30:51.002 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:30:51.005 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:34:27.749 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:34:27.751 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:35:04.315 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:35:04.316 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:35:12.644 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:35:12.644 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:35:12.645 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:35:12.645 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:39:36.059 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:39:36.063 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:40:31.633 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:40:31.634 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:41:28.659 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:41:28.661 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:42:18.967 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:42:18.970 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:46:12.270 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:46:12.272 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:49:45.677 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:49:45.679 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:50:47.225 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:50:47.228 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:50:50.910 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:50:50.910 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 17:53:07.102 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 17:53:07.127 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 18:00:10.641 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 18:00:10.643 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-15 18:03:46.226 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-15 18:03:46.227 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 13:57:21.330 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 13:57:21.332 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:01:33.878 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:01:33.879 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:19:33.213 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:19:33.215 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:25:14.106 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:25:14.108 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:26:54.695 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:26:54.696 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:27:52.336 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:27:52.353 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:28:44.079 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:28:44.080 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:31:22.267 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:31:22.269 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:35:30.375 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:35:30.377 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:44:46.833 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:44:46.834 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:45:30.537 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:45:30.538 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 14:48:16.794 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 14:48:16.795 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:05:25.255 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:05:25.257 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:15:11.149 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:15:11.151 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:16:38.057 +08:00 [ERR] Failed executing DbCommand (14,114ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int64), @p4='?' (DbType = Int64), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int64), @p10='?' (Size = 150), @p11='?' (Size = 2500)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Corporation] ([AreaID], [CorporationAddress], [CreationTime], [CreatorUserId], [DeleterUserId], [DeletionTime], [IsActive], [IsDeleted], [LastModificationTime], [ModificationUserID], [Name], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+SELECT [ID]
+FROM [Corporation]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+2020-06-16 16:16:38.176 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'LMS.Repository.EFDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'CorporationAddress'，表 'DB_LMS_Core3.x.dbo.Corporation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:29cbe183-3b16-4d93-b400-b4aab59d3daa
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'CorporationAddress'，表 'DB_LMS_Core3.x.dbo.Corporation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:29cbe183-3b16-4d93-b400-b4aab59d3daa
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2020-06-16 16:27:29.667 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:27:29.668 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:35:40.230 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:35:40.232 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:39:06.979 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:39:06.980 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:40:13.229 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:40:13.232 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:45:23.334 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:45:23.337 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-16 16:57:02.116 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-16 16:57:02.119 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 13:59:33.117 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 13:59:33.129 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:02:11.324 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 14:02:11.326 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:04:02.693 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 14:04:02.694 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:05:06.043 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 14:05:06.045 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:06:19.303 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 14:06:19.305 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:07:28.403 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+CorporationDto -> Corporation
+LMS.Model.Dto.CorporationDto -> LMS.Model.Entities.Corporation
+
+Type Map configuration:
+CorporationDto -> Corporation
+LMS.Model.Dto.CorporationDto -> LMS.Model.Entities.Corporation
+
+Destination Member:
+AreaID
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> Int32
+System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Int32
+   at lambda_method(Closure , List`1 , Int32 , ResolutionContext )
+   at lambda_method(Closure , CorporationDto , Corporation , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , CorporationDto , Corporation , ResolutionContext )
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at LMS.Web.Controllers.CorporationController.Creation(CorporationDto corporationDto) in F:\dotNetCore\LMS\LMS.Web\Controllers\CorporationController.cs:line 101
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-17 14:07:41.140 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 14:07:41.146 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:14:04.411 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 14:14:04.413 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:20:03.673 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 14:20:03.675 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 14:20:55.032 +08:00 [ERR] Connection id "0HM0IGPROME2T", Request id "0HM0IGPROME2T:0000000D": An unhandled exception was thrown by the application.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Utilities.DisposableExtensions.DisposeAsyncIfAvailable(IDisposable disposable)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<>c__DisplayClass15_0.<<DisposeAsync>g__Await|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Autofac.Core.Disposer.DisposeAsync(Boolean disposing)
+   at Autofac.Core.Lifetime.LifetimeScope.DisposeAsync(Boolean disposing)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.DisposeAsync()
+   at Autofac.Extensions.DependencyInjection.AutofacServiceScope.DisposeAsync()
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FireOnCompletedAwaited(Task currentTask, Stack`1 onCompleted)
+2020-06-17 15:24:35.789 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 15:24:35.790 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 17:33:12.208 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 17:33:12.210 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 17:35:46.452 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 17:35:46.453 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-17 17:38:14.346 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-17 17:38:14.348 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 13:54:30.085 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 13:54:30.087 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 14:06:07.698 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 14:06:07.700 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 14:08:26.795 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 14:08:26.797 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 14:09:53.582 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 14:09:53.584 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 14:11:15.799 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 14:11:15.802 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:18:43.694 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:18:43.696 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:22:56.026 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:22:56.029 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:24:24.639 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:24:24.642 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:35:15.633 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:35:15.636 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:37:01.524 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:37:01.525 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:38:37.888 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:38:37.890 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:39:35.870 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:39:35.873 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:41:38.315 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:41:38.317 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:44:53.716 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:44:53.719 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:45:57.527 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:45:57.529 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 16:47:41.971 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 16:47:41.973 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:02:35.405 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:02:35.407 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:02:55.425 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:02:55.426 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:08:33.592 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:08:33.595 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:09:50.438 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:09:50.440 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:21:41.279 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:21:41.281 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:26:07.198 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:26:07.201 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:28:37.033 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:28:37.034 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:30:34.181 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:30:34.183 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:31:16.936 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at LMS.Web.Controllers.CorporationController.Creation(CorporationDto corporationDto) in F:\dotNetCore\LMS\LMS.Web\Controllers\CorporationController.cs:line 96
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-18 17:36:07.284 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:36:07.285 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:40:42.365 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:40:42.367 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:45:39.214 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:45:39.217 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 17:58:40.371 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 17:58:40.375 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 18:00:21.047 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-18 18:00:21.049 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-18 18:01:04.068 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at LMS.Web.Controllers.CorporationController.Creation(CorporationDto corporationDto) in F:\dotNetCore\LMS\LMS.Web\Controllers\CorporationController.cs:line 96
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-18 18:01:40.735 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at LMS.Web.Controllers.CorporationController.Creation(CorporationDto corporationDto) in F:\dotNetCore\LMS\LMS.Web\Controllers\CorporationController.cs:line 96
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-18 18:03:26.517 +08:00 [ERR] Connection id "0HM0JDPJV85OF", Request id "0HM0JDPJV85OF:0000002E": An unhandled exception was thrown by the application.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Utilities.DisposableExtensions.DisposeAsyncIfAvailable(IDisposable disposable)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<>c__DisplayClass15_0.<<DisposeAsync>g__Await|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Autofac.Core.Disposer.DisposeAsync(Boolean disposing)
+   at Autofac.Core.Lifetime.LifetimeScope.DisposeAsync(Boolean disposing)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.DisposeAsync()
+   at Autofac.Extensions.DependencyInjection.AutofacServiceScope.DisposeAsync()
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FireOnCompletedAwaited(Task currentTask, Stack`1 onCompleted)
+2020-06-19 11:04:11.808 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 11:04:11.811 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 11:06:46.829 +08:00 [ERR] Connection id "0HM0JVLNMAPG4", Request id "0HM0JVLNMAPG4:00000012": An unhandled exception was thrown by the application.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Utilities.DisposableExtensions.DisposeAsyncIfAvailable(IDisposable disposable)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<>c__DisplayClass15_0.<<DisposeAsync>g__Await|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Autofac.Core.Disposer.DisposeAsync(Boolean disposing)
+   at Autofac.Core.Lifetime.LifetimeScope.DisposeAsync(Boolean disposing)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.DisposeAsync()
+   at Autofac.Extensions.DependencyInjection.AutofacServiceScope.DisposeAsync()
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FireOnCompletedAwaited(Task currentTask, Stack`1 onCompleted)
+2020-06-19 11:50:14.681 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 11:50:14.683 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 11:51:54.991 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 11:51:54.992 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 11:58:33.076 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 11:58:33.078 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 12:20:27.479 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 12:20:27.481 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 12:24:08.733 +08:00 [ERR] An error occurred using a transaction.
+2020-06-19 15:18:34.147 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 15:18:34.149 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 15:42:14.649 +08:00 [ERR] Connection id "0HM0K43SA3EM8", Request id "0HM0K43SA3EM8:0000000F": An unhandled exception was thrown by the application.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Utilities.DisposableExtensions.DisposeAsyncIfAvailable(IDisposable disposable)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<>c__DisplayClass15_0.<<DisposeAsync>g__Await|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Autofac.Core.Disposer.DisposeAsync(Boolean disposing)
+   at Autofac.Core.Lifetime.LifetimeScope.DisposeAsync(Boolean disposing)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.DisposeAsync()
+   at Autofac.Extensions.DependencyInjection.AutofacServiceScope.DisposeAsync()
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FireOnCompletedAwaited(Task currentTask, Stack`1 onCompleted)
+2020-06-19 15:43:31.136 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at LMS.Web.Controllers.CorporationController.Creation(CorporationDto corporationDto) in F:\dotNetCore\LMS\LMS.Web\Controllers\CorporationController.cs:line 96
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-19 15:43:33.443 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 15:43:33.443 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 15:45:46.828 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at LMS.Web.Controllers.CorporationController.Creation(CorporationDto corporationDto) in F:\dotNetCore\LMS\LMS.Web\Controllers\CorporationController.cs:line 96
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-06-19 16:04:14.704 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 16:04:14.706 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 16:05:17.940 +08:00 [ERR] Connection id "0HM0K4TCVVOFV", Request id "0HM0K4TCVVOFV:00000019": An unhandled exception was thrown by the application.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Utilities.DisposableExtensions.DisposeAsyncIfAvailable(IDisposable disposable)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<>c__DisplayClass15_0.<<DisposeAsync>g__Await|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Autofac.Core.Disposer.DisposeAsync(Boolean disposing)
+   at Autofac.Core.Lifetime.LifetimeScope.DisposeAsync(Boolean disposing)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.DisposeAsync()
+   at Autofac.Extensions.DependencyInjection.AutofacServiceScope.DisposeAsync()
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FireOnCompletedAwaited(Task currentTask, Stack`1 onCompleted)
+2020-06-19 16:06:21.019 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 16:06:21.021 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 16:07:10.746 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 16:07:10.749 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 16:09:41.538 +08:00 [ERR] Connection id "0HM0K4V1EIM1P", Request id "0HM0K4V1EIM1P:00000010": An unhandled exception was thrown by the application.
+System.InvalidOperationException: There is already an open DataReader associated with this Command which must be closed first.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Utilities.DisposableExtensions.DisposeAsyncIfAvailable(IDisposable disposable)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<>c__DisplayClass15_0.<<DisposeAsync>g__Await|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Autofac.Core.Disposer.DisposeAsync(Boolean disposing)
+   at Autofac.Core.Lifetime.LifetimeScope.DisposeAsync(Boolean disposing)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.DisposeAsync()
+   at Autofac.Extensions.DependencyInjection.AutofacServiceScope.DisposeAsync()
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FireOnCompletedAwaited(Task currentTask, Stack`1 onCompleted)
+2020-06-19 16:15:58.674 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 16:15:58.676 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 16:30:40.072 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 16:30:40.075 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-19 16:33:25.784 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-19 16:33:25.786 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home

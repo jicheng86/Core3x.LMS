@@ -8,7 +8,7 @@ namespace LMS.Web.Models
     /// <summary>
     /// 常用常量
     /// </summary>
-    public static class ConstantCollection
+    public static class Constant
     {
         /// <summary>
         /// MIME Types Name. 
@@ -313,5 +313,10 @@ namespace LMS.Web.Models
             ///<summary>ZIP archive files; Registered[7]</summary>
             public const string ApplicationZip = "application/zip";
         }
+
+        /// <summary>
+        /// 特别行政区AreaID 
+        /// </summary>
+        public static List<int> SpecialAdministrativeRegionAreaID = new List<int> { 35925, 35945 };
     }
 }
