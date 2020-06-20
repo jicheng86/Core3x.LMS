@@ -1,0 +1,1293 @@
+﻿2020-06-20 13:45:21.415 +08:00 [INF] Starting up Successful
+2020-06-20 13:45:23.793 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-20 13:45:24.458 +08:00 [INF] Now listening on: http://localhost:8001
+2020-06-20 13:45:24.459 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-06-20 13:45:24.460 +08:00 [INF] Hosting environment: Development
+2020-06-20 13:45:24.460 +08:00 [INF] Content root path: F:\DotNetProjects\LMS\LMS.Web
+2020-06-20 13:45:29.303 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-06-20 13:45:29.353 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 13:45:29.418 +08:00 [INF] Route matched with {action = "Home", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 13:45:29.509 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Home (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:45:29.512 +08:00 [INF] 记录LogInformation日志,发生在Homes/Home
+2020-06-20 13:45:29.512 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-20 13:45:29.514 +08:00 [WRN] 记录LogWarning日志,发生在Homes/Home
+2020-06-20 13:45:29.515 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-20 13:45:29.520 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.3194ms.
+2020-06-20 13:45:29.583 +08:00 [INF] Executing ViewResult, running view Home.
+2020-06-20 13:45:29.822 +08:00 [INF] Executed ViewResult - view Home executed in 261.7068ms.
+2020-06-20 13:45:29.823 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Home (LMS.Web) in 402.4433ms
+2020-06-20 13:45:29.823 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 13:45:29.835 +08:00 [INF] Request finished in 535.6493ms 200 text/html; charset=utf-8
+2020-06-20 13:45:29.898 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-06-20 13:45:29.898 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-06-20 13:45:29.898 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/layui.css  
+2020-06-20 13:45:29.898 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-06-20 13:45:29.921 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-06-20 13:45:29.936 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/profile_small.jpg  
+2020-06-20 13:45:29.949 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a7.jpg  
+2020-06-20 13:45:29.956 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a4.jpg  
+2020-06-20 13:45:29.962 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-20 13:45:29.987 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a1.jpg  
+2020-06-20 13:45:30.007 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/layui.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\layui.css'
+2020-06-20 13:45:30.007 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap\v3.3.6\css\bootstrap.css'
+2020-06-20 13:45:30.012 +08:00 [INF] Request finished in 113.795ms 200 text/css
+2020-06-20 13:45:30.018 +08:00 [INF] Request finished in 55.6065ms 200 text/css
+2020-06-20 13:45:30.019 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-20 13:45:30.020 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-06-20 13:45:30.026 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap\v3.3.6\js\bootstrap.js'
+2020-06-20 13:45:30.031 +08:00 [INF] Request finished in 11.4817ms 200 application/javascript
+2020-06-20 13:45:30.034 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-06-20 13:45:30.041 +08:00 [INF] Sending file. Request path: '/img/profile_small.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\profile_small.jpg'
+2020-06-20 13:45:30.044 +08:00 [INF] Request finished in 110.6435ms 200 image/jpeg
+2020-06-20 13:45:30.046 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-06-20 13:45:30.051 +08:00 [INF] Sending file. Request path: '/img/a4.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a4.jpg'
+2020-06-20 13:45:30.055 +08:00 [INF] Sending file. Request path: '/img/a7.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a7.jpg'
+2020-06-20 13:45:30.056 +08:00 [INF] Sending file. Request path: '/img/a1.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a1.jpg'
+2020-06-20 13:45:30.055 +08:00 [INF] Request finished in 97.3282ms 200 image/jpeg
+2020-06-20 13:45:30.058 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-06-20 13:45:30.058 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\site.css'
+2020-06-20 13:45:30.061 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-06-20 13:45:30.065 +08:00 [INF] Request finished in 118.4962ms 200 image/jpeg
+2020-06-20 13:45:30.067 +08:00 [INF] Request finished in 79.1789ms 200 image/jpeg
+2020-06-20 13:45:30.069 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/layui.all.js  
+2020-06-20 13:45:30.071 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-06-20 13:45:30.079 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-06-20 13:45:30.072 +08:00 [INF] Request finished in 37.486ms 200 application/javascript
+2020-06-20 13:45:30.077 +08:00 [INF] Request finished in 30.8838ms 200 application/javascript
+2020-06-20 13:45:30.081 +08:00 [INF] Request finished in 182.9645ms 200 text/css
+2020-06-20 13:45:30.079 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-06-20 13:45:30.074 +08:00 [INF] Request finished in 154.2926ms 200 text/css
+2020-06-20 13:45:30.082 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/publics.js  
+2020-06-20 13:45:30.083 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a3.jpg  
+2020-06-20 13:45:30.083 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a2.jpg  
+2020-06-20 13:45:30.086 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/layui.all.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\layui.all.js'
+2020-06-20 13:45:30.091 +08:00 [INF] Sending file. Request path: '/js/public/publics.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\publics.js'
+2020-06-20 13:45:30.091 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-06-20 13:45:30.093 +08:00 [INF] Sending file. Request path: '/img/a2.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a2.jpg'
+2020-06-20 13:45:30.093 +08:00 [INF] Request finished in 23.5559ms 200 application/javascript
+2020-06-20 13:45:30.086 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\style.css'
+2020-06-20 13:45:30.089 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-06-20 13:45:30.094 +08:00 [INF] Request finished in 12.0011ms 200 application/javascript
+2020-06-20 13:45:30.094 +08:00 [INF] Sending file. Request path: '/img/a3.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a3.jpg'
+2020-06-20 13:45:30.096 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-06-20 13:45:30.095 +08:00 [INF] Request finished in 75.4082ms 200 application/javascript
+2020-06-20 13:45:30.096 +08:00 [INF] Request finished in 13.021ms 200 image/jpeg
+2020-06-20 13:45:30.100 +08:00 [INF] Request finished in 201.8417ms 200 text/css
+2020-06-20 13:45:30.103 +08:00 [INF] Request finished in 20.0564ms 200 image/jpeg
+2020-06-20 13:45:30.104 +08:00 [INF] Request finished in 24.8265ms 200 application/javascript
+2020-06-20 13:45:30.108 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a8.jpg  
+2020-06-20 13:45:30.108 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-06-20 13:45:30.110 +08:00 [INF] Sending file. Request path: '/img/a8.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a8.jpg'
+2020-06-20 13:45:30.114 +08:00 [INF] Request finished in 24.4595ms 200 application/javascript
+2020-06-20 13:45:30.115 +08:00 [INF] Request finished in 7.7921ms 200 image/jpeg
+2020-06-20 13:45:30.116 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-06-20 13:45:30.117 +08:00 [INF] Request finished in 37.7533ms 200 application/javascript
+2020-06-20 13:45:30.141 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-06-20 13:45:30.143 +08:00 [INF] Request finished in 244.8773ms 200 text/css
+2020-06-20 13:45:30.181 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Homes/Index  
+2020-06-20 13:45:30.186 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 13:45:30.191 +08:00 [INF] Route matched with {action = "Index", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 13:45:30.219 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Index (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:45:30.220 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2967ms.
+2020-06-20 13:45:30.225 +08:00 [INF] Executing ViewResult, running view Index.
+2020-06-20 13:45:30.242 +08:00 [INF] Executed ViewResult - view Index executed in 18.1649ms.
+2020-06-20 13:45:30.242 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Index (LMS.Web) in 49.1042ms
+2020-06-20 13:45:30.245 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 13:45:30.247 +08:00 [INF] Request finished in 65.7064ms 200 text/html; charset=utf-8
+2020-06-20 13:45:30.261 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css?v=5.0.9  
+2020-06-20 13:45:30.263 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\laydate\default\laydate.css'
+2020-06-20 13:45:30.264 +08:00 [INF] Request finished in 2.8138ms 200 text/css
+2020-06-20 13:45:30.291 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css?v=3.1.1  
+2020-06-20 13:45:30.292 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\layer\default\layer.css'
+2020-06-20 13:45:30.294 +08:00 [INF] Request finished in 3.4539ms 200 text/css
+2020-06-20 13:45:30.310 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/code.css  
+2020-06-20 13:45:30.311 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/code.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\code.css'
+2020-06-20 13:45:30.314 +08:00 [INF] Request finished in 3.7983ms 200 text/css
+2020-06-20 13:45:30.324 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/qr_code.png  
+2020-06-20 13:45:30.326 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/pay.png  
+2020-06-20 13:45:30.327 +08:00 [INF] Sending file. Request path: '/img/qr_code.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\qr_code.png'
+2020-06-20 13:45:30.329 +08:00 [INF] Request finished in 5.3218ms 200 image/png
+2020-06-20 13:45:30.353 +08:00 [INF] Sending file. Request path: '/img/pay.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\pay.png'
+2020-06-20 13:45:30.356 +08:00 [INF] Request finished in 30.8324ms 200 image/png
+2020-06-20 13:45:30.423 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.eot?  
+2020-06-20 13:45:30.445 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.eot'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.eot'
+2020-06-20 13:45:30.448 +08:00 [INF] Request finished in 25.5411ms 200 application/vnd.ms-fontobject
+2020-06-20 13:45:30.580 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile.png  
+2020-06-20 13:45:30.580 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-1.png  
+2020-06-20 13:45:30.582 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-3.png  
+2020-06-20 13:45:30.582 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\patterns\header-profile.png'
+2020-06-20 13:45:30.585 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-1.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-1.png'
+2020-06-20 13:45:30.586 +08:00 [INF] Request finished in 6.3956ms 200 image/png
+2020-06-20 13:45:30.588 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-3.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-3.png'
+2020-06-20 13:45:30.590 +08:00 [INF] Request finished in 9.1399ms 200 image/png
+2020-06-20 13:45:30.596 +08:00 [INF] Request finished in 13.8514ms 200 image/png
+2020-06-20 13:45:30.724 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/favicon.ico  
+2020-06-20 13:45:30.727 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\favicon.ico'
+2020-06-20 13:45:30.732 +08:00 [INF] Request finished in 8.7471ms 200 image/x-icon
+2020-06-20 13:45:48.884 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Corporation/Creation  
+2020-06-20 13:45:48.893 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:45:48.910 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(Int32) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:45:49.457 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:45:50.240 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:45:50.825 +08:00 [INF] Executed DbCommand (65ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:45:50.856 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1397.0049ms.
+2020-06-20 13:45:50.864 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:45:50.956 +08:00 [INF] Executed ViewResult - view Creation executed in 94.4445ms.
+2020-06-20 13:45:50.957 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 2043.9692ms
+2020-06-20 13:45:50.961 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:45:50.969 +08:00 [INF] Request finished in 2085.0579ms 200 text/html; charset=utf-8
+2020-06-20 13:45:50.984 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/content.js?v=1.0  
+2020-06-20 13:45:50.984 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/css/bootstrap-select.css  
+2020-06-20 13:45:50.986 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/bootstrap-select.js  
+2020-06-20 13:45:50.988 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/i18n/defaults-zh_CN.js  
+2020-06-20 13:45:51.005 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js  
+2020-06-20 13:45:51.013 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/css/bootstrap-select.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\css\bootstrap-select.css'
+2020-06-20 13:45:51.028 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js  
+2020-06-20 13:45:51.005 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css  
+2020-06-20 13:45:51.013 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/js/i18n/defaults-zh_CN.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\js\i18n\defaults-zh_CN.js'
+2020-06-20 13:45:51.039 +08:00 [INF] Request finished in 54.82ms 200 text/css
+2020-06-20 13:45:51.039 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.form/jquery.form.js  
+2020-06-20 13:45:51.059 +08:00 [INF] Sending file. Request path: '/lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.bootstrapvalidator\v0.5.3\js\language\zh_CN.js'
+2020-06-20 13:45:51.063 +08:00 [INF] Sending file. Request path: '/lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.bootstrapvalidator\v0.5.3\js\bootstrapValidator.js'
+2020-06-20 13:45:51.059 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/js/bootstrap-select.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\js\bootstrap-select.js'
+2020-06-20 13:45:51.077 +08:00 [INF] Request finished in 73.0793ms 200 application/javascript
+2020-06-20 13:45:51.077 +08:00 [INF] Request finished in 62.1019ms 200 application/javascript
+2020-06-20 13:45:51.059 +08:00 [INF] Sending file. Request path: '/lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.bootstrapvalidator\v0.5.3\css\bootstrapValidator.css'
+2020-06-20 13:45:51.058 +08:00 [INF] Request finished in 55.2774ms 200 application/javascript
+2020-06-20 13:45:51.059 +08:00 [INF] Sending file. Request path: '/js/public/content.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\content.js'
+2020-06-20 13:45:51.038 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/Corporation/Creation.js  
+2020-06-20 13:45:51.078 +08:00 [INF] Sending file. Request path: '/lib/jquery.form/jquery.form.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.form\jquery.form.js'
+2020-06-20 13:45:51.082 +08:00 [INF] Request finished in 95.7901ms 200 application/javascript
+2020-06-20 13:45:51.088 +08:00 [INF] Request finished in 83.4262ms 200 text/css
+2020-06-20 13:45:51.089 +08:00 [INF] Request finished in 105.9177ms 200 application/javascript
+2020-06-20 13:45:51.091 +08:00 [INF] Sending file. Request path: '/js/Corporation/Creation.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\Corporation\Creation.js'
+2020-06-20 13:45:51.091 +08:00 [INF] Request finished in 52.5192ms 200 application/javascript
+2020-06-20 13:45:51.094 +08:00 [INF] Request finished in 55.4229ms 200 application/javascript
+2020-06-20 13:46:03.293 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif  
+2020-06-20 13:46:03.294 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=---------------------------7e411d310aba 888
+2020-06-20 13:46:03.296 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\layer\default\loading-0.gif'
+2020-06-20 13:46:03.300 +08:00 [INF] Request finished in 7.5928ms 200 image/gif
+2020-06-20 13:46:03.302 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:46:03.318 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:46:03.395 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:46:03.402 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 3.967ms.
+2020-06-20 13:46:03.411 +08:00 [INF] Executing JsonResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:46:03.532 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 211.864ms
+2020-06-20 13:46:03.533 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:46:03.535 +08:00 [INF] Request finished in 241.2765ms 200 application/json; charset=utf-8
+2020-06-20 13:46:03.554 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png  
+2020-06-20 13:46:03.556 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\layer\default\icon.png'
+2020-06-20 13:46:03.560 +08:00 [INF] Request finished in 5.3947ms 200 image/png
+2020-06-20 13:49:54.425 +08:00 [INF] Starting up Successful
+2020-06-20 13:49:55.504 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-20 13:49:55.894 +08:00 [INF] Now listening on: http://localhost:8001
+2020-06-20 13:49:55.894 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-06-20 13:49:55.895 +08:00 [INF] Hosting environment: Development
+2020-06-20 13:49:55.895 +08:00 [INF] Content root path: F:\DotNetProjects\LMS\LMS.Web
+2020-06-20 13:50:27.533 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-06-20 13:50:27.636 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 13:50:27.701 +08:00 [INF] Route matched with {action = "Home", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 13:50:27.789 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Home (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:27.792 +08:00 [INF] 记录LogInformation日志,发生在Homes/Home
+2020-06-20 13:50:27.826 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-20 13:50:27.830 +08:00 [WRN] 记录LogWarning日志,发生在Homes/Home
+2020-06-20 13:50:27.830 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-20 13:50:27.858 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 41.2407ms.
+2020-06-20 13:50:27.923 +08:00 [INF] Executing ViewResult, running view Home.
+2020-06-20 13:50:28.119 +08:00 [INF] Executed ViewResult - view Home executed in 219ms.
+2020-06-20 13:50:28.120 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Home (LMS.Web) in 417.214ms
+2020-06-20 13:50:28.121 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 13:50:28.136 +08:00 [INF] Request finished in 618.9051ms 200 text/html; charset=utf-8
+2020-06-20 13:50:28.181 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/animate.css  
+2020-06-20 13:50:28.181 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/css/font-awesome.css  
+2020-06-20 13:50:28.191 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/layui.css  
+2020-06-20 13:50:28.191 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/style.css?v=4.9.0  
+2020-06-20 13:50:28.192 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/site.css  
+2020-06-20 13:50:28.221 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-20 13:50:28.263 +08:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\site.css'
+2020-06-20 13:50:28.265 +08:00 [INF] Sending file. Request path: '/css/style.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\style.css'
+2020-06-20 13:50:28.269 +08:00 [INF] Request finished in 76.0099ms 200 text/css
+2020-06-20 13:50:28.265 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/layui.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\layui.css'
+2020-06-20 13:50:28.265 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/css/font-awesome.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\css\font-awesome.css'
+2020-06-20 13:50:28.271 +08:00 [INF] Sending file. Request path: '/css/animate.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\animate.css'
+2020-06-20 13:50:28.271 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Homes/Index  
+2020-06-20 13:50:28.272 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/v3.3.6/css/bootstrap.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap\v3.3.6\css\bootstrap.css'
+2020-06-20 13:50:28.272 +08:00 [INF] Request finished in 80.8789ms 200 text/css
+2020-06-20 13:50:28.273 +08:00 [INF] Request finished in 82.0093ms 200 text/css
+2020-06-20 13:50:28.274 +08:00 [INF] Request finished in 93.5274ms 200 text/css
+2020-06-20 13:50:28.281 +08:00 [INF] Request finished in 59.1215ms 200 text/css
+2020-06-20 13:50:28.277 +08:00 [INF] Request finished in 96.4527ms 200 text/css
+2020-06-20 13:50:28.281 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-20 13:50:28.283 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 13:50:28.283 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jQuery.metisMenu/metisMenu.js?v=1.1.3  
+2020-06-20 13:50:28.284 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery-slimScroll/jquery.slimscroll.js?v=1.3.0  
+2020-06-20 13:50:28.289 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/layui.all.js  
+2020-06-20 13:50:28.283 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery/v2.1.4/dist/jquery.js  
+2020-06-20 13:50:28.295 +08:00 [INF] Sending file. Request path: '/lib/jQuery.metisMenu/metisMenu.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jQuery.metisMenu\metisMenu.js'
+2020-06-20 13:50:28.296 +08:00 [INF] Route matched with {action = "Index", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 13:50:28.298 +08:00 [INF] Request finished in 14.8249ms 200 application/javascript
+2020-06-20 13:50:28.294 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/v3.3.6/js/bootstrap.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap\v3.3.6\js\bootstrap.js'
+2020-06-20 13:50:28.296 +08:00 [INF] Sending file. Request path: '/lib/jquery-slimScroll/jquery.slimscroll.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery-slimScroll\jquery.slimscroll.js'
+2020-06-20 13:50:28.301 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/layui.all.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\layui.all.js'
+2020-06-20 13:50:28.300 +08:00 [INF] Sending file. Request path: '/lib/jquery/v2.1.4/dist/jquery.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery\v2.1.4\dist\jquery.js'
+2020-06-20 13:50:28.341 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Index (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:28.343 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/contabs.js?v=4.9.0  
+2020-06-20 13:50:28.346 +08:00 [INF] Request finished in 64.6077ms 200 application/javascript
+2020-06-20 13:50:28.356 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2511ms.
+2020-06-20 13:50:28.348 +08:00 [INF] Request finished in 63.7046ms 200 application/javascript
+2020-06-20 13:50:28.350 +08:00 [INF] Request finished in 61.1082ms 200 application/javascript
+2020-06-20 13:50:28.353 +08:00 [INF] Request finished in 70.8587ms 200 application/javascript
+2020-06-20 13:50:28.358 +08:00 [INF] Sending file. Request path: '/js/public/contabs.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\contabs.js'
+2020-06-20 13:50:28.359 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/hplus.js?v=4.9.0  
+2020-06-20 13:50:28.361 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/pace/v0.5.1/pace.js  
+2020-06-20 13:50:28.361 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/profile_small.jpg  
+2020-06-20 13:50:28.362 +08:00 [INF] Executing ViewResult, running view Index.
+2020-06-20 13:50:28.365 +08:00 [INF] Sending file. Request path: '/js/public/hplus.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\hplus.js'
+2020-06-20 13:50:28.363 +08:00 [INF] Request finished in 20.14ms 200 application/javascript
+2020-06-20 13:50:28.362 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/publics.js  
+2020-06-20 13:50:28.370 +08:00 [INF] Sending file. Request path: '/lib/pace/v0.5.1/pace.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\pace\v0.5.1\pace.js'
+2020-06-20 13:50:28.376 +08:00 [INF] Request finished in 16.9172ms 200 application/javascript
+2020-06-20 13:50:28.374 +08:00 [INF] Sending file. Request path: '/img/profile_small.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\profile_small.jpg'
+2020-06-20 13:50:28.376 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a7.jpg  
+2020-06-20 13:50:28.380 +08:00 [INF] Sending file. Request path: '/js/public/publics.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\publics.js'
+2020-06-20 13:50:28.382 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a4.jpg  
+2020-06-20 13:50:28.381 +08:00 [INF] Request finished in 20.5769ms 200 application/javascript
+2020-06-20 13:50:28.389 +08:00 [INF] Request finished in 27.6874ms 200 image/jpeg
+2020-06-20 13:50:28.393 +08:00 [INF] Sending file. Request path: '/img/a7.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a7.jpg'
+2020-06-20 13:50:28.405 +08:00 [INF] Request finished in 28.282ms 200 image/jpeg
+2020-06-20 13:50:28.397 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a1.jpg  
+2020-06-20 13:50:28.397 +08:00 [INF] Sending file. Request path: '/img/a4.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a4.jpg'
+2020-06-20 13:50:28.404 +08:00 [INF] Executed ViewResult - view Index executed in 43.7999ms.
+2020-06-20 13:50:28.398 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a2.jpg  
+2020-06-20 13:50:28.407 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a8.jpg  
+2020-06-20 13:50:28.395 +08:00 [INF] Request finished in 32.9902ms 200 application/javascript
+2020-06-20 13:50:28.413 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Index (LMS.Web) in 111.594ms
+2020-06-20 13:50:28.410 +08:00 [INF] Request finished in 27.9993ms 200 image/jpeg
+2020-06-20 13:50:28.414 +08:00 [INF] Sending file. Request path: '/img/a2.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a2.jpg'
+2020-06-20 13:50:28.427 +08:00 [INF] Request finished in 29.6923ms 200 image/jpeg
+2020-06-20 13:50:28.423 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/a3.jpg  
+2020-06-20 13:50:28.423 +08:00 [INF] Sending file. Request path: '/img/a1.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a1.jpg'
+2020-06-20 13:50:28.423 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 13:50:28.425 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile.png  
+2020-06-20 13:50:28.440 +08:00 [INF] Request finished in 168.7141ms 200 text/html; charset=utf-8
+2020-06-20 13:50:28.441 +08:00 [INF] Sending file. Request path: '/img/a3.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a3.jpg'
+2020-06-20 13:50:28.440 +08:00 [INF] Request finished in 42.9527ms 200 image/jpeg
+2020-06-20 13:50:28.431 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-1.png  
+2020-06-20 13:50:28.414 +08:00 [INF] Sending file. Request path: '/img/a8.jpg'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\a8.jpg'
+2020-06-20 13:50:28.447 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\patterns\header-profile.png'
+2020-06-20 13:50:28.447 +08:00 [INF] Request finished in 24.4041ms 200 image/jpeg
+2020-06-20 13:50:28.452 +08:00 [INF] Request finished in 44.1562ms 200 image/jpeg
+2020-06-20 13:50:28.453 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-1.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-1.png'
+2020-06-20 13:50:28.457 +08:00 [INF] Request finished in 31.2417ms 200 image/png
+2020-06-20 13:50:28.460 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/css/patterns/header-profile-skin-3.png  
+2020-06-20 13:50:28.461 +08:00 [INF] Request finished in 30.1097ms 200 image/png
+2020-06-20 13:50:28.463 +08:00 [INF] Sending file. Request path: '/css/patterns/header-profile-skin-3.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\css\patterns\header-profile-skin-3.png'
+2020-06-20 13:50:28.465 +08:00 [INF] Request finished in 4.9465ms 200 image/png
+2020-06-20 13:50:28.555 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2?v=4.4.0  
+2020-06-20 13:50:28.589 +08:00 [INF] Sending file. Request path: '/lib/font-awesome/v4.4.0/fonts/fontawesome-webfont.woff2'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\font-awesome\v4.4.0\fonts\fontawesome-webfont.woff2'
+2020-06-20 13:50:28.593 +08:00 [INF] Request finished in 37.9977ms 200 font/woff2
+2020-06-20 13:50:28.660 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css?v=5.0.9  
+2020-06-20 13:50:28.664 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\laydate\default\laydate.css'
+2020-06-20 13:50:28.670 +08:00 [INF] Request finished in 9.6738ms 200 text/css
+2020-06-20 13:50:28.682 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css?v=3.1.1  
+2020-06-20 13:50:28.686 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\layer\default\layer.css'
+2020-06-20 13:50:28.692 +08:00 [INF] Request finished in 10.4259ms 200 text/css
+2020-06-20 13:50:28.697 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/code.css  
+2020-06-20 13:50:28.702 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/code.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\code.css'
+2020-06-20 13:50:28.704 +08:00 [INF] Request finished in 7.3895ms 200 text/css
+2020-06-20 13:50:28.775 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/qr_code.png  
+2020-06-20 13:50:28.775 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/img/pay.png  
+2020-06-20 13:50:28.780 +08:00 [INF] Sending file. Request path: '/img/qr_code.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\qr_code.png'
+2020-06-20 13:50:28.785 +08:00 [INF] Request finished in 9.773ms 200 image/png
+2020-06-20 13:50:28.787 +08:00 [INF] Sending file. Request path: '/img/pay.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\img\pay.png'
+2020-06-20 13:50:28.792 +08:00 [INF] Request finished in 16.4012ms 200 image/png
+2020-06-20 13:50:29.006 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/favicon.ico  
+2020-06-20 13:50:29.013 +08:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\favicon.ico'
+2020-06-20 13:50:29.019 +08:00 [INF] Request finished in 13.5446ms 200 image/x-icon
+2020-06-20 13:50:30.949 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Corporation/Creation  
+2020-06-20 13:50:30.954 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:30.975 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(Int32) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:31.412 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:32.038 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:50:32.525 +08:00 [INF] Executed DbCommand (68ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:50:32.846 +08:00 [INF] Executed DbCommand (110ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:50:32.857 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1443.4137ms.
+2020-06-20 13:50:32.860 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:32.956 +08:00 [INF] Executed ViewResult - view Creation executed in 96.5586ms.
+2020-06-20 13:50:32.956 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 1978.8298ms
+2020-06-20 13:50:32.958 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:32.970 +08:00 [INF] Request finished in 2020.9253ms 200 text/html; charset=utf-8
+2020-06-20 13:50:32.973 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/content.js?v=1.0  
+2020-06-20 13:50:32.974 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/css/bootstrap-select.css  
+2020-06-20 13:50:32.976 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/bootstrap-select.js  
+2020-06-20 13:50:32.977 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css  
+2020-06-20 13:50:32.977 +08:00 [INF] Sending file. Request path: '/js/public/content.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\public\content.js'
+2020-06-20 13:50:32.977 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/i18n/defaults-zh_CN.js  
+2020-06-20 13:50:32.977 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/css/bootstrap-select.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\css\bootstrap-select.css'
+2020-06-20 13:50:32.977 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js  
+2020-06-20 13:50:32.982 +08:00 [INF] Sending file. Request path: '/lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.bootstrapvalidator\v0.5.3\css\bootstrapValidator.css'
+2020-06-20 13:50:32.986 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/js/i18n/defaults-zh_CN.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\js\i18n\defaults-zh_CN.js'
+2020-06-20 13:50:32.989 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/js/bootstrap-select.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\js\bootstrap-select.js'
+2020-06-20 13:50:32.983 +08:00 [INF] Request finished in 10.1099ms 200 application/javascript
+2020-06-20 13:50:32.986 +08:00 [INF] Request finished in 11.954ms 200 text/css
+2020-06-20 13:50:32.990 +08:00 [INF] Sending file. Request path: '/lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.bootstrapvalidator\v0.5.3\js\bootstrapValidator.js'
+2020-06-20 13:50:32.992 +08:00 [INF] Request finished in 14.8769ms 200 text/css
+2020-06-20 13:50:32.996 +08:00 [INF] Request finished in 18.8309ms 200 application/javascript
+2020-06-20 13:50:32.997 +08:00 [INF] Request finished in 21.9071ms 200 application/javascript
+2020-06-20 13:50:32.998 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js  
+2020-06-20 13:50:32.999 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.form/jquery.form.js  
+2020-06-20 13:50:33.000 +08:00 [INF] Request finished in 22.3138ms 200 application/javascript
+2020-06-20 13:50:33.002 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/Corporation/Creation.js  
+2020-06-20 13:50:33.011 +08:00 [INF] Sending file. Request path: '/lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.bootstrapvalidator\v0.5.3\js\language\zh_CN.js'
+2020-06-20 13:50:33.012 +08:00 [INF] Sending file. Request path: '/lib/jquery.form/jquery.form.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\jquery.form\jquery.form.js'
+2020-06-20 13:50:33.013 +08:00 [INF] Request finished in 15.1777ms 200 application/javascript
+2020-06-20 13:50:33.013 +08:00 [INF] Sending file. Request path: '/js/Corporation/Creation.js'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\js\Corporation\Creation.js'
+2020-06-20 13:50:33.014 +08:00 [INF] Request finished in 15.5431ms 200 application/javascript
+2020-06-20 13:50:33.022 +08:00 [INF] Request finished in 20.3685ms 200 application/javascript
+2020-06-20 13:50:34.078 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif  
+2020-06-20 13:50:34.081 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\layer\default\loading-0.gif'
+2020-06-20 13:50:34.090 +08:00 [INF] Request finished in 12.6861ms 200 image/gif
+2020-06-20 13:50:34.095 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryYfZmAECNAQM613XX 880
+2020-06-20 13:50:34.105 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:34.127 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:34.207 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:34.212 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2.5385ms.
+2020-06-20 13:50:34.220 +08:00 [INF] Executing JsonResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:50:34.336 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 206.7277ms
+2020-06-20 13:50:34.337 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:34.337 +08:00 [INF] Request finished in 242.8846ms 200 application/json; charset=utf-8
+2020-06-20 13:50:34.341 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png  
+2020-06-20 13:50:34.343 +08:00 [INF] Sending file. Request path: '/lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\layer\v2.5.6\dist\css\modules\layer\default\icon.png'
+2020-06-20 13:50:34.344 +08:00 [INF] Request finished in 2.8337ms 200 image/png
+2020-06-20 13:50:37.061 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 26
+2020-06-20 13:50:37.064 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:37.071 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 13:50:37.074 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/fonts/glyphicons-halflings-regular.woff2  
+2020-06-20 13:50:37.121 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:37.126 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/v3.3.6/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap\v3.3.6\fonts\glyphicons-halflings-regular.woff2'
+2020-06-20 13:50:37.128 +08:00 [INF] Request finished in 53.8433ms 200 font/woff2
+2020-06-20 13:50:37.174 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:50:37.189 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:50:37.225 +08:00 [INF] Executed DbCommand (22ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:50:37.229 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 106.2298ms.
+2020-06-20 13:50:37.242 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:50:37.260 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 187.4652ms
+2020-06-20 13:50:37.261 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:37.263 +08:00 [INF] Request finished in 202.6603ms 200 application/json; charset=utf-8
+2020-06-20 13:50:38.556 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 13:50:38.557 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:38.559 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 13:50:38.600 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:38.620 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:50:38.629 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:50:38.666 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:50:38.671 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.7151ms.
+2020-06-20 13:50:38.679 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:50:38.681 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 119.5058ms
+2020-06-20 13:50:38.683 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:38.685 +08:00 [INF] Request finished in 129.0549ms 200 application/json; charset=utf-8
+2020-06-20 13:50:42.279 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 13:50:42.281 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:42.285 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 13:50:42.326 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:42.336 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:50:42.344 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:50:42.389 +08:00 [INF] Executed DbCommand (27ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:50:42.399 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 70.6429ms.
+2020-06-20 13:50:42.406 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:50:42.408 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 120.5731ms
+2020-06-20 13:50:42.409 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:42.410 +08:00 [INF] Request finished in 131.3843ms 200 application/json; charset=utf-8
+2020-06-20 13:50:43.310 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary4YxLhMLcYguYNX40 892
+2020-06-20 13:50:43.312 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:43.317 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:43.368 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:43.370 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.1963ms.
+2020-06-20 13:50:43.373 +08:00 [INF] Executing JsonResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:50:43.374 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 49.2197ms
+2020-06-20 13:50:43.375 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:43.375 +08:00 [INF] Request finished in 65.2803ms 200 application/json; charset=utf-8
+2020-06-20 13:50:47.124 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarype3UJcJWIDRFM4De 896
+2020-06-20 13:50:47.125 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:47.128 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:47.169 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:47.171 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.278ms.
+2020-06-20 13:50:47.173 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:47.182 +08:00 [INF] Executed ViewResult - view Creation executed in 9.1282ms.
+2020-06-20 13:50:47.183 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 50.3278ms
+2020-06-20 13:50:47.184 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:47.189 +08:00 [INF] Request finished in 64.4949ms 200 text/html; charset=utf-8
+2020-06-20 13:50:48.698 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarytEIeIPpcBF7sDHh7 896
+2020-06-20 13:50:48.699 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:48.699 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:48.738 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:48.740 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1595ms.
+2020-06-20 13:50:48.748 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:48.756 +08:00 [INF] Executed ViewResult - view Creation executed in 9.3469ms.
+2020-06-20 13:50:48.757 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 52.8789ms
+2020-06-20 13:50:48.758 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:48.758 +08:00 [INF] Request finished in 60.9158ms 200 text/html; charset=utf-8
+2020-06-20 13:50:49.272 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryNSKiAWFRldarMDor 896
+2020-06-20 13:50:49.273 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.275 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:49.316 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:49.319 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1985ms.
+2020-06-20 13:50:49.323 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:49.334 +08:00 [INF] Executed ViewResult - view Creation executed in 11.577ms.
+2020-06-20 13:50:49.335 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 56.8772ms
+2020-06-20 13:50:49.335 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.337 +08:00 [INF] Request finished in 65.2082ms 200 text/html; charset=utf-8
+2020-06-20 13:50:49.469 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary8iIdXIeh6HwgqLnA 896
+2020-06-20 13:50:49.469 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.473 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:49.509 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:49.512 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4794ms.
+2020-06-20 13:50:49.515 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:49.525 +08:00 [INF] Executed ViewResult - view Creation executed in 9.5401ms.
+2020-06-20 13:50:49.525 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 50.053ms
+2020-06-20 13:50:49.526 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.529 +08:00 [INF] Request finished in 60.2609ms 200 text/html; charset=utf-8
+2020-06-20 13:50:49.656 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarykTqg3LgDravkqBYY 896
+2020-06-20 13:50:49.658 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.662 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:49.700 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:49.702 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1112ms.
+2020-06-20 13:50:49.705 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:49.710 +08:00 [INF] Executed ViewResult - view Creation executed in 4.7151ms.
+2020-06-20 13:50:49.711 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 47.9025ms
+2020-06-20 13:50:49.714 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.716 +08:00 [INF] Request finished in 59.444ms 200 text/html; charset=utf-8
+2020-06-20 13:50:49.837 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryx8gH0HaQWf4ksVAd 896
+2020-06-20 13:50:49.838 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.840 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:49.924 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:49.926 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1745ms.
+2020-06-20 13:50:49.929 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:49.933 +08:00 [INF] Executed ViewResult - view Creation executed in 4.3218ms.
+2020-06-20 13:50:49.934 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 91.3596ms
+2020-06-20 13:50:49.941 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:49.943 +08:00 [INF] Request finished in 105.5619ms 200 text/html; charset=utf-8
+2020-06-20 13:50:50.202 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryP98spNbP5bATAzM5 896
+2020-06-20 13:50:50.203 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:50.206 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:50.244 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:50:50.250 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.366ms.
+2020-06-20 13:50:50.254 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:50.259 +08:00 [INF] Executed ViewResult - view Creation executed in 5.0436ms.
+2020-06-20 13:50:50.259 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 51.3775ms
+2020-06-20 13:50:50.261 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:50.264 +08:00 [INF] Request finished in 61.7029ms 200 text/html; charset=utf-8
+2020-06-20 13:50:54.872 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Corporation/Creation  
+2020-06-20 13:50:54.873 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:54.877 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(Int32) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:50:54.910 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:54.913 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:50:54.916 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:50:54.936 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:50:54.943 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 31.8808ms.
+2020-06-20 13:50:54.945 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:50:54.948 +08:00 [INF] Executed ViewResult - view Creation executed in 3.7581ms.
+2020-06-20 13:50:54.950 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 68.3766ms
+2020-06-20 13:50:54.951 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:50:54.956 +08:00 [INF] Request finished in 83.0198ms 200 text/html; charset=utf-8
+2020-06-20 13:50:58.583 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 26
+2020-06-20 13:50:58.584 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:58.588 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 13:50:58.631 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:58.634 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:50:58.638 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:50:58.684 +08:00 [INF] Executed DbCommand (29ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:50:58.689 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 55.6658ms.
+2020-06-20 13:50:58.691 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:50:58.692 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 98.421ms
+2020-06-20 13:50:58.697 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:58.700 +08:00 [INF] Request finished in 116.3604ms 200 application/json; charset=utf-8
+2020-06-20 13:50:59.791 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 13:50:59.792 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:59.794 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 13:50:59.831 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:50:59.834 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:50:59.839 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:50:59.872 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:50:59.876 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.9936ms.
+2020-06-20 13:50:59.883 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:50:59.890 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 91.3708ms
+2020-06-20 13:50:59.892 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:50:59.897 +08:00 [INF] Request finished in 106.356ms 200 application/json; charset=utf-8
+2020-06-20 13:51:00.870 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 13:51:00.871 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:51:00.872 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 13:51:00.911 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 13:51:00.917 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 13:51:00.922 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 13:51:00.952 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 13:51:00.957 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 43.131ms.
+2020-06-20 13:51:00.961 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 13:51:00.965 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 87.8503ms
+2020-06-20 13:51:00.969 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 13:51:00.972 +08:00 [INF] Request finished in 102.3015ms 200 application/json; charset=utf-8
+2020-06-20 13:51:03.406 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarywqlwcdCBNSe9nZA5 896
+2020-06-20 13:51:03.407 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:03.411 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:51:03.454 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:51:03.455 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1454ms.
+2020-06-20 13:51:03.456 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:51:03.464 +08:00 [INF] Executed ViewResult - view Creation executed in 7.5115ms.
+2020-06-20 13:51:03.466 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 52.1761ms
+2020-06-20 13:51:03.467 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:03.469 +08:00 [INF] Request finished in 63.7176ms 200 text/html; charset=utf-8
+2020-06-20 13:51:04.086 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryDB4mcggm2mtQrCM7 896
+2020-06-20 13:51:04.087 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.089 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:51:04.126 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:51:04.129 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3059ms.
+2020-06-20 13:51:04.134 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:51:04.138 +08:00 [INF] Executed ViewResult - view Creation executed in 4.1352ms.
+2020-06-20 13:51:04.139 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 46.5835ms
+2020-06-20 13:51:04.140 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.142 +08:00 [INF] Request finished in 55.8379ms 200 text/html; charset=utf-8
+2020-06-20 13:51:04.264 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary2lbre4JgS5ZQF94z 896
+2020-06-20 13:51:04.265 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.268 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:51:04.317 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:51:04.320 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2789ms.
+2020-06-20 13:51:04.323 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:51:04.327 +08:00 [INF] Executed ViewResult - view Creation executed in 3.9913ms.
+2020-06-20 13:51:04.328 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 56.1858ms
+2020-06-20 13:51:04.334 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.337 +08:00 [INF] Request finished in 72.6327ms 200 text/html; charset=utf-8
+2020-06-20 13:51:04.398 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryhx9IgPMEBPeJALjj 896
+2020-06-20 13:51:04.399 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.399 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:51:04.440 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:51:04.441 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1878ms.
+2020-06-20 13:51:04.446 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:51:04.450 +08:00 [INF] Executed ViewResult - view Creation executed in 3.6915ms.
+2020-06-20 13:51:04.450 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 47.068ms
+2020-06-20 13:51:04.452 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.453 +08:00 [INF] Request finished in 54.9358ms 200 text/html; charset=utf-8
+2020-06-20 13:51:04.562 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryyMJk3T4mDg3nFfqf 896
+2020-06-20 13:51:04.563 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.566 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 13:51:04.601 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 13:51:04.603 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1313ms.
+2020-06-20 13:51:04.605 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 13:51:04.611 +08:00 [INF] Executed ViewResult - view Creation executed in 6.5339ms.
+2020-06-20 13:51:04.612 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 42.8686ms
+2020-06-20 13:51:04.615 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 13:51:04.617 +08:00 [INF] Request finished in 55.351ms 200 text/html; charset=utf-8
+2020-06-20 14:25:23.487 +08:00 [INF] Application is shutting down...
+2020-06-20 14:38:28.842 +08:00 [INF] Starting up Successful
+2020-06-20 14:38:30.212 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-20 14:38:30.738 +08:00 [INF] Now listening on: http://localhost:8001
+2020-06-20 14:38:30.739 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-06-20 14:38:30.739 +08:00 [INF] Hosting environment: Development
+2020-06-20 14:38:30.739 +08:00 [INF] Content root path: F:\DotNetProjects\LMS\LMS.Web
+2020-06-20 14:38:32.302 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-06-20 14:38:32.352 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 14:38:32.409 +08:00 [INF] Route matched with {action = "Home", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 14:38:32.628 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Home (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:38:32.631 +08:00 [INF] 记录LogInformation日志,发生在Homes/Home
+2020-06-20 14:38:32.632 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-20 14:38:32.668 +08:00 [WRN] 记录LogWarning日志,发生在Homes/Home
+2020-06-20 14:38:32.668 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-20 14:38:32.703 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 39.1883ms.
+2020-06-20 14:38:32.760 +08:00 [INF] Executing ViewResult, running view Home.
+2020-06-20 14:38:33.017 +08:00 [INF] Executed ViewResult - view Home executed in 272.2984ms.
+2020-06-20 14:38:33.018 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Home (LMS.Web) in 606.9231ms
+2020-06-20 14:38:33.018 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 14:38:33.034 +08:00 [INF] Request finished in 735.5624ms 200 text/html; charset=utf-8
+2020-06-20 14:38:33.037 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-20 14:38:33.077 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-20 14:38:33.078 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Homes/Index  
+2020-06-20 14:38:33.080 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/layui.all.js  
+2020-06-20 14:38:33.091 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/publics.js  
+2020-06-20 14:38:33.100 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/layui.css  
+2020-06-20 14:38:33.101 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 14:38:33.102 +08:00 [INF] Route matched with {action = "Index", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 14:38:33.105 +08:00 [INF] The file /lib/bootstrap/v3.3.6/js/bootstrap.js was not modified
+2020-06-20 14:38:33.105 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/layui.css was not modified
+2020-06-20 14:38:33.105 +08:00 [INF] The file /lib/bootstrap/v3.3.6/css/bootstrap.css was not modified
+2020-06-20 14:38:33.105 +08:00 [INF] The file /js/public/publics.js was not modified
+2020-06-20 14:38:33.105 +08:00 [INF] The file /lib/layer/v2.5.6/dist/layui.all.js was not modified
+2020-06-20 14:38:33.136 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Index (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:38:33.139 +08:00 [INF] Request finished in 55.7023ms 304 application/javascript
+2020-06-20 14:38:33.139 +08:00 [INF] Request finished in 38.3634ms 304 text/css
+2020-06-20 14:38:33.139 +08:00 [INF] Request finished in 101.9254ms 304 text/css
+2020-06-20 14:38:33.146 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3316ms.
+2020-06-20 14:38:33.140 +08:00 [INF] Request finished in 62.6861ms 304 application/javascript
+2020-06-20 14:38:33.145 +08:00 [INF] Request finished in 65.2204ms 304 application/javascript
+2020-06-20 14:38:33.154 +08:00 [INF] Executing ViewResult, running view Index.
+2020-06-20 14:38:33.167 +08:00 [INF] Executed ViewResult - view Index executed in 14.7217ms.
+2020-06-20 14:38:33.168 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Index (LMS.Web) in 64.0803ms
+2020-06-20 14:38:33.169 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 14:38:33.172 +08:00 [INF] Request finished in 93.9582ms 200 text/html; charset=utf-8
+2020-06-20 14:38:33.359 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css?v=5.0.9  
+2020-06-20 14:38:33.360 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css was not modified
+2020-06-20 14:38:33.362 +08:00 [INF] Request finished in 3.0005ms 304 text/css
+2020-06-20 14:38:33.374 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css?v=3.1.1  
+2020-06-20 14:38:33.375 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css was not modified
+2020-06-20 14:38:33.376 +08:00 [INF] Request finished in 2.0678ms 304 text/css
+2020-06-20 14:38:33.383 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/code.css  
+2020-06-20 14:38:33.384 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/code.css was not modified
+2020-06-20 14:38:33.385 +08:00 [INF] Request finished in 1.84ms 304 text/css
+2020-06-20 14:38:36.613 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Corporation/Creation  
+2020-06-20 14:38:36.617 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:36.638 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(Int32) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:37.295 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:38:38.172 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:38:39.260 +08:00 [INF] Executed DbCommand (394ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:38:39.568 +08:00 [INF] Executed DbCommand (102ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:38:39.576 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2279.2849ms.
+2020-06-20 14:38:39.579 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:38:39.811 +08:00 [INF] Executed ViewResult - view Creation executed in 233.424ms.
+2020-06-20 14:38:39.812 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 3164.1099ms
+2020-06-20 14:38:39.815 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:39.826 +08:00 [INF] Request finished in 3212.9813ms 200 text/html; charset=utf-8
+2020-06-20 14:38:39.832 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/css/bootstrap-select.css  
+2020-06-20 14:38:39.841 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css  
+2020-06-20 14:38:39.841 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/bootstrap-select.js  
+2020-06-20 14:38:39.857 +08:00 [INF] The file /lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css was not modified
+2020-06-20 14:38:39.857 +08:00 [INF] The file /lib/bootstrap-select/css/bootstrap-select.css was not modified
+2020-06-20 14:38:39.859 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js  
+2020-06-20 14:38:39.874 +08:00 [INF] Request finished in 32.5073ms 304 text/css
+2020-06-20 14:38:39.874 +08:00 [INF] Request finished in 41.7454ms 304 text/css
+2020-06-20 14:38:39.873 +08:00 [INF] The file /lib/bootstrap-select/js/bootstrap-select.js was not modified
+2020-06-20 14:38:39.859 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/i18n/defaults-zh_CN.js  
+2020-06-20 14:38:39.874 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js  
+2020-06-20 14:38:39.875 +08:00 [INF] The file /lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js was not modified
+2020-06-20 14:38:39.876 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.form/jquery.form.js  
+2020-06-20 14:38:39.877 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/Corporation/Creation.js  
+2020-06-20 14:38:39.880 +08:00 [INF] Request finished in 38.736ms 304 application/javascript
+2020-06-20 14:38:39.883 +08:00 [INF] The file /lib/bootstrap-select/js/i18n/defaults-zh_CN.js was not modified
+2020-06-20 14:38:39.883 +08:00 [INF] The file /lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js was not modified
+2020-06-20 14:38:39.884 +08:00 [INF] Request finished in 26.9053ms 304 application/javascript
+2020-06-20 14:38:39.885 +08:00 [INF] The file /js/Corporation/Creation.js was not modified
+2020-06-20 14:38:39.887 +08:00 [INF] Request finished in 12.8364ms 304 application/javascript
+2020-06-20 14:38:39.892 +08:00 [INF] Request finished in 15.2572ms 304 application/javascript
+2020-06-20 14:38:39.885 +08:00 [INF] The file /lib/jquery.form/jquery.form.js was not modified
+2020-06-20 14:38:39.886 +08:00 [INF] Request finished in 29.6825ms 304 application/javascript
+2020-06-20 14:38:39.895 +08:00 [INF] Request finished in 19.5381ms 304 application/javascript
+2020-06-20 14:38:43.711 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif  
+2020-06-20 14:38:43.714 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif was not modified
+2020-06-20 14:38:43.718 +08:00 [INF] Request finished in 6.5515ms 304 image/gif
+2020-06-20 14:38:43.726 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 26
+2020-06-20 14:38:43.726 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/fonts/glyphicons-halflings-regular.woff2  
+2020-06-20 14:38:43.729 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:43.729 +08:00 [INF] The file /lib/bootstrap/v3.3.6/fonts/glyphicons-halflings-regular.woff2 was not modified
+2020-06-20 14:38:43.731 +08:00 [INF] Request finished in 4.696ms 304 font/woff2
+2020-06-20 14:38:43.739 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 14:38:43.800 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:38:43.845 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:38:43.850 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:38:43.877 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:38:43.882 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 73.097ms.
+2020-06-20 14:38:43.895 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:38:44.115 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 371.4329ms
+2020-06-20 14:38:44.116 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:44.117 +08:00 [INF] Request finished in 391.4636ms 200 application/json; charset=utf-8
+2020-06-20 14:38:46.528 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 14:38:46.530 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:46.540 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 14:38:46.574 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:38:46.583 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:38:46.593 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:38:46.616 +08:00 [INF] Executed DbCommand (16ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:38:46.618 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.0483ms.
+2020-06-20 14:38:46.620 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:38:46.623 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 80.3315ms
+2020-06-20 14:38:46.624 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:46.625 +08:00 [INF] Request finished in 97.5754ms 200 application/json; charset=utf-8
+2020-06-20 14:38:48.313 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 14:38:48.316 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:48.319 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 14:38:48.359 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:38:48.362 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:38:48.367 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:38:48.390 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:38:48.392 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.9716ms.
+2020-06-20 14:38:48.395 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:38:48.397 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 76.252ms
+2020-06-20 14:38:48.398 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:48.399 +08:00 [INF] Request finished in 85.4486ms 200 application/json; charset=utf-8
+2020-06-20 14:38:50.597 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryknnIbZtHyxEwWFNd 896
+2020-06-20 14:38:50.602 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:50.622 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:50.697 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:38:50.702 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.0268ms.
+2020-06-20 14:38:50.705 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:38:50.721 +08:00 [INF] Executed ViewResult - view Creation executed in 16.3586ms.
+2020-06-20 14:38:50.722 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 92.8686ms
+2020-06-20 14:38:50.724 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:50.727 +08:00 [INF] Request finished in 130.3154ms 200 text/html; charset=utf-8
+2020-06-20 14:38:51.695 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryRFHwYmFZ0ZyIcqPN 896
+2020-06-20 14:38:51.697 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:51.698 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:51.736 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:38:51.739 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1841ms.
+2020-06-20 14:38:51.742 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:38:51.746 +08:00 [INF] Executed ViewResult - view Creation executed in 4.1315ms.
+2020-06-20 14:38:51.746 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 44.7898ms
+2020-06-20 14:38:51.747 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:51.749 +08:00 [INF] Request finished in 54.4938ms 200 text/html; charset=utf-8
+2020-06-20 14:38:52.281 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryB4U1I8n4L93LGXpi 896
+2020-06-20 14:38:52.282 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:52.291 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:52.330 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:38:52.333 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3039ms.
+2020-06-20 14:38:52.337 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:38:52.348 +08:00 [INF] Executed ViewResult - view Creation executed in 11.7517ms.
+2020-06-20 14:38:52.349 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 52.5854ms
+2020-06-20 14:38:52.354 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:52.357 +08:00 [INF] Request finished in 75.9457ms 200 text/html; charset=utf-8
+2020-06-20 14:38:52.683 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryuP6t0w6vWrBAKMu0 896
+2020-06-20 14:38:52.685 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:52.691 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:52.731 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:38:52.738 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7355ms.
+2020-06-20 14:38:52.742 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:38:52.745 +08:00 [INF] Executed ViewResult - view Creation executed in 3.1861ms.
+2020-06-20 14:38:52.746 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 52.7587ms
+2020-06-20 14:38:52.747 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:52.749 +08:00 [INF] Request finished in 65.5334ms 200 text/html; charset=utf-8
+2020-06-20 14:38:53.275 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryAcRADCtzoCwBn2PS 896
+2020-06-20 14:38:53.277 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:53.279 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:53.321 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:38:53.323 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1562ms.
+2020-06-20 14:38:53.325 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:38:53.328 +08:00 [INF] Executed ViewResult - view Creation executed in 2.9266ms.
+2020-06-20 14:38:53.329 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 46.1101ms
+2020-06-20 14:38:53.329 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:53.330 +08:00 [INF] Request finished in 55.3149ms 200 text/html; charset=utf-8
+2020-06-20 14:38:54.070 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary6n6n2B8yf3tMuYcc 896
+2020-06-20 14:38:54.071 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:54.074 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:54.112 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:38:54.114 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1806ms.
+2020-06-20 14:38:54.121 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:38:54.127 +08:00 [INF] Executed ViewResult - view Creation executed in 6.1474ms.
+2020-06-20 14:38:54.128 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 51.7388ms
+2020-06-20 14:38:54.131 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:54.132 +08:00 [INF] Request finished in 61.906ms 200 text/html; charset=utf-8
+2020-06-20 14:38:57.974 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 14:38:57.975 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:57.977 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 14:38:58.014 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:38:58.021 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:38:58.031 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:38:58.066 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:38:58.073 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 53.9753ms.
+2020-06-20 14:38:58.077 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:38:58.079 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 99.4115ms
+2020-06-20 14:38:58.081 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:38:58.085 +08:00 [INF] Request finished in 111.1617ms 200 application/json; charset=utf-8
+2020-06-20 14:38:59.348 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary6jomJDTwRkZtWbMA 892
+2020-06-20 14:38:59.349 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:59.351 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:38:59.389 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:38:59.391 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.2225ms.
+2020-06-20 14:38:59.401 +08:00 [INF] Executing JsonResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:38:59.405 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 50.6337ms
+2020-06-20 14:38:59.406 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:38:59.407 +08:00 [INF] Request finished in 58.7854ms 200 application/json; charset=utf-8
+2020-06-20 14:38:59.412 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png  
+2020-06-20 14:38:59.413 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png was not modified
+2020-06-20 14:38:59.414 +08:00 [INF] Request finished in 2.1684ms 304 image/png
+2020-06-20 14:39:06.227 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary7RvQSnQBeP3rYTlF 896
+2020-06-20 14:39:06.228 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:39:06.229 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:39:06.270 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:39:06.273 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0943ms.
+2020-06-20 14:39:06.276 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:39:06.281 +08:00 [INF] Executed ViewResult - view Creation executed in 4.2235ms.
+2020-06-20 14:39:06.282 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 48.0487ms
+2020-06-20 14:39:06.286 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:39:06.288 +08:00 [INF] Request finished in 60.3797ms 200 text/html; charset=utf-8
+2020-06-20 14:39:07.170 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary1tMX4W7EFsgTWv4j 896
+2020-06-20 14:39:07.171 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:39:07.172 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:39:07.209 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:39:07.211 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1097ms.
+2020-06-20 14:39:07.212 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:39:07.220 +08:00 [INF] Executed ViewResult - view Creation executed in 8.7295ms.
+2020-06-20 14:39:07.222 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 44.6284ms
+2020-06-20 14:39:07.225 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:39:07.227 +08:00 [INF] Request finished in 56.4123ms 200 text/html; charset=utf-8
+2020-06-20 14:39:12.764 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/bootstrap-select.js.map  
+2020-06-20 14:39:12.766 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/i18n/defaults-zh_CN.js.map  
+2020-06-20 14:39:12.836 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/js/i18n/defaults-zh_CN.js.map'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\js\i18n\defaults-zh_CN.js.map'
+2020-06-20 14:39:12.841 +08:00 [INF] Request finished in 74.2611ms 200 text/plain
+2020-06-20 14:39:12.857 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/js/bootstrap-select.js.map'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\js\bootstrap-select.js.map'
+2020-06-20 14:39:12.866 +08:00 [INF] Request finished in 102.7891ms 200 text/plain
+2020-06-20 14:39:12.943 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/css/bootstrap.css.map  
+2020-06-20 14:39:12.949 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/css/bootstrap-select.css.map  
+2020-06-20 14:39:12.970 +08:00 [INF] Sending file. Request path: '/lib/bootstrap-select/css/bootstrap-select.css.map'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap-select\css\bootstrap-select.css.map'
+2020-06-20 14:39:12.972 +08:00 [INF] Request finished in 22.8119ms 200 text/plain
+2020-06-20 14:39:12.984 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/v3.3.6/css/bootstrap.css.map'. Physical path: 'F:\DotNetProjects\LMS\LMS.Web\wwwroot\lib\bootstrap\v3.3.6\css\bootstrap.css.map'
+2020-06-20 14:39:12.987 +08:00 [INF] Request finished in 44.5298ms 200 text/plain
+2020-06-20 14:50:22.703 +08:00 [INF] Starting up Successful
+2020-06-20 14:50:24.261 +08:00 [INF] User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-20 14:50:24.836 +08:00 [INF] Now listening on: http://localhost:8001
+2020-06-20 14:50:24.837 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-06-20 14:50:24.838 +08:00 [INF] Hosting environment: Development
+2020-06-20 14:50:24.838 +08:00 [INF] Content root path: F:\DotNetProjects\LMS\LMS.Web
+2020-06-20 14:50:26.040 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/  
+2020-06-20 14:50:26.133 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 14:50:26.230 +08:00 [INF] Route matched with {action = "Home", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Home() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 14:50:26.330 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Home (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:50:26.335 +08:00 [INF] 记录LogInformation日志,发生在Homes/Home
+2020-06-20 14:50:26.336 +08:00 [ERR] 记录LogError日志,发生在Homes/Home
+2020-06-20 14:50:26.339 +08:00 [WRN] 记录LogWarning日志,发生在Homes/Home
+2020-06-20 14:50:26.339 +08:00 [FTL] 记录LogCritical日志,发生在Homes/Home
+2020-06-20 14:50:26.361 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Home (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.3877ms.
+2020-06-20 14:50:26.428 +08:00 [INF] Executing ViewResult, running view Home.
+2020-06-20 14:50:26.670 +08:00 [INF] Executed ViewResult - view Home executed in 253.4488ms.
+2020-06-20 14:50:26.672 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Home (LMS.Web) in 440.8191ms
+2020-06-20 14:50:26.673 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Home (LMS.Web)'
+2020-06-20 14:50:26.686 +08:00 [INF] Request finished in 658.1464ms 200 text/html; charset=utf-8
+2020-06-20 14:50:26.693 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/layui.css  
+2020-06-20 14:50:26.726 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/js/bootstrap.js  
+2020-06-20 14:50:26.769 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Homes/Index  
+2020-06-20 14:50:26.802 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/layui.all.js  
+2020-06-20 14:50:26.851 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/public/publics.js  
+2020-06-20 14:50:26.860 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-20 14:50:26.879 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 14:50:26.881 +08:00 [INF] The file /lib/layer/v2.5.6/dist/layui.all.js was not modified
+2020-06-20 14:50:26.881 +08:00 [INF] The file /js/public/publics.js was not modified
+2020-06-20 14:50:26.894 +08:00 [INF] Request finished in 43.4623ms 304 application/javascript
+2020-06-20 14:50:26.882 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/layui.css was not modified
+2020-06-20 14:50:26.882 +08:00 [INF] The file /lib/bootstrap/v3.3.6/js/bootstrap.js was not modified
+2020-06-20 14:50:26.892 +08:00 [INF] Route matched with {action = "Index", controller = "Homes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LMS.Web.Controllers.HomesController (LMS.Web).
+2020-06-20 14:50:26.882 +08:00 [INF] The file /lib/bootstrap/v3.3.6/css/bootstrap.css was not modified
+2020-06-20 14:50:26.908 +08:00 [INF] Request finished in 215.6558ms 304 text/css
+2020-06-20 14:50:26.910 +08:00 [INF] Request finished in 183.7245ms 304 application/javascript
+2020-06-20 14:50:26.920 +08:00 [INF] Request finished in 61.8277ms 304 text/css
+2020-06-20 14:50:26.953 +08:00 [INF] Executing action method LMS.Web.Controllers.HomesController.Index (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:50:26.891 +08:00 [INF] Request finished in 98.9769ms 304 application/javascript
+2020-06-20 14:50:26.961 +08:00 [INF] Executed action method LMS.Web.Controllers.HomesController.Index (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.1715ms.
+2020-06-20 14:50:26.965 +08:00 [INF] Executing ViewResult, running view Index.
+2020-06-20 14:50:26.987 +08:00 [INF] Executed ViewResult - view Index executed in 24.153ms.
+2020-06-20 14:50:26.988 +08:00 [INF] Executed action LMS.Web.Controllers.HomesController.Index (LMS.Web) in 76.544ms
+2020-06-20 14:50:26.992 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.HomesController.Index (LMS.Web)'
+2020-06-20 14:50:26.995 +08:00 [INF] Request finished in 225.1132ms 200 text/html; charset=utf-8
+2020-06-20 14:50:27.125 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css?v=5.0.9  
+2020-06-20 14:50:27.127 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css was not modified
+2020-06-20 14:50:27.131 +08:00 [INF] Request finished in 5.1858ms 304 text/css
+2020-06-20 14:50:27.144 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css?v=3.1.1  
+2020-06-20 14:50:27.155 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css was not modified
+2020-06-20 14:50:27.161 +08:00 [INF] Request finished in 16.2458ms 304 text/css
+2020-06-20 14:50:27.173 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/code.css  
+2020-06-20 14:50:27.176 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/code.css was not modified
+2020-06-20 14:50:27.178 +08:00 [INF] Request finished in 4.2617ms 304 text/css
+2020-06-20 14:50:30.130 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/Corporation/Creation  
+2020-06-20 14:50:30.136 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:30.160 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(Int32) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:30.642 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:50:31.363 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:50:31.886 +08:00 [INF] Executed DbCommand (56ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:50:32.053 +08:00 [INF] Executed DbCommand (19ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:50:32.061 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1417.2197ms.
+2020-06-20 14:50:32.064 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:32.174 +08:00 [INF] Executed ViewResult - view Creation executed in 111.4606ms.
+2020-06-20 14:50:32.175 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 2012.9636ms
+2020-06-20 14:50:32.184 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:32.197 +08:00 [INF] Request finished in 2067.5853ms 200 text/html; charset=utf-8
+2020-06-20 14:50:32.201 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/i18n/defaults-zh_CN.js  
+2020-06-20 14:50:32.201 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css  
+2020-06-20 14:50:32.202 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/css/bootstrap-select.css  
+2020-06-20 14:50:32.202 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js  
+2020-06-20 14:50:32.202 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js  
+2020-06-20 14:50:32.202 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/bootstrap-select.js  
+2020-06-20 14:50:32.209 +08:00 [INF] The file /lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css was not modified
+2020-06-20 14:50:32.209 +08:00 [INF] The file /lib/bootstrap-select/js/i18n/defaults-zh_CN.js was not modified
+2020-06-20 14:50:32.209 +08:00 [INF] The file /lib/bootstrap-select/css/bootstrap-select.css was not modified
+2020-06-20 14:50:32.210 +08:00 [INF] The file /lib/jquery.bootstrapvalidator/v0.5.3/js/language/zh_CN.js was not modified
+2020-06-20 14:50:32.211 +08:00 [INF] The file /lib/jquery.bootstrapvalidator/v0.5.3/js/bootstrapValidator.js was not modified
+2020-06-20 14:50:32.215 +08:00 [INF] The file /lib/bootstrap-select/js/bootstrap-select.js was not modified
+2020-06-20 14:50:32.216 +08:00 [INF] Request finished in 14.5866ms 304 text/css
+2020-06-20 14:50:32.218 +08:00 [INF] Request finished in 16.6389ms 304 application/javascript
+2020-06-20 14:50:32.218 +08:00 [INF] Request finished in 16.3308ms 304 text/css
+2020-06-20 14:50:32.219 +08:00 [INF] Request finished in 16.925ms 304 application/javascript
+2020-06-20 14:50:32.220 +08:00 [INF] Request finished in 17.8311ms 304 application/javascript
+2020-06-20 14:50:32.225 +08:00 [INF] Request finished in 23.8126ms 304 application/javascript
+2020-06-20 14:50:32.228 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.form/jquery.form.js  
+2020-06-20 14:50:32.229 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/js/Corporation/Creation.js  
+2020-06-20 14:50:32.235 +08:00 [INF] The file /lib/jquery.form/jquery.form.js was not modified
+2020-06-20 14:50:32.235 +08:00 [INF] The file /js/Corporation/Creation.js was not modified
+2020-06-20 14:50:32.236 +08:00 [INF] Request finished in 7.7902ms 304 application/javascript
+2020-06-20 14:50:32.238 +08:00 [INF] Request finished in 8.9741ms 304 application/javascript
+2020-06-20 14:50:33.871 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif  
+2020-06-20 14:50:33.873 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/layer/default/loading-0.gif was not modified
+2020-06-20 14:50:33.878 +08:00 [INF] Request finished in 7.067ms 304 image/gif
+2020-06-20 14:50:33.879 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryYdWKXltUGcMGh5eF 880
+2020-06-20 14:50:33.885 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:33.924 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:34.007 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:34.011 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2.1005ms.
+2020-06-20 14:50:34.021 +08:00 [INF] Executing JsonResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:50:34.146 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 219.8208ms
+2020-06-20 14:50:34.147 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:34.149 +08:00 [INF] Request finished in 269.9314ms 200 application/json; charset=utf-8
+2020-06-20 14:50:34.158 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png  
+2020-06-20 14:50:34.161 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/layer/default/icon.png was not modified
+2020-06-20 14:50:34.163 +08:00 [INF] Request finished in 4.8178ms 304 image/png
+2020-06-20 14:50:39.106 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 26
+2020-06-20 14:50:39.109 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:50:39.115 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/fonts/glyphicons-halflings-regular.woff2  
+2020-06-20 14:50:39.117 +08:00 [INF] The file /lib/bootstrap/v3.3.6/fonts/glyphicons-halflings-regular.woff2 was not modified
+2020-06-20 14:50:39.117 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 14:50:39.119 +08:00 [INF] Request finished in 3.6523ms 304 font/woff2
+2020-06-20 14:50:39.161 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:50:39.233 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:50:39.250 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:50:39.295 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:50:39.303 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 135.6431ms.
+2020-06-20 14:50:39.321 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:50:39.342 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 222.981ms
+2020-06-20 14:50:39.343 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:50:39.344 +08:00 [INF] Request finished in 238.1462ms 200 application/json; charset=utf-8
+2020-06-20 14:50:40.423 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 14:50:40.425 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:50:40.428 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 14:50:40.477 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:50:40.500 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:50:40.511 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:50:40.551 +08:00 [INF] Executed DbCommand (28ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:50:40.561 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 79.2355ms.
+2020-06-20 14:50:40.564 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:50:40.567 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 134.0174ms
+2020-06-20 14:50:40.571 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:50:40.575 +08:00 [INF] Request finished in 151.7129ms 200 application/json; charset=utf-8
+2020-06-20 14:50:41.459 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/API/GetAreasSelectOptions application/x-www-form-urlencoded; charset=UTF-8 13
+2020-06-20 14:50:41.461 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:50:41.466 +08:00 [INF] Route matched with {action = "GetAreasSelectOptions", controller = "API"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAreasSelectOptions(Int32, Int32, Boolean) on controller LMS.Web.Controllers.APIController (LMS.Web).
+2020-06-20 14:50:41.511 +08:00 [INF] Executing action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) - Validation state: "Valid"
+2020-06-20 14:50:41.518 +08:00 [INF] Entity Framework Core 3.1.4 initialized 'EFDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-06-20 14:50:41.524 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__ParentID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[ID], [a].[AreaLevel], [a].[Center], [a].[CityCode], [a].[CompleteSpelling], [a].[CreationTime], [a].[CreatorUserId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[Latitude], [a].[LevelType], [a].[LogogramName], [a].[LogogramSpelling], [a].[Longitude], [a].[MergerLogogramName], [a].[MergerName], [a].[ModificationUserID], [a].[Name], [a].[NameFirstChar], [a].[ParentCode], [a].[Remarks], [a].[TelephoneCode], [a].[Version], [a].[ZipCode]
+FROM [Area] AS [a]
+WHERE [a].[ID] = @__ParentID_0
+2020-06-20 14:50:41.561 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[@__SelectedID_1='?' (DbType = Int32), @__area_CityCode_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CONVERT(VARCHAR(11), [a].[ID]) AS [Value], [a].[Name] AS [Text], CASE
+    WHEN [a].[ID] = @__SelectedID_1 THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END AS [Selected]
+FROM [Area] AS [a]
+WHERE [a].[ParentCode] = @__area_CityCode_0
+2020-06-20 14:50:41.575 +08:00 [INF] Executed action method LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 58.298ms.
+2020-06-20 14:50:41.586 +08:00 [INF] Executing ObjectResult, writing value of type 'LMS.Web.Models.JSONData'.
+2020-06-20 14:50:41.595 +08:00 [INF] Executed action LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web) in 123.3167ms
+2020-06-20 14:50:41.601 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.APIController.GetAreasSelectOptions (LMS.Web)'
+2020-06-20 14:50:41.602 +08:00 [INF] Request finished in 143.5286ms 200 application/json; charset=utf-8
+2020-06-20 14:50:43.701 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarynywegSPAvDvJclbL 896
+2020-06-20 14:50:43.703 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:43.707 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:43.759 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:43.762 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2738ms.
+2020-06-20 14:50:43.766 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:43.776 +08:00 [INF] Executed ViewResult - view Creation executed in 10.3969ms.
+2020-06-20 14:50:43.777 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 64.4157ms
+2020-06-20 14:50:43.778 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:43.781 +08:00 [INF] Request finished in 79.1316ms 200 text/html; charset=utf-8
+2020-06-20 14:50:44.506 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryBwaUCzZVkKiaU2fK 896
+2020-06-20 14:50:44.510 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:44.521 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:44.576 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:44.578 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1904ms.
+2020-06-20 14:50:44.582 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:44.627 +08:00 [INF] Executed ViewResult - view Creation executed in 45.1361ms.
+2020-06-20 14:50:44.630 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 96.2953ms
+2020-06-20 14:50:44.636 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:44.638 +08:00 [INF] Request finished in 132.5905ms 200 text/html; charset=utf-8
+2020-06-20 14:50:44.923 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarypxlbvrKlB2hZxEDt 896
+2020-06-20 14:50:44.924 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:44.929 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:44.976 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:44.982 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9ms.
+2020-06-20 14:50:44.983 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:44.988 +08:00 [INF] Executed ViewResult - view Creation executed in 4.8534ms.
+2020-06-20 14:50:44.989 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 57.7773ms
+2020-06-20 14:50:44.990 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:44.994 +08:00 [INF] Request finished in 70.9081ms 200 text/html; charset=utf-8
+2020-06-20 14:50:45.108 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryFuuTEBRPKordGwge 896
+2020-06-20 14:50:45.108 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:45.113 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:45.160 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:45.162 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0932ms.
+2020-06-20 14:50:45.170 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:45.172 +08:00 [INF] Executed ViewResult - view Creation executed in 2.211ms.
+2020-06-20 14:50:45.173 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 53.1397ms
+2020-06-20 14:50:45.177 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:45.178 +08:00 [INF] Request finished in 70.0976ms 200 text/html; charset=utf-8
+2020-06-20 14:50:45.326 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryhohanbg7IiTnCnb9 896
+2020-06-20 14:50:45.327 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:45.332 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:45.391 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:45.393 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2027ms.
+2020-06-20 14:50:45.406 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:45.417 +08:00 [INF] Executed ViewResult - view Creation executed in 10.928ms.
+2020-06-20 14:50:45.418 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 81.0474ms
+2020-06-20 14:50:45.419 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:45.421 +08:00 [INF] Request finished in 95.3465ms 200 text/html; charset=utf-8
+2020-06-20 14:50:45.678 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryudfHIvGDm9id0YfR 896
+2020-06-20 14:50:45.680 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:45.684 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:45.731 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:45.735 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.529ms.
+2020-06-20 14:50:45.738 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:45.743 +08:00 [INF] Executed ViewResult - view Creation executed in 4.8576ms.
+2020-06-20 14:50:45.744 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 55.0671ms
+2020-06-20 14:50:45.748 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:45.752 +08:00 [INF] Request finished in 73.7555ms 200 text/html; charset=utf-8
+2020-06-20 14:50:45.995 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryl7NUHw1XEi5Q3j0P 896
+2020-06-20 14:50:45.996 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:46.000 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:46.043 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:46.047 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6114ms.
+2020-06-20 14:50:46.050 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:46.057 +08:00 [INF] Executed ViewResult - view Creation executed in 6.3989ms.
+2020-06-20 14:50:46.058 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 55.1824ms
+2020-06-20 14:50:46.059 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:46.062 +08:00 [INF] Request finished in 67.2423ms 200 text/html; charset=utf-8
+2020-06-20 14:50:46.210 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarylQM0unZGFvBAZhZm 896
+2020-06-20 14:50:46.212 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:46.219 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:46.264 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:46.268 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.171ms.
+2020-06-20 14:50:46.272 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:46.294 +08:00 [INF] Executed ViewResult - view Creation executed in 22.133ms.
+2020-06-20 14:50:46.295 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 73.6066ms
+2020-06-20 14:50:46.298 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:46.299 +08:00 [INF] Request finished in 88.8898ms 200 text/html; charset=utf-8
+2020-06-20 14:50:46.459 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarySuoCBBe2rCRCPoXH 896
+2020-06-20 14:50:46.460 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:46.464 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 14:50:46.509 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 14:50:46.513 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2956ms.
+2020-06-20 14:50:46.517 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 14:50:46.536 +08:00 [INF] Executed ViewResult - view Creation executed in 18.44ms.
+2020-06-20 14:50:46.537 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 69.5336ms
+2020-06-20 14:50:46.540 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 14:50:46.542 +08:00 [INF] Request finished in 82.2753ms 200 text/html; charset=utf-8
+2020-06-20 15:06:31.080 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryCqwj5nUYZPylAKw6 896
+2020-06-20 15:06:31.081 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:31.083 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 15:06:31.125 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 15:06:31.128 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.268ms.
+2020-06-20 15:06:31.132 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 15:06:31.138 +08:00 [INF] Executed ViewResult - view Creation executed in 6.2746ms.
+2020-06-20 15:06:31.138 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 52.7768ms
+2020-06-20 15:06:31.142 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:31.145 +08:00 [INF] Request finished in 65.7825ms 200 text/html; charset=utf-8
+2020-06-20 15:06:31.740 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundary1PtznvVqEG6zbAg8 896
+2020-06-20 15:06:31.741 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:31.748 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 15:06:31.791 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 15:06:31.793 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1104ms.
+2020-06-20 15:06:31.794 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 15:06:31.800 +08:00 [INF] Executed ViewResult - view Creation executed in 6.1135ms.
+2020-06-20 15:06:31.801 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 36.5444ms
+2020-06-20 15:06:31.802 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:31.806 +08:00 [INF] Request finished in 65.5814ms 200 text/html; charset=utf-8
+2020-06-20 15:06:31.904 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundarydrV143b3BcKAWnLO 896
+2020-06-20 15:06:31.906 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:31.912 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 15:06:31.958 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 15:06:31.960 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1279ms.
+2020-06-20 15:06:31.963 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 15:06:31.966 +08:00 [INF] Executed ViewResult - view Creation executed in 3.1416ms.
+2020-06-20 15:06:31.966 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 52.6052ms
+2020-06-20 15:06:31.969 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:31.973 +08:00 [INF] Request finished in 69.4901ms 200 text/html; charset=utf-8
+2020-06-20 15:06:32.143 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:8001/Corporation/Creation multipart/form-data; boundary=----WebKitFormBoundaryQbM8rIEPajwYpxNv 896
+2020-06-20 15:06:32.145 +08:00 [INF] Executing endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:32.151 +08:00 [INF] Route matched with {action = "Creation", controller = "Corporation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Creation(LMS.Model.Dto.CorporationDto) on controller LMS.Web.Controllers.CorporationController (LMS.Web).
+2020-06-20 15:06:32.195 +08:00 [INF] Executing action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web) - Validation state: "Invalid"
+2020-06-20 15:06:32.544 +08:00 [INF] Executed action method LMS.Web.Controllers.CorporationController.Creation (LMS.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1312ms.
+2020-06-20 15:06:32.547 +08:00 [INF] Executing ViewResult, running view Creation.
+2020-06-20 15:06:32.553 +08:00 [INF] Executed ViewResult - view Creation executed in 6.0636ms.
+2020-06-20 15:06:32.553 +08:00 [INF] Executed action LMS.Web.Controllers.CorporationController.Creation (LMS.Web) in 399.918ms
+2020-06-20 15:06:32.558 +08:00 [INF] Executed endpoint 'LMS.Web.Controllers.CorporationController.Creation (LMS.Web)'
+2020-06-20 15:06:32.560 +08:00 [INF] Request finished in 416.1961ms 200 text/html; charset=utf-8
+2020-06-20 15:06:34.785 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/css/bootstrap.css  
+2020-06-20 15:06:34.790 +08:00 [INF] The file /lib/bootstrap/v3.3.6/css/bootstrap.css was not modified
+2020-06-20 15:06:34.790 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/layui.css  
+2020-06-20 15:06:34.838 +08:00 [INF] Request finished in 54.8836ms 304 text/css
+2020-06-20 15:06:34.868 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css?v=5.0.9  
+2020-06-20 15:06:34.898 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/layui.css was not modified
+2020-06-20 15:06:34.899 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/laydate/default/laydate.css was not modified
+2020-06-20 15:06:34.900 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css  
+2020-06-20 15:06:34.911 +08:00 [INF] Request finished in 42.886ms 304 text/css
+2020-06-20 15:06:34.911 +08:00 [INF] Request finished in 121.2051ms 304 text/css
+2020-06-20 15:06:34.914 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css?v=3.1.1  
+2020-06-20 15:06:34.914 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/layer/v2.5.6/dist/css/modules/code.css  
+2020-06-20 15:06:34.914 +08:00 [INF] The file /lib/jquery.bootstrapvalidator/v0.5.3/css/bootstrapValidator.css was not modified
+2020-06-20 15:06:34.925 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/css/bootstrap-select.css  
+2020-06-20 15:06:34.925 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/bootstrap-select.js.map  
+2020-06-20 15:06:34.926 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/layer/default/layer.css was not modified
+2020-06-20 15:06:34.939 +08:00 [INF] The file /lib/bootstrap-select/css/bootstrap-select.css was not modified
+2020-06-20 15:06:34.928 +08:00 [INF] The file /lib/layer/v2.5.6/dist/css/modules/code.css was not modified
+2020-06-20 15:06:34.927 +08:00 [INF] Request finished in 27.2775ms 304 text/css
+2020-06-20 15:06:34.939 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/js/i18n/defaults-zh_CN.js.map  
+2020-06-20 15:06:34.939 +08:00 [INF] Request finished in 25.2501ms 304 text/css
+2020-06-20 15:06:34.939 +08:00 [INF] The file /lib/bootstrap-select/js/bootstrap-select.js.map was not modified
+2020-06-20 15:06:34.946 +08:00 [INF] The file /lib/bootstrap-select/js/i18n/defaults-zh_CN.js.map was not modified
+2020-06-20 15:06:34.941 +08:00 [INF] Request finished in 23.2559ms 304 text/css
+2020-06-20 15:06:34.943 +08:00 [INF] Request finished in 29.0616ms 304 text/css
+2020-06-20 15:06:34.952 +08:00 [INF] Request finished in 26.2044ms 304 text/plain
+2020-06-20 15:06:34.953 +08:00 [INF] Request finished in 14.6999ms 304 text/plain
+2020-06-20 15:06:35.094 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap/v3.3.6/css/bootstrap.css.map  
+2020-06-20 15:06:35.096 +08:00 [INF] The file /lib/bootstrap/v3.3.6/css/bootstrap.css.map was not modified
+2020-06-20 15:06:35.101 +08:00 [INF] Request finished in 6.2928ms 304 text/plain
+2020-06-20 15:06:35.119 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/lib/bootstrap-select/css/bootstrap-select.css.map  
+2020-06-20 15:06:35.122 +08:00 [INF] The file /lib/bootstrap-select/css/bootstrap-select.css.map was not modified
+2020-06-20 15:06:35.125 +08:00 [INF] Request finished in 4.7471ms 304 text/plain
+2020-06-20 15:07:03.446 +08:00 [INF] Application is shutting down...

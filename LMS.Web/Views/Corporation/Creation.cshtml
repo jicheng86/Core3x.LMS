@@ -28,7 +28,7 @@
                                 <label class="col-sm-3 control-label" asp-for="Name"></label>
                                 <div class="col-sm-9">
                                     <input asp-for="Name" class="form-control" type="text" placeholder="填写公司名称">
-                                    <span asp-validation-for="Name"></span>
+                                    <span asp-validation-for="Name" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="form-group col-sm-6">
@@ -42,14 +42,14 @@
                                     </select>
                                     <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="auto" data-actions-box="true" title="请选择" name="AreaID" id="seltStreetAreaID">
                                     </select>
-                                    <span asp-validation-for="AreaID"></span>
+                                    <span asp-validation-for="AreaID" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label class="col-sm-3 control-label" asp-for="CorporationAddress"></label>
                                 <div class="col-sm-9">
                                     <input asp-for="CorporationAddress" id="CorporationAddress" class="form-control" type="text" placeholder="请填写公司所在区划之后的详细地址">
-                                    <span asp-validation-for="CorporationAddress"></span>
+                                    <span asp-validation-for="CorporationAddress" class="text-danger"></span>
                                 </div>
                             </div>
 
@@ -62,7 +62,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <span asp-validation-summary="ModelOnly"></span>
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <div class="form-group ">
                                 <div class="col-sm-9 col-sm-offset-1">
                                     <button class="btn btn-primary" id="btnSubmit" type="button">提交</button>
