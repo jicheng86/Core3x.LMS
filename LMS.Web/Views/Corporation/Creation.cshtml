@@ -34,7 +34,7 @@
                             <div class="form-group col-sm-6">
                                 <label class="col-sm-3 control-label" asp-for="AreaID"></label>
                                 <div class="col-sm-9">
-                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="fit" data-actions-box="true" title="请选择" name="AreaID" id="seltProvinceAreaID" asp-items="@ViewBag.AreaSelectListItem">
+                                    <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="fit" data-actions-box="true" title="请选择" name="AreaID" id="seltProvinceAreaID">
                                     </select>
                                     <select class="form-control col-sm-4 selectpicker show-tick" data-live-search="true" data-style="btn-success" data-size="11" data-width="fit" data-actions-box="true" title="请选择" name="AreaID" id="seltCityAreaID">
                                     </select>
@@ -44,6 +44,7 @@
                                     </select>
                                     <span asp-validation-for="AreaID" class="text-danger"></span>
                                 </div>
+                                <input type="hidden" id="hidAreaID" name="hidAreaID" value="@ViewBag.AreaIDs" />
                             </div>
                             <div class="form-group col-sm-6">
                                 <label class="col-sm-3 control-label" asp-for="CorporationAddress"></label>
@@ -62,10 +63,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group  col-sm-6">
+                                <div  asp-validation-summary="ModelOnly" class="col-sm-9 col-sm-offset-1 text-danger"></div>
+                            </div>
+
                             <div class="form-group ">
                                 <div class="col-sm-9 col-sm-offset-1">
-                                    <button class="btn btn-primary" id="btnSubmit" type="button">提交</button>
+                                    <button class="btn btn-primary" id="btn" type="submit">提交</button>
                                     <button class="btn btn-default" type="button">取消</button>
                                 </div>
                             </div>

@@ -15,17 +15,17 @@ namespace LMS.Model.Dto
         /// <summary>
         /// 公司名称
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "公司名称")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "公司名称"), StringLength(5, ErrorMessage = "字段：{0}，不能超过长度：{1}，请核实")]
         public string Name { get; set; }
         /// <summary>
         /// 行政区划ID
         /// </summary>
         [Display(Name = "行政区划")]
-        public int AreaID { get; set; }
+        public List<int> AreaID { get; set; }
         /// <summary>
         /// 公司详细地址：行政区划ID之后地址
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "公司详细地址")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "公司详细地址"), MinLength(5, ErrorMessage = "字段：{0},长度不能少于{1}")]
         public string CorporationAddress { get; set; }
 
 

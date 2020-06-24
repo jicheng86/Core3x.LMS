@@ -90,9 +90,17 @@ namespace LMS.Web.Controllers
         /// <param name="corporationDto">提交公司信息</param>
         /// <returns></returns>
         [HttpPost, ValidateAntiForgeryToken]
-        public IActionResult Creation(CorporationDto corporationDto)
+        public async Task<IActionResult> CreationAsync(CorporationDtoCreation corporationDto)
         {
             JSONData Jsondata = new JSONData();
+
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError(string.Empty, "ModelLevelError");
+                ViewBag.AreaIDs = string.Join(",", corporationDto.AreaID);
+                return View();
+            }
+           
             var firstArerID = corporationDto.AreaID.FirstOrDefault();
             if (Constant.SpecialAdministrativeRegionAreaID.Contains(firstArerID))
             {
@@ -109,18 +117,12 @@ namespace LMS.Web.Controllers
                 Jsondata.Message = "请选择完整的区划地址";
                 return Json(Jsondata);
             }
-            if (!ModelState.IsValid)
-            {
-                ModelState.AddModelError(string.Empty, "ModelLevelError");
-                return View();
-            }
-
 
             Corporation corporation = AutoMapper.Map<Corporation>(corporationDto);
             corporation.CreatorUserId = 1000;
             CorporationService.Create(corporation);
-            var result = CorporationService.SaveChangeAsync();
-            if (result.IsCompleted && result.Result > 0)
+            var result = await CorporationService.SaveChangeAsync();
+            if (result > 0)
             {
                 Jsondata.Code = EnumCollection.ResponseStatusCode.SUCCESS;
                 Jsondata.Message = "操作成功";

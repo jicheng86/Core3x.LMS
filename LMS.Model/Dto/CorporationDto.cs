@@ -26,7 +26,7 @@ namespace LMS.Model.Dto
         /// <summary>
         /// 公司详细地址：行政区划ID之后地址
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "公司详细地址")]
+        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "公司详细地址"), MinLength(5, ErrorMessage = "字段：{0},长度不能少于{1}")]
         public string CorporationAddress { get; set; }
 
 
