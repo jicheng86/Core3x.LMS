@@ -31,5 +31,22 @@ namespace LMS.Service.Services
         {
             return corporationRepository.LoadPageDataList(whereLambda, orderLambda, pageIndex, pageSize, isDesc);
         }
+        /// <summary>
+        /// 是否已存在
+        /// </summary>
+        /// <param name="corporation">实体</param>
+        /// <returns></returns>
+        public bool IsExisted(Corporation corporation)
+        {
+            if (corporation == null)
+            {
+                return true;
+            }
+            if (IsExisted(c => c.Name == corporation.Name && c.IsDeleted == false && c.IsActive == true))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

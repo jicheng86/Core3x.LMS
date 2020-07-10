@@ -1,4 +1,5 @@
 ﻿using LMS.Model;
+
 using System;
 using System.Linq;
 using System.Linq.Expressions;
@@ -18,6 +19,13 @@ namespace LMS.IRepository
         /// <param name="entity">实体对象</param>
         /// <returns></returns>
         T Create(T entity);
+
+        /// <summary>
+        /// 是否已存在
+        /// </summary>
+        /// <param name="whereLambda">Lambda查询条件</param>
+        /// <returns></returns>
+        bool IsExisted(Expression<Func<T, bool>> whereLambda);
         /// <summary>
         /// 删除实体
         /// </summary>

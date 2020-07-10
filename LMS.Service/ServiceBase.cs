@@ -1,6 +1,7 @@
 ﻿using LMS.IRepository;
 using LMS.IService;
 using LMS.Model;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,17 +23,29 @@ namespace LMS.Service
         {
             Repository = repository;
         }
-
+        /// <summary>
+        /// 新增实体
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public T Create(T entity)
         {
             return Repository.Create(entity);
         }
-
+        /// <summary>
+        /// 根据条件删除实体
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
         public bool Delete(Expression<Func<T, bool>> whereLambda)
         {
             return Repository.Delete(whereLambda);
         }
-
+       /// <summary>
+       /// 删除实体
+       /// </summary>
+       /// <param name="entity"></param>
+       /// <returns></returns>
         public bool Delete(T entity)
         {
             return Repository.Delete(entity);
@@ -52,17 +65,31 @@ namespace LMS.Service
         {
             return Repository.GetEntityListAsync(whereLambda);
         }
-
-     
-
+        /// <summary>
+        /// 数据响应提交
+        /// </summary>
+        /// <returns></returns>
         public Task<int> SaveChangeAsync()
         {
             return Repository.SaveChangeAsync();
         }
-
+        /// <summary>
+        /// 修改并返回实体
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public T Update(T entity)
         {
             return Repository.Update(entity);
+        }
+        /// <summary>
+        /// 是否已存在
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
+        public bool IsExisted(Expression<Func<T, bool>> whereLambda)
+        {
+            return Repository.IsExisted(whereLambda);
         }
     }
 }

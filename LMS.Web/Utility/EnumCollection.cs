@@ -119,6 +119,11 @@ namespace LMS.Web.Utility
             ARGUMENTSLOSE = 3,
 
             /// <summary>
+            /// ModelStateInValid
+            /// </summary>
+            MODELSTATE = 4,
+
+            /// <summary>
             /// 未知错误
             /// </summary>
             [Description("未知错误")]

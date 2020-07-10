@@ -22,6 +22,7 @@ namespace LMS.IService.IServices
         /// <param name="total">查询数据总条数</param>
         /// <returns>分页数据集合</returns>
         PageData<CorporationDto> LoadPageDataList(Expression<Func<Corporation, bool>> whereLambda, Expression<Func<Corporation, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false);
+        bool IsExisted(Corporation corporation);
 
     }
 }

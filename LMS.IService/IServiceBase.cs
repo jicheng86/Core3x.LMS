@@ -18,6 +18,12 @@ namespace LMS.IService
         /// <returns></returns>
         T Create(T entity);
         /// <summary>
+        /// 是否已存在
+        /// </summary>
+        /// <param name="whereLambda">Lambda查询条件</param>
+        /// <returns></returns>
+        bool IsExisted(Expression<Func<T, bool>> whereLambda);
+        /// <summary>
         /// 删除实体
         /// </summary>
         /// <param name="whereLambda">Lambda查询条件</param>
@@ -30,7 +36,7 @@ namespace LMS.IService
         /// <returns></returns>
         bool Delete(T entity);
         /// <summary>
-        /// 修改实体
+        /// 修改并返回实体
         /// </summary>
         /// <param name="entity">实体对象</param>
         /// <returns></returns>
@@ -53,7 +59,6 @@ namespace LMS.IService
         /// <param name="whereLambda">Lambda查询条件</param>
         /// <returns></returns>
         Task<IQueryable<T>> GetEntityListAsync(Expression<Func<T, bool>> whereLambda);
-
         /// <summary>
         /// 数据响应提交
         /// </summary>

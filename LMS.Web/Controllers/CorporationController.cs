@@ -12,6 +12,7 @@ using LMS.Web.Utility;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 
 using System;
 using System.Collections.Generic;
@@ -90,45 +91,71 @@ namespace LMS.Web.Controllers
         /// <param name="corporationDto">提交公司信息</param>
         /// <returns></returns>
         [HttpPost, ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreationAsync(CorporationDtoCreation corporationDto)
+        public async Task<IActionResult> Creation(CorporationDtoCreation corporationDto)
         {
-            JSONData Jsondata = new JSONData();
+            JSONData jsondata = new JSONData();
 
             if (!ModelState.IsValid)
             {
-                ModelState.AddModelError(string.Empty, "ModelLevelError");
+                ModelState.Remove("AreaID");
+                ModelState.AddModelError(string.Empty, "自定义描述错误");
                 ViewBag.AreaIDs = string.Join(",", corporationDto.AreaID);
-                return View();
+                Dictionary<string, string> ModelErrors = new Dictionary<string, string>();
+                //ViewBag.ModelState = ModelState;
+                //ViewData["ModelState"] = ModelState;
+                //var values = ModelState.Values.Where(s => s.Errors.Any());
+                var keys = ModelState.Keys.Where(k => ModelState[k].Errors.Count > 0);
+                foreach (var key in keys)
+                {
+                    var ErrorMessages = "";
+                    foreach (var error in ModelState[key].Errors)
+                    {
+                        ErrorMessages += ' ' + error.ErrorMessage;
+                    }
+                    ModelErrors.Add(key, ErrorMessages);
+                }
+                jsondata.Code = EnumCollection.ResponseStatusCode.MODELSTATE;
+                jsondata.Data = new { ModelErrors, AreaIDs = string.Join(",", corporationDto.AreaID) };
+                jsondata.Message = "数据校验非法，请核实！";
+                // ViewBag.ModelErrors = ModelErrors;
+                return Json(jsondata);
+                //return View();
             }
-           
+
             var firstArerID = corporationDto.AreaID.FirstOrDefault();
             if (Constant.SpecialAdministrativeRegionAreaID.Contains(firstArerID))
             {
                 if (corporationDto.AreaID.Count < 2)
                 {
-                    Jsondata.Code = EnumCollection.ResponseStatusCode.ARGUMENTSLOSE;
-                    Jsondata.Message = "请选择完整的区划地址";
-                    return Json(Jsondata);
+                    jsondata.Code = EnumCollection.ResponseStatusCode.ARGUMENTSLOSE;
+                    jsondata.Message = "请选择完整的区划地址";
+                    return Json(jsondata);
                 }
             }
             if (corporationDto.AreaID.Count < 4)
             {
-                Jsondata.Code = EnumCollection.ResponseStatusCode.ARGUMENTSLOSE;
-                Jsondata.Message = "请选择完整的区划地址";
-                return Json(Jsondata);
+                jsondata.Code = EnumCollection.ResponseStatusCode.ARGUMENTSLOSE;
+                jsondata.Message = "请选择完整的区划地址";
+                return Json(jsondata);
             }
 
             Corporation corporation = AutoMapper.Map<Corporation>(corporationDto);
             corporation.CreatorUserId = 1000;
+            if (CorporationService.IsExisted(corporation))
+            {
+                jsondata.Code = EnumCollection.ResponseStatusCode.FAIL;
+                jsondata.Message = "操作失败：分公司信息已存在，请核实！";
+                return Json(jsondata);
+            }
             CorporationService.Create(corporation);
             var result = await CorporationService.SaveChangeAsync();
             if (result > 0)
             {
-                Jsondata.Code = EnumCollection.ResponseStatusCode.SUCCESS;
-                Jsondata.Message = "操作成功";
-                return Json(Jsondata);
+                jsondata.Code = EnumCollection.ResponseStatusCode.SUCCESS;
+                jsondata.Message = "操作成功";
+                return Json(jsondata);
             }
-            return Json(Jsondata);
+            return Json(jsondata);
         }
 
     }

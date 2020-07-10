@@ -1,7 +1,10 @@
 ﻿using LMS.IRepository;
 using LMS.Model;
+using LMS.Model.Extend;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,7 +49,7 @@ namespace LMS.Repository
             }
             T entity = GetEntity(whereLambda);
 
-            return entity == null ? false : Update(entity) != null;
+            return entity != null && Update(entity) != null;
         }
         /// <summary>
         /// 删除实体
@@ -97,7 +100,29 @@ namespace LMS.Repository
             }
             return await Task.Run(() => dbContext.Set<T>().Where(whereLambda));
         }
-
+        /// <summary>
+        /// 实体是否已存在
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <returns></returns>
+        public bool IsExisted(Expression<Func<T, bool>> whereLambda)
+        {
+            if (whereLambda == null)
+            {
+                whereLambda = w => true;
+            }
+            var entity = GetEntityAsync(whereLambda).Result;
+            return entity != null;
+        }
+        /// <summary>
+        /// 加载列表数据
+        /// </summary>
+        /// <param name="whereLambda"></param>
+        /// <param name="orderLambda"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="isDesc"></param>
+        /// <returns></returns>
         public async Task<PageData<T>> LoadPageDataList(Expression<Func<T, bool>> whereLambda, Expression<Func<T, object>> orderLambda, int pageIndex, int pageSize, bool isDesc = false)
         {
             if (whereLambda == null)
@@ -116,14 +141,19 @@ namespace LMS.Repository
             };
             return pageData;
         }
-
-     
-
+        /// <summary>
+        /// 数据响应提交
+        /// </summary>
+        /// <returns></returns>
         public async Task<int> SaveChangeAsync()
         {
             return await dbContext.SaveChangesAsync();
         }
-
+        /// <summary>
+        /// 修改单个实体
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public T Update(T entity)
         {
             return entity;

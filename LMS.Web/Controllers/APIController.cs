@@ -45,10 +45,10 @@ namespace LMS.Web.Controllers
             {
                 items.Add(new SelectListItem { Value = string.Empty, Text = "请选择" });
             }
-            if (ParentID == 1000 && SelectedID < 1)
-            {
-                SelectedID = 3689;//广东省
-            }
+            //if (ParentID == 1000 && SelectedID < 1)
+            //{
+            //    SelectedID = 3689;//广东省
+            //}
             var area = AreaService.GetEntity(a => a.ID == ParentID);
             if (area == null)
             {
