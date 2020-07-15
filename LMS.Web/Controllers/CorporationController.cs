@@ -12,7 +12,6 @@ using LMS.Web.Utility;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
 
 using System;
 using System.Collections.Generic;
@@ -94,32 +93,37 @@ namespace LMS.Web.Controllers
         public async Task<IActionResult> Creation(CorporationDtoCreation corporationDto)
         {
             JSONData jsondata = new JSONData();
-
             if (!ModelState.IsValid)
             {
-                ModelState.Remove("AreaID");
-                ModelState.AddModelError(string.Empty, "自定义描述错误");
-                ViewBag.AreaIDs = string.Join(",", corporationDto.AreaID);
-                Dictionary<string, string> ModelErrors = new Dictionary<string, string>();
+                //ModelState.AddModelError(string.Empty, "自定义描述错误");
+                //ModelState.Remove("AreaID");
                 //ViewBag.ModelState = ModelState;
                 //ViewData["ModelState"] = ModelState;
                 //var values = ModelState.Values.Where(s => s.Errors.Any());
+                ViewBag.AreaIDs = string.Join(",", corporationDto.AreaID);
+                Dictionary<string, string> ModelErrors = new Dictionary<string, string>();
+
                 var keys = ModelState.Keys.Where(k => ModelState[k].Errors.Count > 0);
                 foreach (var key in keys)
                 {
                     var ErrorMessages = "";
-                    foreach (var error in ModelState[key].Errors)
+                    if (key == "AreaID")
                     {
-                        ErrorMessages += ' ' + error.ErrorMessage;
+                        ErrorMessages = "请正确选择区划地址！";
+                    }
+                    else
+                    {
+                        foreach (var error in ModelState[key].Errors)
+                        {
+                            ErrorMessages += ' ' + error.ErrorMessage;
+                        }
                     }
                     ModelErrors.Add(key, ErrorMessages);
                 }
                 jsondata.Code = EnumCollection.ResponseStatusCode.MODELSTATE;
                 jsondata.Data = new { ModelErrors, AreaIDs = string.Join(",", corporationDto.AreaID) };
                 jsondata.Message = "数据校验非法，请核实！";
-                // ViewBag.ModelErrors = ModelErrors;
                 return Json(jsondata);
-                //return View();
             }
 
             var firstArerID = corporationDto.AreaID.FirstOrDefault();

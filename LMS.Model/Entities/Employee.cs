@@ -17,22 +17,22 @@ namespace LMS.Model.Entities
         /// <summary>
         /// 员工性别
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！")]
+        [Required(ErrorMessage = "{0}不能为空！")]
         public EntityEnum.Gender EmployeeGender { get; set; }
 
-        [Required(ErrorMessage = "字段：{0}，不能为空！")]
+        [Required(ErrorMessage = "{0}不能为空！")]
         public int PositionID { get; set; }
         public Position Position { get; set; }
 
         /// <summary>
         /// 创建者ID
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "创建者ID")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "创建者ID")]
         public long CreatorUserId { get; set; }
         /// <summary>
         /// 创建时间
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "创建时间")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "创建时间")]
         public DateTime CreationTime { get; set; }
         /// <summary>
         /// 修改者ID
@@ -47,12 +47,12 @@ namespace LMS.Model.Entities
         /// <summary>
         /// 是否活跃状态
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "是否活跃状态")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "是否活跃状态")]
         public bool IsActive { get; set; }
         /// <summary>
         /// 是否删除状态
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "是否删除状态")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "是否删除状态")]
         public bool IsDeleted { get; set; }
         /// <summary>
         /// 删除操作者ID

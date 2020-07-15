@@ -16,12 +16,12 @@ namespace LMS.Model.Dto
         /// <summary>
         /// table每页行数
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "每页行数")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "每页行数")]
         public int PageSize { get; set; }
         /// <summary>
         /// table当前页码
         /// </summary>
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "当前页码")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "当前页码")]
         public int PageNumber { get; set; }
         /// <summary>
         /// 查找字符串

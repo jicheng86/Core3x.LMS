@@ -17,13 +17,12 @@ namespace LMS.Model
         /// <summary>
         /// 实体名称
         /// </summary>
-        [Display(Name = "名称"), Required(ErrorMessage = "字段：{0}，不能为空！")]
-        [StringLength(150, ErrorMessage = "字段：{0}长度范围为：{2}到{1}，请核实！", MinimumLength = 1)]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "名称"), StringLength(150, MinimumLength = 1, ErrorMessage = "{0}长度范围为：{2}到{1}，请核实！")]
         public string Name { get; set; }
         /// <summary>
         /// 备注信息
         /// </summary>
-        [Display(Name = "备注信息"), StringLength(2500, ErrorMessage = "字段：{0}长度不能超过：{1}，请核实！")]
+        [Display(Name = "备注信息"), StringLength(2500, ErrorMessage = "{0}长度不能超过：{1}，请核实！")]
         public string Remarks { get; set; }
     }
 }

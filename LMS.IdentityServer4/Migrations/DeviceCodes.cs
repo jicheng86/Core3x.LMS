@@ -8,11 +8,11 @@ namespace LMS.IdentityServer4.Migrations
 {
     public class DeviceCodes
     {
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "UserCode"), StringLength(2000, ErrorMessage = "字段：{0}长度不能超过：{1}")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "UserCode"), StringLength(2000, ErrorMessage = "{0}长度不能超过：{1}")]
         public string UserCode { get; set; }
-        [Required(ErrorMessage = "字段：{0}，不能为空！"), Display(Name = "DeviceCode"), StringLength(2000, ErrorMessage = "字段：{0}长度不能超过：{1}")]
+        [Required(ErrorMessage = "{0}不能为空！"), Display(Name = "DeviceCode"), StringLength(2000, ErrorMessage = "{0}长度不能超过：{1}")]
         public string DeviceCode { get; set; }
-        [Display(Name = "SubjectId"),StringLength(200, ErrorMessage = "字段：{0}长度不饿能超过：{1}")]
+        [Display(Name = "SubjectId"),StringLength(200, ErrorMessage = "{0}长度不饿能超过：{1}")]
         public string SubjectId { get; set; }
 
     }
