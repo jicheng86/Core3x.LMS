@@ -28,6 +28,21 @@ namespace LMS.Web.Controllers
             _logger.LogCritical(message: $"记录LogCritical日志,发生在{actionDescriptor.ControllerName}/{actionDescriptor.ActionName}");
             return View();
         }
+        public IActionResult MyHome()
+        {
+            ControllerActionDescriptor actionDescriptor = ControllerContext.ActionDescriptor;
+            _logger.LogDebug(message: $"记录LogDebug日志,发生在{actionDescriptor.ControllerName}/{actionDescriptor.ActionName}");
+            _logger.LogInformation(message: $"记录LogInformation日志,发生在{actionDescriptor.ControllerName}/{actionDescriptor.ActionName}");
+            _logger.LogError(message: $"记录LogError日志,发生在{actionDescriptor.ControllerName}/{actionDescriptor.ActionName}");
+            _logger.LogWarning(message: $"记录LogWarning日志,发生在{actionDescriptor.ControllerName}/{actionDescriptor.ActionName}");
+            _logger.LogCritical(message: $"记录LogCritical日志,发生在{actionDescriptor.ControllerName}/{actionDescriptor.ActionName}");
+            return View();
+        }
+
+        public IActionResult MyConsole()
+        {
+            return View();
+        }
 
         public IActionResult Index()
         {

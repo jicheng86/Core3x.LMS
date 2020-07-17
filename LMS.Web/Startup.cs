@@ -103,7 +103,7 @@ namespace LMS.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Homes}/{action=Home}/{id?}");
+                    pattern: "{controller=Homes}/{action=MyHome}/{id?}");
             });
         }
     }

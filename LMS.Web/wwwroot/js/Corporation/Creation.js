@@ -5,6 +5,9 @@ $(function () {
     //初始化按钮注册事件
     var btnInit = new ButtonInit();
     btnInit.Init();
+
+    //初始化上传文件
+    webuploadInitialize();
 });
 
 var ButtonInit = function () {
@@ -21,7 +24,7 @@ var ButtonInit = function () {
             if (isValid) {
                 //触发from提交事件
                 FormCorporationCreation.ajaxSubmit({
-               // $.ajax({
+                    // $.ajax({
                     //url: "/Corporation/Creation",          //默认是form的action， 如果声明，则会覆盖  
                     //type: "post",      //默认是form的method（get or post），如果申明，则会覆盖  
                     //data: FormCorporationCreation.serialize(),//序列化表单，$("form").serialize()只能序列化数据，不能序列化文件
@@ -201,6 +204,17 @@ var bvCorporationCreation = function () {
                     }
                 }
             },
+            BusinessLicense: {
+                message: '必填',
+                validators: {
+                    notEmpty: { message: '请输入公司公司营业执照/组织机构代码/税务登记编号' }
+                    , stringLength: {
+                        min: 10,
+                        max: 20,
+                        message: '请填写10-20个字符'
+                    }
+                }
+            },
             LegalPerson: {
                 message: '必填',
                 validators: {
@@ -298,5 +312,5 @@ var loadingAreaData = function (AreaIDs) {
             loadingAreasOptions(true, "seltStreetAreaID", "", AreaIDList[3], AreaIDList[2]);
         }
     }
-};
+}
 

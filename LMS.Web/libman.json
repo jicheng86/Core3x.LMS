@@ -77,6 +77,11 @@
       "provider": "unpkg",
       "library": "jquery-form@4.3.0",
       "destination": "wwwroot/lib/jquery-form/v4.3.0/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "webuploader@0.1.8",
+      "destination": "wwwroot/lib/webuploader/v0.1.8/"
     }
   ]
 }
